@@ -1,18 +1,17 @@
 backend:
-  name: test-repo
-  # name: git-gateway
-  # branch: main # Branch to update (optional; defaults to master)
+  # name: test-repo
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
 
 media_folder: 'images/uploads' # Media files will be stored in the repo under images/uploads
 public_folder: '/images/uploads' # The src attribute for uploaded media will begin with /images/uploads
 collections:
-  - name: 'type de menu'
-    label: 'menu-type'
+  - label: 'menu-type'
+    name: 'type de menu'
     folder: 'assets/menu-type'
     create: true
     fields:
       - { label: 'Title', title: 'title', name: 'title', widget: 'string' }
-      - { label: 'Content', name: 'body', widget: 'markdown' }
 
   - label: 'category'
     name: 'submenu'
@@ -20,12 +19,84 @@ collections:
     create: true
     fields:
       - { label: 'Title', title: 'title', name: 'title', widget: 'string' }
-      - { label: 'Content', name: 'body', widget: 'markdown' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+      - label: 'Item'
+        name: 'item'
+        widget: 'list'
+        create: true
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'markdown' }
+          - { label: 'Price', name: 'price', widget: 'string' }
 
   - label: 'menu'
     name: 'menu'
     folder: 'asssets/menu'
     create: true
     fields:
-      - { label: 'Title', title: 'title', name: 'title', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Price', name: 'price', widget: 'string' }
+      - label: 'Entrées'
+        name: 'starters'
+        fields:
+          - {
+              label: 'Title',
+              name: 'title',
+              widget: 'string',
+              default: 'Entrées',
+            }
+          - label: 'Item'
+            name: 'item'
+            create: true
+            widget: 'list'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                }
+              - { label: 'Price', name: 'price', widget: 'string' }
+      - label: 'Plats'
+        name: 'main-course'
+        fields:
+          - {
+              label: 'Title',
+              name: 'title',
+              widget: 'string',
+              default: 'Plats',
+            }
+          - label: 'Item'
+            name: 'item'
+            create: true
+            widget: 'list'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                }
+              - { label: 'Price', name: 'price', widget: 'string' }
+      - label: 'Desserts/Fromage'
+        name: 'desert-cheese'
+        fields:
+          - {
+              label: 'Title',
+              name: 'title',
+              widget: 'string',
+              default: 'Desserts/Fromage',
+            }
+          - label: 'Item'
+            name: 'item'
+            create: true
+            widget: 'list'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                }
+              - { label: 'Price', name: 'price', widget: 'string' }
