@@ -5,6 +5,13 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/assets`,
+        name: 'markdown-pages',
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
