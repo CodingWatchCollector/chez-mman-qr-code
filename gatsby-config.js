@@ -4,11 +4,12 @@ module.exports = {
     title: "chez-mman-qr-code",
   },
   plugins: [
+    'gatsby-transformer-remark',
     "gatsby-plugin-netlify-cms",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/assets`,
+        path: `${__dirname}/src/assets`,
         name: 'markdown-pages',
       },
     },
