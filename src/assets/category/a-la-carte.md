@@ -6,4 +6,5 @@ item:
   - title: foie de veau
     description: pas le foie de volaille
     price: 19.00$
+assetType: submenu
 ---
