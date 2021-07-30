@@ -1,8 +1,9 @@
 backend:
-  name: test-repo
-  # name: git-gateway
-  # repo: CodingWatchCollector/chez-mman-qr-code
+  # name: test-repo
+  name: git-gateway
+  repo: CodingWatchCollector/chez-mman-qr-code
   branch: production # Branch to update (optional; defaults to master)
+  publish_mode: editorial_workflow
 
 media_folder: 'images/uploads' # Media files will be stored in the repo under images/uploads
 public_folder: '/images/uploads' # The src attribute for uploaded media will begin with /images/uploads
@@ -13,6 +14,12 @@ collections:
     create: true
     fields:
       - { label: 'Title', title: 'title', name: 'title', widget: 'string' }
+      - {
+          label: 'asset-type',
+          name: 'assetType',
+          widget: 'hidden',
+          default: 'menu-type',
+        }
 
   - label: 'category'
     name: 'submenu'
@@ -20,6 +27,12 @@ collections:
     create: true
     fields:
       - { label: 'Title', title: 'title', name: 'title', widget: 'string' }
+      - {
+          label: 'asset-type',
+          name: 'assetType',
+          widget: 'hidden',
+          default: 'submenu',
+        }
       - {
           label: 'Description',
           name: 'description',
@@ -38,7 +51,12 @@ collections:
         create: true
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Description', name: 'description', widget: 'markdown' }
+          - {
+              label: 'Description',
+              name: 'description',
+              widget: 'markdown',
+              required: false,
+            }
           - { label: 'Price', name: 'price', widget: 'string' }
 
   - label: 'menu'
@@ -48,6 +66,12 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Price', name: 'price', widget: 'string' }
+      - {
+          label: 'asset-type',
+          name: 'assetType',
+          widget: 'hidden',
+          default: 'menu',
+        }
       - label: 'Entrées'
         name: 'starters'
         create: true
@@ -68,9 +92,15 @@ collections:
               - {
                   label: 'Description',
                   name: 'description',
+                  required: false,
                   widget: 'markdown',
                 }
-              - { label: 'Price', name: 'price', widget: 'string' }
+              - {
+                  label: 'Price',
+                  name: 'price',
+                  widget: 'string',
+                  required: false,
+                }
       - label: 'Plats'
         name: 'main-course'
         widget: 'object'
@@ -90,9 +120,15 @@ collections:
               - {
                   label: 'Description',
                   name: 'description',
+                  required: false,
                   widget: 'markdown',
                 }
-              - { label: 'Price', name: 'price', widget: 'string' }
+              - {
+                  label: 'Price',
+                  name: 'price',
+                  required: false,
+                  widget: 'string',
+                }
       - label: 'Desserts/Fromage'
         name: 'desert-cheese'
         widget: 'object'
@@ -112,6 +148,12 @@ collections:
               - {
                   label: 'Description',
                   name: 'description',
+                  required: false,
                   widget: 'markdown',
                 }
-              - { label: 'Price', name: 'price', widget: 'string' }
+              - {
+                  label: 'Supplement / Add to Price',
+                  name: 'addToPrice',
+                  required: false,
+                  widget: 'string',
+                }
