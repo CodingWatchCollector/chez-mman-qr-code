@@ -1,7 +1,7 @@
 backend:
-  # name: test-repo
-  name: git-gateway
-  repo: CodingWatchCollector/chez-mman-qr-code
+  name: test-repo
+  # name: git-gateway
+  # repo: CodingWatchCollector/chez-mman-qr-code
   branch: production # Branch to update (optional; defaults to master)
 
 media_folder: 'images/uploads' # Media files will be stored in the repo under images/uploads
@@ -9,19 +9,29 @@ public_folder: '/images/uploads' # The src attribute for uploaded media will beg
 collections:
   - label: 'type de menu'
     name: 'menu-type'
-    folder: 'assets/menu-type'
+    folder: 'src/assets/menu-type'
     create: true
     fields:
       - { label: 'Title', title: 'title', name: 'title', widget: 'string' }
 
   - label: 'category'
     name: 'submenu'
-    folder: 'assets/category'
+    folder: 'src/assets/category'
     create: true
     fields:
       - { label: 'Title', title: 'title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'markdown' }
-      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+      - {
+          label: 'Description',
+          name: 'description',
+          widget: 'markdown',
+          required: false,
+        }
+      - {
+          label: 'Featured Image',
+          name: 'thumbnail',
+          widget: 'image',
+          required: false,
+        }
       - label: 'Item'
         name: 'item'
         widget: 'list'
@@ -33,13 +43,15 @@ collections:
 
   - label: 'menu'
     name: 'menu'
-    folder: 'asssets/menu'
+    folder: 'src/assets/menu'
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Price', name: 'price', widget: 'string' }
       - label: 'Entrées'
         name: 'starters'
+        create: true
+        widget: 'object'
         fields:
           - {
               label: 'Title',
@@ -61,6 +73,7 @@ collections:
               - { label: 'Price', name: 'price', widget: 'string' }
       - label: 'Plats'
         name: 'main-course'
+        widget: 'object'
         fields:
           - {
               label: 'Title',
@@ -82,6 +95,7 @@ collections:
               - { label: 'Price', name: 'price', widget: 'string' }
       - label: 'Desserts/Fromage'
         name: 'desert-cheese'
+        widget: 'object'
         fields:
           - {
               label: 'Title',
