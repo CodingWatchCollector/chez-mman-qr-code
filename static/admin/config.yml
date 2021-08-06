@@ -1,159 +1,156 @@
 backend:
-  # name: test-repo
-  name: git-gateway
+  name: test-repo
+  # name: git-gateway
   repo: CodingWatchCollector/chez-mman-qr-code
-  branch: production # Branch to update (optional; defaults to master)
+  branch: main # Branch to update (optional; defaults to master)
   publish_mode: editorial_workflow
 
 media_folder: 'images/uploads' # Media files will be stored in the repo under images/uploads
 public_folder: '/images/uploads' # The src attribute for uploaded media will begin with /images/uploads
 collections:
-  - label: 'type de menu'
+  - label: 'type de carte'
     name: 'menu-type'
     folder: 'src/assets/menu-type'
+    editor:
+      preview: false
     create: true
     fields:
-      - { label: 'Title', title: 'title', name: 'title', widget: 'string' }
       - {
-          label: 'asset-type',
-          name: 'assetType',
-          widget: 'hidden',
-          default: 'menu-type',
+          label: 'Type de carte',
+          title: 'title',
+          name: 'title',
+          widget: 'string',
         }
-
-  - label: 'category'
-    name: 'submenu'
-    folder: 'src/assets/category'
-    create: true
-    fields:
-      - { label: 'Title', title: 'title', name: 'title', widget: 'string' }
-      - {
-          label: 'asset-type',
-          name: 'assetType',
-          widget: 'hidden',
-          default: 'submenu',
-        }
-      - {
-          label: 'Description',
-          name: 'description',
-          widget: 'markdown',
-          required: false,
-        }
-      - {
-          label: 'Featured Image',
-          name: 'thumbnail',
-          widget: 'image',
-          required: false,
-        }
-      - label: 'Item'
-        name: 'item'
+      - label: 'Contenu'
+        name: 'content'
         widget: 'list'
-        create: true
-        fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - {
-              label: 'Description',
-              name: 'description',
-              widget: 'markdown',
-              required: false,
-            }
-          - { label: 'Price', name: 'price', widget: 'string' }
+        types:
+          - label: 'A la carte'
+            name: 'alacarte'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Nom',
+                  title: 'title',
+                  name: 'title',
+                  widget: 'string',
+                }
+              - {
+                  label: 'asset-type',
+                  name: 'assetType',
+                  widget: 'hidden',
+                  default: 'submenu',
+                }
+              - {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                  required: false,
+                }
+              - label: 'Plats:'
+                name: 'item'
+                widget: 'list'
+                fields:
+                  - { label: 'Nom', name: 'title', widget: 'string' }
+                  - {
+                      label: 'Description',
+                      name: 'description',
+                      widget: 'markdown',
+                      required: false,
+                    }
+                  - { label: 'Prix', name: 'price', widget: 'string' }
 
-  - label: 'menu'
-    name: 'menu'
-    folder: 'src/assets/menu'
-    create: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Price', name: 'price', widget: 'string' }
-      - {
-          label: 'asset-type',
-          name: 'assetType',
-          widget: 'hidden',
-          default: 'menu',
-        }
-      - label: 'Entrées'
-        name: 'starters'
-        create: true
-        widget: 'object'
-        fields:
-          - {
-              label: 'Title',
-              name: 'title',
-              widget: 'string',
-              default: 'Entrées',
-            }
-          - label: 'Item'
-            name: 'item'
-            create: true
-            widget: 'list'
+          - label: 'Menu'
+            name: 'menu'
+            widget: 'object'
             fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Nom', name: 'title', widget: 'string' }
+              - { label: 'Prix', name: 'price', widget: 'string' }
               - {
-                  label: 'Description',
-                  name: 'description',
-                  required: false,
-                  widget: 'markdown',
+                  label: 'asset-type',
+                  name: 'assetType',
+                  widget: 'hidden',
+                  default: 'menu',
                 }
-              - {
-                  label: 'Price',
-                  name: 'price',
-                  widget: 'string',
-                  required: false,
-                }
-      - label: 'Plats'
-        name: 'main-course'
-        widget: 'object'
-        fields:
-          - {
-              label: 'Title',
-              name: 'title',
-              widget: 'string',
-              default: 'Plats',
-            }
-          - label: 'Item'
-            name: 'item'
-            create: true
-            widget: 'list'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - {
-                  label: 'Description',
-                  name: 'description',
-                  required: false,
-                  widget: 'markdown',
-                }
-              - {
-                  label: 'Price',
-                  name: 'price',
-                  required: false,
-                  widget: 'string',
-                }
-      - label: 'Desserts/Fromage'
-        name: 'desert-cheese'
-        widget: 'object'
-        fields:
-          - {
-              label: 'Title',
-              name: 'title',
-              widget: 'string',
-              default: 'Desserts/Fromage',
-            }
-          - label: 'Item'
-            name: 'item'
-            create: true
-            widget: 'list'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - {
-                  label: 'Description',
-                  name: 'description',
-                  required: false,
-                  widget: 'markdown',
-                }
-              - {
-                  label: 'Supplement / Add to Price',
-                  name: 'addToPrice',
-                  required: false,
-                  widget: 'string',
-                }
+              - label: 'Entrées'
+                name: 'starters'
+                create: true
+                widget: 'object'
+                fields:
+                  - {
+                      label: 'Nom',
+                      name: 'title',
+                      widget: 'string',
+                      default: 'Entrées',
+                    }
+                  - label: 'Entrées:'
+                    name: 'item'
+                    widget: 'list'
+                    fields:
+                      - { label: 'Nom', name: 'title', widget: 'string' }
+                      - {
+                          label: 'Description',
+                          name: 'description',
+                          required: false,
+                          widget: 'markdown',
+                        }
+                      - {
+                          label: 'Supplement?',
+                          name: 'supplement',
+                          widget: 'string',
+                          required: false,
+                        }
+              - label: 'Plats'
+                name: 'main-course'
+                widget: 'object'
+                fields:
+                  - {
+                      label: 'Nom',
+                      name: 'title',
+                      widget: 'string',
+                      default: 'Plats',
+                    }
+                  - label: 'Plats:'
+                    name: 'item'
+                    widget: 'list'
+                    fields:
+                      - { label: 'Nom', name: 'title', widget: 'string' }
+                      - {
+                          label: 'Description',
+                          name: 'description',
+                          required: false,
+                          widget: 'markdown',
+                        }
+                      - {
+                          label: 'Supplement?',
+                          name: 'supplement',
+                          required: false,
+                          widget: 'string',
+                        }
+              - label: 'Desserts/Fromage'
+                name: 'desert-cheese'
+                widget: 'object'
+                fields:
+                  - {
+                      label: 'Nom',
+                      name: 'title',
+                      widget: 'string',
+                      default: 'Desserts/Fromage',
+                    }
+                  - label: 'Desserts/Fromage:'
+                    name: 'item'
+                    widget: 'list'
+                    fields:
+                      - { label: 'Nom', name: 'title', widget: 'string' }
+                      - {
+                          label: 'Description',
+                          name: 'description',
+                          required: false,
+                          widget: 'markdown',
+                        }
+                      - {
+                          label: 'Supplement?',
+                          name: 'supplement',
+                          required: false,
+                          widget: 'string',
+                        }

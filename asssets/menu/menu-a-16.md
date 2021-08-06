@@ -4,5 +4,4 @@ price: 16$
 starters: lyonnaise
 main-course: quenelle
 desert-cheese: stmarc
-assetType: menu
 ---
