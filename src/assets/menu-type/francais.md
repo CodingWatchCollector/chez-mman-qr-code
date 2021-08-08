@@ -2,7 +2,7 @@
 title: Francais
 content:
   - type: menu
-    assetType: menu
+    description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
     starters:
       title: Entrées
       item:
@@ -14,9 +14,9 @@ content:
       title: Plats
       item:
         - title: sauc
-          description: ""
+          description: ''
         - title: pave
-          supplement: "2"
+          supplement: '2'
     desert-cheese:
       title: Desserts/Fromage
       item:
@@ -24,18 +24,17 @@ content:
           description: s
         - title: dessert
     title: menu
-    price: "16"
+    price: '16'
   - type: alacarte
     assetType: submenu
     title: carte
     description: plat carte
     item:
       - title: foei de veau
-        price: "20"
+        price: '20'
   - type: alacarte
     assetType: submenu
     title: salade
     item:
       - title: 3V
-        price: "11"
 ---

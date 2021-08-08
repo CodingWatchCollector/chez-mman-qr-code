@@ -1,7 +1,9 @@
 backend:
+#   name: test-repo
   name: git-gateway
   repo: CodingWatchCollector/chez-mman-qr-code
   branch: production # Branch to update (optional; defaults to master)
+#   publish_mode: editorial_workflow
 
 media_folder: '/images/uploads' # Media files will be stored in the repo under images/uploads
 public_folder: '/images/uploads' # The src attribute for uploaded media will begin with /images/uploads
@@ -34,12 +36,6 @@ collections:
                   widget: 'string',
                 }
               - {
-                  label: 'asset-type',
-                  name: 'assetType',
-                  widget: 'hidden',
-                  default: 'submenu',
-                }
-              - {
                   label: 'Description',
                   name: 'description',
                   widget: 'markdown',
@@ -56,7 +52,12 @@ collections:
                       widget: 'markdown',
                       required: false,
                     }
-                  - { label: 'Prix', name: 'price', widget: 'string' }
+                  - {
+                      label: 'Prix',
+                      name: 'price',
+                      widget: 'string',
+                      required: false,
+                    }
 
           - label: 'Menu'
             name: 'menu'
@@ -65,10 +66,11 @@ collections:
               - { label: 'Nom', name: 'title', widget: 'string' }
               - { label: 'Prix', name: 'price', widget: 'string' }
               - {
-                  label: 'asset-type',
-                  name: 'assetType',
-                  widget: 'hidden',
-                  default: 'menu',
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                  default: '1 Entrée + 1 Plat + 1 Fromage ou Dessert',
+                  required: false,
                 }
               - label: 'Entrées'
                 name: 'starters'
