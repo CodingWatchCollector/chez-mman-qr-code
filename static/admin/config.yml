@@ -50,13 +50,13 @@ collections:
                       label: 'Description',
                       name: 'description',
                       widget: 'markdown',
-                      required: false,
+                      required: false
                     }
                   - {
                       label: 'Prix',
                       name: 'price',
                       widget: 'string',
-                      required: false,
+                      required: false
                     }
 
           - label: 'Menu'
