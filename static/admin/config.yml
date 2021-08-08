@@ -36,12 +36,6 @@ collections:
                   widget: 'string',
                 }
               - {
-                  label: 'asset-type',
-                  name: 'assetType',
-                  widget: 'hidden',
-                  default: 'submenu',
-                }
-              - {
                   label: 'Description',
                   name: 'description',
                   widget: 'markdown',
@@ -58,7 +52,12 @@ collections:
                       widget: 'markdown',
                       required: false,
                     }
-                  - { label: 'Prix', name: 'price', widget: 'string' }
+                  - {
+                      label: 'Prix',
+                      name: 'price',
+                      widget: 'string',
+                      required: false,
+                    }
 
           - label: 'Menu'
             name: 'menu'
@@ -67,10 +66,11 @@ collections:
               - { label: 'Nom', name: 'title', widget: 'string' }
               - { label: 'Prix', name: 'price', widget: 'string' }
               - {
-                  label: 'asset-type',
-                  name: 'assetType',
-                  widget: 'hidden',
-                  default: 'menu',
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                  default: '1 Entrée + 1 Plat + 1 Fromage ou Dessert',
+                  required: false,
                 }
               - label: 'Entrées'
                 name: 'starters'
