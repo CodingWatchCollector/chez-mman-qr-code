@@ -6,11 +6,18 @@ content:
     starters:
       title: Entrées
       item:
-        - title: lyob
+        - title: Salade lyonnaise
           description: oeuf poche
-        - title: saladier
+        - title: L'assiette de M'man
+          description: Tranches de saucissons & gâteau de foies, *gratinés au four *
+        - title: Oeuf en Meurette
+        - title: Terrine de chez M'man Maison & son toast grillé
+        - title: Saladier lyonnais
           description: pied de veau
-        - title: Terrine
+        - title: Salade de Foies de Volaille
+        - title: Salade de Chèvre Chaud Au Miel Toasté
+        - title: Tartare de Hareng, pomme de terre à l'huile
+        - title: Tomates et mozzarella
     main-course:
       title: Plats
       item:
@@ -24,8 +31,8 @@ content:
         - title: st marc
           description: s
         - title: dessert
-    title: menu
-    price: "16"
+    title: Menu de M'man
+    price: 16€
   - type: alacarte
     assetType: submenu
     title: carte
