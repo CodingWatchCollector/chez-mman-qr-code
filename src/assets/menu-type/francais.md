@@ -21,10 +21,19 @@ content:
     main-course:
       title: Plats
       item:
-        - title: sauc
+        - title: Saucisson chaud pistaché, cervelle de canuts, pommes vapeurs
           description: ""
-        - title: pave
+        - title: Tablier de sapeur, sauce tartare
           supplement: "2"
+        - title: Quenelle de Brochet, sauce Nantua, riz
+        - title: Andouillette de Lyon, sauce moutarde
+        - title: Filet de lieu rôti à l'huile d'olive
+        - title: Blanc de volaille, sauce forestière
+        - title: Jambon à l'os, sauce Madère
+        - title: Bœuf à la provençale, pâtes
+        - title: Assiette végétarienne
+        - title: Pièce de bœuf poêlée
+          supplement: 2€
     desert-cheese:
       title: Desserts/Fromage
       item:
