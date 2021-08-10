@@ -1,5 +1,5 @@
 ---
-title: Francais
+title: Francais local/veget checkbox
 content:
   - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
