@@ -2,6 +2,7 @@ import * as React from 'react'
 // import { useEffect, useState } from 'react'
 import { graphql } from 'gatsby'
 import '../styles/index.css'
+import '../components/toggle_button.js'
 
 const Menu = ({ data }) => {
   const subMenus = [
@@ -88,14 +89,27 @@ const IndexPage = ({ data }) => {
   //   return () => {
   //     clearTimeout()
   //   }
-  // }, [])
+  // })
   // const menu = data.allMarkdownRemark.nodes[0].frontmatter.content.filter(content => content.type === 'menu')
 
   return (
     <div>
-      <h1>{title}</h1>
-      {/* <p>{dishOfTheDay}</p> */}
-      <div>
+      <h1>
+        <label>
+          {title}
+          <button
+            className=''
+            aria-label='expand the menu'
+            is='toggle-button'
+            data-target='#content'
+            data-sign-open='&#9667;'
+            data-sign-close='&#9662;'
+            data-sign-active='&#9667;'
+            hidden
+          ></button>
+        </label>
+      </h1>
+      <div id='content'>
         {content.map(subgroup => {
           if (subgroup.type === 'menu') {
             return <Menu data={subgroup} key={subgroup.title} />

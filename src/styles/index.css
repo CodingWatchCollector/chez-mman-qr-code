@@ -2,3 +2,17 @@
   display: flex;
   justify-content: space-between;
 }
+
+.hide {
+  display: none;
+}
+
+button[is='toggle-button'] {
+  background: inherit;
+  border: none;
+  font-size: inherit;
+  width: fit-content;
+}
+button[is='toggle-button']::before {
+  content: attr(data-sign-active);
+}
