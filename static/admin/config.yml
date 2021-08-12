@@ -1,9 +1,7 @@
 backend:
-#   name: test-repo
   name: git-gateway
   repo: CodingWatchCollector/chez-mman-qr-code
   branch: production # Branch to update (optional; defaults to master)
-#   publish_mode: editorial_workflow
 
 media_folder: '/images/uploads' # Media files will be stored in the repo under images/uploads
 public_folder: '/images/uploads' # The src attribute for uploaded media will begin with /images/uploads
@@ -49,14 +47,26 @@ collections:
                   - {
                       label: 'Description',
                       name: 'description',
-                      widget: 'markdown',
-                      required: false
+                      widget: 'string',
+                      required: false,
                     }
                   - {
                       label: 'Prix',
                       name: 'price',
                       widget: 'string',
                       required: false
+                    }
+                  - {
+                      label: 'Local',
+                      name: 'local',
+                      widget: 'boolean',
+                      required: false,
+                    }
+                  - {
+                      label: 'Vegetarien',
+                      name: 'vegeterian',
+                      widget: 'boolean',
+                      required: false,
                     }
 
           - label: 'Menu'
@@ -92,7 +102,7 @@ collections:
                           label: 'Description',
                           name: 'description',
                           required: false,
-                          widget: 'markdown',
+                          widget: 'string',
                         }
                       - {
                           label: 'Supplement?',
@@ -100,6 +110,19 @@ collections:
                           widget: 'string',
                           required: false,
                         }
+                      - {
+                          label: 'Local',
+                          name: 'local',
+                          widget: 'boolean',
+                          required: false,
+                        }
+                      - {
+                          label: 'Vegetarien',
+                          name: 'vegeterian',
+                          widget: 'boolean',
+                          required: false,
+                        }
+
               - label: 'Plats'
                 name: 'main-course'
                 widget: 'object'
@@ -119,7 +142,7 @@ collections:
                           label: 'Description',
                           name: 'description',
                           required: false,
-                          widget: 'markdown',
+                          widget: 'string',
                         }
                       - {
                           label: 'Supplement?',
@@ -127,6 +150,19 @@ collections:
                           required: false,
                           widget: 'string',
                         }
+                      - {
+                          label: 'Local',
+                          name: 'local',
+                          widget: 'boolean',
+                          required: false,
+                        }
+                      - {
+                          label: 'Vegetarien',
+                          name: 'vegeterian',
+                          widget: 'boolean',
+                          required: false,
+                        }
+
               - label: 'Desserts/Fromage'
                 name: 'desert-cheese'
                 widget: 'object'
@@ -146,11 +182,23 @@ collections:
                           label: 'Description',
                           name: 'description',
                           required: false,
-                          widget: 'markdown',
+                          widget: 'string',
                         }
                       - {
                           label: 'Supplement?',
                           name: 'supplement',
                           required: false,
                           widget: 'string',
+                        }
+                      - {
+                          label: 'Local',
+                          name: 'local',
+                          widget: 'boolean',
+                          required: false,
+                        }
+                      - {
+                          label: 'Vegetarien',
+                          name: 'vegeterian',
+                          widget: 'boolean',
+                          required: false,
                         }
