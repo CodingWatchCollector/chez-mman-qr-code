@@ -54,7 +54,7 @@ collections:
                       label: 'Prix',
                       name: 'price',
                       widget: 'string',
-                      required: false,
+                      required: false
                     }
                   - {
                       label: 'Local',
