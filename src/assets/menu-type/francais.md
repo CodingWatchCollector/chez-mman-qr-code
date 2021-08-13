@@ -7,13 +7,18 @@ content:
       title: Entrées
       item:
         - title: Salade lyonnaise
-          description: oeuf poche
+          description: Salade verte, oeuf poche, tranche de lard, croûtons
+          local: true
         - title: L'assiette de M'man
-          description: Tranches de saucissons & gâteau de foies, *gratinés au four *
+          description: "Tranches de saucissons & gâteau de foies, gratinés au four "
+          local: true
         - title: Oeuf en Meurette
-        - title: Terrine de chez M'man Maison & son toast grillé
+          local: true
+          vegeterian: true
         - title: Saladier lyonnais
           description: pied de veau
+          local: true
+        - title: Terrine de chez M'man Maison & son toast grillé
         - title: Salade de Foies de Volaille
         - title: Salade de Chèvre Chaud Au Miel Toasté
         - title: Tartare de Hareng, pomme de terre à l'huile
