@@ -24,6 +24,7 @@ button[is='toggle-button']::after {
 */
 
 // JS:
+if (typeof document !== "undefined") {
 class ToggleButton extends HTMLButtonElement {
   connectedCallback () {
     this.removeAttribute('hidden')
@@ -57,3 +58,4 @@ class ToggleButton extends HTMLButtonElement {
 }
 
 customElements.define('toggle-button', ToggleButton, { extends: 'button' })
+}
