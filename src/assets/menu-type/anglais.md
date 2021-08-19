@@ -10,7 +10,7 @@ content:
           description: Salade verte, oeuf poche, tranche de lard, croûtons
           local: true
         - title: L'assiette de M'man
-          description: 'Tranches de saucissons & gâteau de foies, gratinés au four '
+          description: "Tranches de saucissons & gâteau de foies, gratinés au four "
           local: true
         - title: Oeuf en Meurette
           local: true
@@ -27,10 +27,10 @@ content:
       title: Plats
       item:
         - title: Saucisson chaud pistaché, cervelle de canuts, pommes vapeurs
-          description: ''
+          description: ""
           local: true
         - title: Tablier de sapeur, sauce tartare
-          supplement: '2'
+          supplement: "2"
         - title: Quenelle de Brochet, sauce Nantua, riz
         - title: Andouillette de Lyon, sauce moutarde
         - title: Filet de lieu rôti à l'huile d'olive
@@ -55,12 +55,13 @@ content:
     description: plat carte
     item:
       - title: foie de veau
-        price: '20'
+        price: "20"
         local: false
         vegetarian: false
   - type: alacarte
     title: salade
     item:
       - title: 3V
-        price: '11'
+        price: "11"
+        description: rosbif, blanc
 ---
