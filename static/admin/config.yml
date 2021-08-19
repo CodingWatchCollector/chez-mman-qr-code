@@ -1,14 +1,16 @@
 backend:
+  # name: test-repo
   name: git-gateway
   repo: CodingWatchCollector/chez-mman-qr-code
   branch: production # Branch to update (optional; defaults to master)
 
-media_folder: '/images/uploads' # Media files will be stored in the repo under images/uploads
+media_folder: 'images/uploads' # Media files will be stored in the repo under images/uploads
 public_folder: '/images/uploads' # The src attribute for uploaded media will begin with /images/uploads
 collections:
   - label: 'type de carte'
     name: 'menu-type'
     folder: 'src/assets/menu-type'
+    slug: '{{month}}{{day}}{{hour}}-{{slug}}'
     editor:
       preview: false
     create: true
@@ -60,13 +62,13 @@ collections:
                       label: 'Local',
                       name: 'local',
                       widget: 'boolean',
-                      required: false,
+                      default: false,
                     }
                   - {
                       label: 'Vegetarien',
-                      name: 'vegeterian',
+                      name: 'vegetarian',
                       widget: 'boolean',
-                      required: false,
+                      default: false,
                     }
 
           - label: 'Menu'
@@ -114,13 +116,13 @@ collections:
                           label: 'Local',
                           name: 'local',
                           widget: 'boolean',
-                          required: false,
+                          default: false,
                         }
                       - {
                           label: 'Vegetarien',
-                          name: 'vegeterian',
+                          name: 'vegetarian',
                           widget: 'boolean',
-                          required: false,
+                          default: false,
                         }
 
               - label: 'Plats'
@@ -154,13 +156,13 @@ collections:
                           label: 'Local',
                           name: 'local',
                           widget: 'boolean',
-                          required: false,
+                          default: false,
                         }
                       - {
                           label: 'Vegetarien',
-                          name: 'vegeterian',
+                          name: 'vegetarian',
                           widget: 'boolean',
-                          required: false,
+                          default: false,
                         }
 
               - label: 'Desserts/Fromage'
@@ -194,11 +196,11 @@ collections:
                           label: 'Local',
                           name: 'local',
                           widget: 'boolean',
-                          required: false,
+                          default: false,
                         }
                       - {
                           label: 'Vegetarien',
-                          name: 'vegeterian',
+                          name: 'vegetarian',
                           widget: 'boolean',
-                          required: false,
+                          default: false,
                         }

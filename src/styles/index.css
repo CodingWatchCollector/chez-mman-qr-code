@@ -1,3 +1,7 @@
+body {
+  font-family: sans-serif;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -15,4 +19,23 @@ button[is='toggle-button'] {
 }
 button[is='toggle-button']::before {
   content: attr(data-sign-active);
+}
+
+/* item styles */
+/* .item.local .item--title::before {
+  content: '\2606';
+  color: red;
+}
+.item.vegetarian .item--title::after {
+  content: '\2618';
+  color: greenyellow;
+} */
+.item--description {
+  display: block;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.category--container + .category--container {
+  border-top: 1px solid;
 }

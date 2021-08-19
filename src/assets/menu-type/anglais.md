@@ -1,5 +1,5 @@
 ---
-title: Francais local/veget checkbox
+title: English Menu
 content:
   - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
@@ -13,16 +13,14 @@ content:
           description: 'Tranches de saucissons & gâteau de foies, gratinés au four '
           local: true
         - title: Oeuf en Meurette
-          description: 'Oeuf poche, sauce au vin rouge'
           local: true
-          vegetarian: true
+          vegeterian: true
         - title: Saladier lyonnais
           description: pied de veau
           local: true
         - title: Terrine de chez M'man Maison & son toast grillé
         - title: Salade de Foies de Volaille
         - title: Salade de Chèvre Chaud Au Miel Toasté
-          vegetarian: true
         - title: Tartare de Hareng, pomme de terre à l'huile
         - title: Tomates et mozzarella
     main-course:
@@ -50,7 +48,6 @@ content:
           description: s
           local: false
         - title: dessert
-          vegetarian: false
     title: Menu de M'man
     price: 16€
   - type: alacarte

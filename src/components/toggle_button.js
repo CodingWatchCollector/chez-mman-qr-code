@@ -53,7 +53,7 @@ class ToggleButton extends HTMLButtonElement {
   }
 
   get target () {
-    return document.querySelector(this.dataset.target)
+    return document.getElementById(this.dataset.target)
   }
 }
 
