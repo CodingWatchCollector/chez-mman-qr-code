@@ -1,7 +1,7 @@
 import React from 'react'
 import { Menu } from './menu'
 import { AlaCarte } from './alacarte'
-if (document !== undefined) {
+if (document !== undefined || typeof document === undefined) {
   import('../components/toggle_button.js')
 }
 
