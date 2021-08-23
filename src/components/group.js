@@ -9,12 +9,11 @@ export const Group = ({ data }) => {
   const { title, content } = data.frontmatter
   const contentId = data.id
   return (
-    <div>
-      <h1>
-        <label>
+    <div className='content-group'>
+      <label>
+        <h1 className='content-group__title'>
           {title}
           <button
-            className=''
             aria-label='expand the menu'
             is='toggle-button'
             data-target={contentId}
@@ -23,9 +22,9 @@ export const Group = ({ data }) => {
             data-sign-active='&#9667;'
             hidden
           ></button>
-        </label>
-      </h1>
-      <div id={contentId}>
+        </h1>
+      </label>
+      <div id={contentId} className='content-group--content'>
         {content.map(subgroup => {
           if (subgroup.type === 'menu') {
             return <Menu data={subgroup} key={subgroup.title} />

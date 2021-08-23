@@ -4,9 +4,9 @@ import { Item } from './item'
 export const AlaCarte = ({ data }) => {
   const itemsList = data.item
   return (
-    <div className='alacarte category--container'>
+    <div className='alacarte category'>
       <div>
-        <h1 className='alacarte category--title'>{data.title}</h1>
+        <h2 className='alacarte category--title'>{data.title}</h2>
         <p className='alacarte category--description'>{data.description}</p>
       </div>
       <div className='alacarte category--content'>

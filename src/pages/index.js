@@ -35,6 +35,7 @@ export const query = graphql`
               title
               price
               local
+              description
               vegetarian
             }
             starters {
