@@ -1,5 +1,5 @@
 ---
-title: Francais local/veget checkbox
+title: Français
 content:
   - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
@@ -13,14 +13,14 @@ content:
           description: 'Tranches de saucissons & gâteau de foies, gratinés au four '
           local: true
         - title: Oeuf en Meurette
-          description: 'Oeuf poche, sauce au vin rouge'
+          description: Oeuf poché, sauce au vin rouge, échalotes et champignons
           local: true
           vegetarian: true
         - title: Saladier lyonnais
-          description: pied de veau
+          description: pied de veau, museau de bœuf, lentilles et cervelas
           local: true
         - title: Terrine de chez M'man Maison & son toast grillé
-        - title: Salade de Foies de Volaille
+        - title: Salade des Foies de Volaille
         - title: Salade de Chèvre Chaud Au Miel Toasté
           vegetarian: true
         - title: Tartare de Hareng, pomme de terre à l'huile
@@ -32,17 +32,23 @@ content:
           description: ''
           local: true
         - title: Tablier de sapeur, sauce tartare
-          supplement: '2'
+          supplement: ''
+          description: La panse de bœuf pané et frit
+          local: true
         - title: Quenelle de Brochet, sauce Nantua, riz
+          local: true
         - title: Andouillette de Lyon, sauce moutarde
+          local: true
         - title: Filet de lieu rôti à l'huile d'olive
         - title: Blanc de volaille, sauce forestière
         - title: Jambon à l'os, sauce Madère
         - title: Bœuf à la provençale, pâtes
         - title: Assiette végétarienne
           vegetarian: true
+          supplement: '2'
+          description: Gratin dauphinois et assortiment des légumes
         - title: Pièce de bœuf poêlée
-          supplement: 2€
+          supplement: '2'
     desert-cheese:
       title: Desserts/Fromage
       item:
@@ -50,7 +56,6 @@ content:
           description: s
           local: false
         - title: dessert
-          vegetarian: false
     title: Menu de M'man
     price: 16€
   - type: alacarte
@@ -58,9 +63,13 @@ content:
     description: plat carte
     item:
       - title: foie de veau
-        price: '20'
-        local: false
-        vegetarian: false
+        price: '20,00$'
+        description: Gratin dauphinois et assortiment des légumes
+        local: true
+      - title: Hamburger maison, frites maison, tout maison
+        price: '20,00$'
+        description: Gratin dauphinois et assortiment des légumes
+        local: true
   - type: alacarte
     title: salade
     item:
