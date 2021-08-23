@@ -10,13 +10,12 @@ content:
           description: Salade verte, oeuf poche, tranche de lard, croûtons
           local: true
         - title: L'assiette de M'man
-          description: "Tranches de saucissons & gâteau de foies, gratinés au four "
+          description: 'Tranches de saucissons & gâteau de foies, gratinés au four '
           local: true
         - title: Oeuf en Meurette
           description: Oeuf poché, sauce au vin rouge, échalotes et champignons
           local: true
           vegetarian: true
-          vegeterian: true
         - title: Saladier lyonnais
           description: pied de veau, museau de bœuf, lentilles et cervelas
           local: true
@@ -24,18 +23,16 @@ content:
         - title: Salade des Foies de Volaille
         - title: Salade de Chèvre Chaud Au Miel Toasté
           vegetarian: true
-          vegeterian: true
         - title: Tartare de Hareng, pomme de terre à l'huile
         - title: Tomates et mozzarella
-          vegeterian: true
     main-course:
       title: Plats
       item:
         - title: Saucisson chaud pistaché, cervelle de canuts, pommes vapeurs
-          description: ""
+          description: ''
           local: true
         - title: Tablier de sapeur, sauce tartare
-          supplement: ""
+          supplement: ''
           description: La panse de bœuf pané et frit
           local: true
         - title: Quenelle de Brochet, sauce Nantua, riz
@@ -48,10 +45,10 @@ content:
         - title: Bœuf à la provençale, pâtes
         - title: Assiette végétarienne
           vegetarian: true
-          vegeterian: true
+          supplement: '2'
           description: Gratin dauphinois et assortiment des légumes
         - title: Pièce de bœuf poêlée
-          supplement: "2"
+          supplement: '2'
     desert-cheese:
       title: Desserts/Fromage
       item:
@@ -59,7 +56,6 @@ content:
           description: s
           local: false
         - title: dessert
-          vegetarian: false
     title: Menu de M'man
     price: 16€
   - type: alacarte
@@ -67,12 +63,16 @@ content:
     description: plat carte
     item:
       - title: foie de veau
-        price: "20"
-        local: false
-        vegetarian: false
+        price: '20,00$'
+        description: Gratin dauphinois et assortiment des légumes
+        local: true
+      - title: Hamburger maison, frites maison, tout maison
+        price: '20,00$'
+        description: Gratin dauphinois et assortiment des légumes
+        local: true
   - type: alacarte
     title: salade
     item:
       - title: 3V
-        price: "11"
+        price: '11'
 ---
