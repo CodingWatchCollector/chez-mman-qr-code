@@ -32,7 +32,7 @@ content:
     main-course:
       title: Plats
       item:
-        - title: Saucisson chaud pistaché, cervelle de canuts, pommes vapeurs
+        - title: Saucisson chaud pistaché, cervelle de canut, pommes vapeurs
           description: ""
           local: true
         - title: Tablier de sapeur, sauce tartare
@@ -51,17 +51,36 @@ content:
           vegetarian: true
           supplement: "2"
           description: Gratin dauphinois et assortiment des légumes
+          vegeterian: true
         - title: Pièce de bœuf poêlée
           supplement: "2"
     desert-cheese:
       title: Desserts/Fromage
       item:
-        - title: st marc
-          description: s
-          local: false
-        - title: dessert
+        - title: 1/2 St Marcellin
+          description: ""
+          local: true
+          vegeterian: true
+        - title: Cervelle de canut
+          description: Faisselle, l'huile d'olive, ail, échalotes, ciboulette
+          local: true
+          vegeterian: true
+        - title: Fromage blanc, nature/à la crème
+          vegeterian: true
+        - title: Dessert Maison au choix
+          local: true
+          vegeterian: true
+        - title: Café gourmand
+          supplement: 4€
+          vegeterian: true
+          local: true
     title: Menu de M'man
     price: 16€
+  - type: alacarte
+    title: salade
+    item:
+      - title: 3V
+        price: "11"
   - type: alacarte
     title: carte
     description: plat carte
@@ -74,9 +93,4 @@ content:
         price: 20,00$
         description: Gratin dauphinois et assortiment des légumes
         local: true
-  - type: alacarte
-    title: salade
-    item:
-      - title: 3V
-        price: "11"
 ---
