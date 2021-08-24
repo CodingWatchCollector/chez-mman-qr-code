@@ -61,19 +61,24 @@ content:
           description: ""
           local: true
           vegeterian: true
+          vegetarian: true
         - title: Cervelle de canut
           description: Faisselle, l'huile d'olive, ail, échalotes, ciboulette
           local: true
           vegeterian: true
+          vegetarian: true
         - title: Fromage blanc, nature/à la crème
           vegeterian: true
+          vegetarian: true
         - title: Dessert Maison au choix
           local: true
           vegeterian: true
+          vegetarian: true
         - title: Café gourmand
           supplement: 4€
           vegeterian: true
           local: true
+          vegetarian: true
     title: Menu de M'man
     price: 16€
   - type: alacarte
@@ -81,6 +86,9 @@ content:
     item:
       - title: 3V
         price: "11"
+      - title: Salade de crudite
+        description: legumes
+        vegetarian: true
   - type: alacarte
     title: carte
     description: plat carte
