@@ -104,15 +104,19 @@ content:
         price: 11€
       - title: Carpaccio de bœuf mariné
   - type: alacarte
-    title: carte
+    title: A la Carte
     description: ""
     item:
-      - title: foie de veau
-        price: 20,00$
-        description: Gratin dauphinois et assortiment des légumes
-        local: true
+      - title: Foie de veau
+        price: 19,50€
+        description: Foie de veau persillé & sa purée maison
+        local: false
+      - title: Poire de bœuf
+        description: Poire de boeuf poêlée (250gr) & sa poêlée d'échalotes
+        price: 18€
       - title: Hamburger maison
         price: 20,00$
-        description: Hamburger servi avec des frites maison et salade verte
+        description: Hamburger maison, frites maison et salade verte
         local: true
+        vegetarian: false
 ---
