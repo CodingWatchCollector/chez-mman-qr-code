@@ -82,7 +82,7 @@ content:
     title: Menu de M'man
     price: 16€
   - type: alacarte
-    title: Maxi Salades
+    title: Maxi Salades Estivales
     item:
       - title: La Pêcheur
         price: 11€
@@ -103,6 +103,7 @@ content:
         description: Salade, Rosbif, blanc de volaille, jambon à l' os, tomates, cornichons
         price: 11€
       - title: Carpaccio de bœuf mariné
+        price: 11€
   - type: alacarte
     title: A la Carte
     description: ""
@@ -115,8 +116,28 @@ content:
         description: Poire de boeuf poêlée (250gr) & sa poêlée d'échalotes
         price: 18€
       - title: Hamburger maison
-        price: 20,00$
+        price: 12,50€
         description: Hamburger maison, frites maison et salade verte
-        local: true
+        local: false
         vegetarian: false
+      - title: Saumon mariné maison
+        description: Assiette de saumon mariné maison & ses toasts grillés, salade verte
+        price: 15,50€
+      - title: Tartare de saumon
+        description: Servi avec des frites maison et salade verte
+        price: 15,50€
+      - title: Magret de canard, sauce aigre douce
+        price: 15,50€
+      - title: Dos de saumon poêlé, sauce vierge
+        price: 16€
+      - title: Tartare ou César de bœuf haché au couteau
+        description: Servi avec des frites maison et salade verte
+        price: 16€
+      - title: Rognons de veau, façon rognonnade
+        price: 22,50€
+      - title: Andouillette "Braillon", sauce moutarde
+        description: La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
+          la ficelle
+        local: true
+        price: 21,50€
 ---
