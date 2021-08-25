@@ -82,13 +82,27 @@ content:
     title: Menu de M'man
     price: 16€
   - type: alacarte
-    title: salade
+    title: Maxi Salades
     item:
-      - title: 3V
-        price: "11"
-      - title: Salade de crudite
-        description: legumes
+      - title: La Pêcheur
+        price: 11€
+        description: Salade, tartare de hareng, toast de sardine, saumon mariné, oeuf dur
+        vegeterian: false
+      - title: La Primeur
+        description: Salade, assortiment de crudités, oeuf dur
         vegetarian: true
+        price: 11€
+        vegeterian: true
+      - title: La Viande Rouge
+        description: Salade, Rosbif, Tomates, Mozzarella
+        price: 11€
+      - title: La Viande Blanche
+        description: Salade, blanc de volaille, foie de volaille, oeuf dur, tomates
+        price: 11€
+      - title: La Trois Viandes
+        description: Salade, Rosbif, blanc de volaille, jambon à l' os, tomates, cornichons
+        price: 11€
+      - title: Carpaccio de bœuf mariné
   - type: alacarte
     title: carte
     description: ""
