@@ -13,7 +13,6 @@ content:
           description: Oeuf poché, sauce au vin rouge, échalotes et champignons
           local: true
           vegetarian: true
-          vegeterian: true
         - title: Terrine de chez M'man Maison & son toast grillé
         - title: L'assiette de M'man
           description: "Tranches de saucisson & gâteau de foie, gratinés au four "
@@ -25,19 +24,15 @@ content:
           local: true
         - title: Salade de chèvre chaud au miel toasté
           vegetarian: true
-          vegeterian: true
         - title: Tartare de hareng, pomme de terre à l'huile
         - title: Tomates et mozzarella
-          vegeterian: true
           vegetarian: true
     main-course:
       title: Plats
       item:
         - title: Saucisson chaud pistaché, cervelle de canut, pommes vapeurs
-          description: ""
           local: true
         - title: Tablier de sapeur, sauce tartare
-          supplement: ""
           description: La panse de bœuf pané et frit
           local: true
         - title: Quenelle de brochet, sauce Nantua, riz
@@ -50,34 +45,26 @@ content:
         - title: Boeuf à la provençale, pâtes
         - title: Assiette végétarienne
           vegetarian: true
-          supplement: ""
           description: Gratin dauphinois et assortiment des légumes
-          vegeterian: true
         - title: Pièce de boeuf poêlée
           supplement: 2€
     desert-cheese:
       title: Desserts/Fromage
       item:
         - title: 1/2 St Marcellin de la Mère Richard
-          description: ""
           local: true
-          vegeterian: true
           vegetarian: true
         - title: Cervelle de canut
           description: Faisselle, l'huile d'olive, ail, échalotes, ciboulette
           local: true
-          vegeterian: true
           vegetarian: true
         - title: Fromage blanc, nature/à la crème
-          vegeterian: true
           vegetarian: true
         - title: Dessert Maison au choix
           local: true
-          vegeterian: true
           vegetarian: true
         - title: Café gourmand
           supplement: 4€
-          vegeterian: true
           local: true
           vegetarian: true
     title: Menu de M'man
@@ -132,18 +119,16 @@ content:
     price: 25,50€
   - type: alacarte
     title: Maxi Salades Estivales
-    description: Toutes nos salades sont accompagnées de frites maison. \n\r1 Maxi
+    description: Toutes nos salades sont accompagnées de frites maison. 1 Maxi
       Salade + 1 Frite + 1 Fromage ou Dessert 13€
     item:
       - title: La Pêcheur
         price: 11€
         description: Salade, tartare de hareng, toast de sardine, saumon mariné, oeuf dur
-        vegeterian: false
       - title: La Primeur
         description: Salade, assortiment de crudités, oeuf dur
         vegetarian: true
         price: 11€
-        vegeterian: true
       - title: La Viande Rouge
         description: Salade, Rosbif, Tomates, Mozzarella
         price: 11€
@@ -162,15 +147,12 @@ content:
       - title: Foie de veau
         price: 19,50€
         description: Foie de veau persillé & sa purée maison
-        local: false
       - title: Poire de bœuf
         description: Poire de boeuf poêlée (250gr) & sa poêlée d'échalotes
         price: 18€
       - title: Hamburger maison
         price: 12,50€
         description: Hamburger maison, frites maison et salade verte
-        local: false
-        vegetarian: false
       - title: Saumon mariné maison
         description: Assiette de saumon mariné maison & ses toasts grillés, salade verte
         price: 15,50€
