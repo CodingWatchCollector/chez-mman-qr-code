@@ -2,7 +2,7 @@
 title: La Carte
 content:
   - type: menu
-    description: 1 **Entrée** + 1 **Plat** + 1 **Fromage** ou **Dessert**
+    description: zjsbekwhbsk
     starters:
       title: Entrées
       item:
