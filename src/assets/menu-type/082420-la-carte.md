@@ -7,28 +7,29 @@ content:
       title: Entrées
       item:
         - title: Salade lyonnaise
-          description: Salade verte, oeuf poche, tranche de lard, croûtons
+          description: Salade verte, oeuf poché, tranche de lard, croûtons
           local: true
-        - title: Oeuf en Meurette
+        - title: Oeuf en meurette
           description: Oeuf poché, sauce au vin rouge, échalotes et champignons
           local: true
           vegetarian: true
           vegeterian: true
         - title: Terrine de chez M'man Maison & son toast grillé
         - title: L'assiette de M'man
-          description: "Tranches de saucissons & gâteau de foies, gratinés au four "
+          description: "Tranches de saucisson & gâteau de foie, gratinés au four "
           local: true
-        - title: Salade des Foies de Volaille
+        - title: Salade des foies de volaille
           local: true
         - title: Saladier lyonnais
-          description: Pied de veau, museau de bœuf, lentilles et cervelas
+          description: Pied de veau, museau de boeuf, lentilles et cervelas
           local: true
-        - title: Salade de Chèvre Chaud Au Miel Toasté
+        - title: Salade de chèvre chaud au miel toasté
           vegetarian: true
           vegeterian: true
-        - title: Tartare de Hareng, pomme de terre à l'huile
+        - title: Tartare de hareng, pomme de terre à l'huile
         - title: Tomates et mozzarella
           vegeterian: true
+          vegetarian: true
     main-course:
       title: Plats
       item:
@@ -39,21 +40,21 @@ content:
           supplement: ""
           description: La panse de bœuf pané et frit
           local: true
-        - title: Quenelle de Brochet, sauce Nantua, riz
+        - title: Quenelle de brochet, sauce Nantua, riz
           local: true
         - title: Andouillette de Lyon, sauce moutarde
           local: true
         - title: Filet de lieu rôti à l'huile d'olive
         - title: Blanc de volaille, sauce forestière
         - title: Jambon à l'os, sauce Madère
-        - title: Bœuf à la provençale, pâtes
+        - title: Boeuf à la provençale, pâtes
         - title: Assiette végétarienne
           vegetarian: true
-          supplement: "2"
+          supplement: ""
           description: Gratin dauphinois et assortiment des légumes
           vegeterian: true
-        - title: Pièce de bœuf poêlée
-          supplement: "2"
+        - title: Pièce de boeuf poêlée
+          supplement: 2€
     desert-cheese:
       title: Desserts/Fromage
       item:
@@ -104,6 +105,7 @@ content:
         price: 11€
       - title: Carpaccio de bœuf mariné
         price: 11€
+    description: T
   - type: alacarte
     title: A la Carte
     description: ""
