@@ -84,7 +84,7 @@ content:
     price: 16€
   - type: alacarte
     title: Maxi Salades Estivales
-    description: Toutes nos salades sont accompagnées de frites maison. 1 Maxi Salade + 1 Frite + 1 Fromage ou Dessert 13€
+    description: Toutes nos salades sont accompagnées de frites maison. \n\r1 Maxi Salade + 1 Frite + 1 Fromage ou Dessert 13€
     item:
       - title: La Pêcheur
         price: 11€
@@ -106,7 +106,6 @@ content:
         price: 11€
       - title: Carpaccio de bœuf mariné
         price: 11€
-    description: T
   - type: alacarte
     title: A la Carte
     description: ""
