@@ -2,7 +2,7 @@
 title: La Carte
 content:
   - type: menu
-    description: zjsbekwhbsk
+    description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
     starters:
       title: Entrées
       item:
@@ -84,6 +84,7 @@ content:
     price: 16€
   - type: alacarte
     title: Maxi Salades Estivales
+    description: Toutes nos salades sont accompagnées de frites maison. 1 Maxi Salade + 1 Frite + 1 Fromage ou Dessert 13€
     item:
       - title: La Pêcheur
         price: 11€
