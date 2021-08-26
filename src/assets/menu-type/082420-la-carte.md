@@ -58,7 +58,7 @@ content:
     desert-cheese:
       title: Desserts/Fromage
       item:
-        - title: 1/2 St Marcellin
+        - title: 1/2 St Marcellin de la Mère Richard
           description: ""
           local: true
           vegeterian: true
@@ -82,9 +82,58 @@ content:
           vegetarian: true
     title: Menu de M'man
     price: 16€
+  - type: menu
+    description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
+    starters:
+      title: Entrées
+      item:
+        - title: Saumon mariné Maison
+          description: Tranche de saumon mariné Maison & son toast grillé
+        - title: Gâteau de foie de volaille
+          local: true
+          description: Gâteau de foie de volaille Maison, sauce financière (tomates,
+            champignons, olives noires)
+        - title: Melon & Jambon cru
+        - title: Salade de lentilles
+          description: Lentilles, oeuf poché, lard, oignons, tomates
+          local: true
+        - title: Entrée du Menu de M'man
+    main-course:
+      title: Plats
+      item:
+        - title: Andouillette éclatée au vin blanc
+          local: true
+        - title: Dos de saumon poêlé, sauce vierge
+        - title: Magret de canard, sauce aigre douce
+        - title: Quenelle & gâteau de foie de volaille, sauce Nantua
+          local: true
+        - title: Rognons de veau, façon rognonnade
+          supplement: 5,50€
+    desert-cheese:
+      title: Desserts/Fromage
+      item:
+        - title: 1/2 St Marcellin de la Mère Richard
+          local: true
+          vegetarian: true
+        - title: Cervelle de canut
+          description: Faisselle, l'huile d'olive, ail, échalotes, ciboulette
+          local: true
+          vegetarian: true
+        - title: Fromage blanc, nature/à la crème
+          vegetarian: true
+        - title: Dessert Maison au choix
+          local: true
+          vegetarian: true
+        - title: Café gourmand
+          supplement: 4€
+          vegetarian: true
+          local: true
+    title: Menu GourM'man
+    price: 25,50€
   - type: alacarte
     title: Maxi Salades Estivales
-    description: Toutes nos salades sont accompagnées de frites maison. \n\r1 Maxi Salade + 1 Frite + 1 Fromage ou Dessert 13€
+    description: Toutes nos salades sont accompagnées de frites maison. \n\r1 Maxi
+      Salade + 1 Frite + 1 Fromage ou Dessert 13€
     item:
       - title: La Pêcheur
         price: 11€
