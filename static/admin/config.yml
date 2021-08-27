@@ -21,6 +21,13 @@ collections:
           name: 'title',
           widget: 'string',
         }
+      - {
+          label: 'Active',
+          name: 'active',
+          widget: 'boolean',
+          required: false,
+          default: true,
+        }
       - label: 'Contenu'
         name: 'content'
         widget: 'list'
@@ -56,19 +63,19 @@ collections:
                       label: 'Prix',
                       name: 'price',
                       widget: 'string',
-                      required: false
+                      required: false,
                     }
                   - {
                       label: 'Local',
                       name: 'local',
                       widget: 'boolean',
-                      default: false,
+                      required: false,
                     }
                   - {
                       label: 'Vegetarien',
                       name: 'vegetarian',
                       widget: 'boolean',
-                      default: false,
+                      required: false,
                     }
 
           - label: 'Menu'
@@ -116,13 +123,13 @@ collections:
                           label: 'Local',
                           name: 'local',
                           widget: 'boolean',
-                          default: false,
+                          required: false,
                         }
                       - {
                           label: 'Vegetarien',
                           name: 'vegetarian',
                           widget: 'boolean',
-                          default: false,
+                          required: false,
                         }
 
               - label: 'Plats'
@@ -156,13 +163,13 @@ collections:
                           label: 'Local',
                           name: 'local',
                           widget: 'boolean',
-                          default: false,
+                          required: false,
                         }
                       - {
                           label: 'Vegetarien',
                           name: 'vegetarian',
                           widget: 'boolean',
-                          default: false,
+                          required: false,
                         }
 
               - label: 'Desserts/Fromage'
@@ -196,11 +203,11 @@ collections:
                           label: 'Local',
                           name: 'local',
                           widget: 'boolean',
-                          default: false,
+                          required: false,
                         }
                       - {
                           label: 'Vegetarien',
                           name: 'vegetarian',
                           widget: 'boolean',
-                          default: false,
+                          required: false,
                         }
