@@ -1,31 +1,47 @@
-import * as React from 'react'
-// import { useEffect, useState } from 'react'
+import React from 'react'
+import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import '../styles/index.css'
 import { Group } from '../components/group'
 
 // markup
 const IndexPage = ({ data }) => {
-  const content = data.allMarkdownRemark.nodes
+  const content = data.content.nodes
+  const { title, description } = data.site.siteMetadata
 
   return (
-    <main>
-      {content.map(group => {
-        return <Group data={group} key={group.id} />
-      })}
-    </main>
+    <>
+      <Helmet>
+        <title>{title}</title>
+        <meta name='description' content={description} />
+      </Helmet>
+      <main className='container'>
+        {content.map(group => {
+          return group.frontmatter.active ? (
+            <Group data={group} key={group.id} />
+          ) : null
+        })}
+      </main>
+    </>
   )
 }
 
 export default IndexPage
 
 export const query = graphql`
-  query Menu {
-    allMarkdownRemark {
+  query {
+    site {
+      siteMetadata {
+        description
+        title
+      }
+    }
+    content: allMarkdownRemark {
       nodes {
         id
         frontmatter {
           title
+          active
           content {
             title
             price

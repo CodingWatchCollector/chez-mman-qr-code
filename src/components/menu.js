@@ -10,7 +10,7 @@ export const Menu = ({ data }) => {
 
   return (
     <div className='menu category'>
-      <div>
+      <div className='menu category--title-wrapper'>
         <h2 className='menu category--title'>
           {data.title}
           <span className='menu category--price'> {data.price}</span>

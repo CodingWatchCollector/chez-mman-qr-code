@@ -26,7 +26,8 @@ collections:
           name: 'active',
           widget: 'boolean',
           required: false,
-      }
+          default: true,
+        }
       - label: 'Contenu'
         name: 'content'
         widget: 'list'

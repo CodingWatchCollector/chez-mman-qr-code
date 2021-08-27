@@ -5,7 +5,7 @@ export const AlaCarte = ({ data }) => {
   const itemsList = data.item
   return (
     <div className='alacarte category'>
-      <div>
+      <div className='alacarte category--title-wrapper'>
         <h2 className='alacarte category--title'>{data.title}</h2>
         <p className='alacarte category--description'>{data.description}</p>
       </div>

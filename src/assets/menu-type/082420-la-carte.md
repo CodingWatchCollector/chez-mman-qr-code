@@ -1,5 +1,6 @@
 ---
 title: La Carte
+active: true
 content:
   - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
@@ -15,7 +16,7 @@ content:
           vegetarian: true
         - title: Terrine de chez M'man Maison & son toast grillé
         - title: L'assiette de M'man
-          description: "Tranches de saucisson & gâteau de foie, gratinés au four "
+          description: "Tranches de saucisson & gâteau de foie, gratinés au four"
           local: true
         - title: Salade des foies de volaille
           local: true
@@ -78,8 +79,7 @@ content:
           description: Tranche de saumon mariné Maison & son toast grillé
         - title: Gâteau de foie de volaille
           local: true
-          description: Gâteau de foie de volaille Maison, sauce financière (tomates,
-            champignons, olives noires)
+          description: Gâteau de foie de volaille Maison, sauce financière (tomates, champignons, olives noires)
         - title: Melon & Jambon cru
         - title: Salade de lentilles
           description: Lentilles, oeuf poché, lard, oignons, tomates
@@ -142,7 +142,6 @@ content:
         price: 11€
   - type: alacarte
     title: A la Carte
-    description: ""
     item:
       - title: Foie de veau
         price: 19,50€
@@ -169,8 +168,7 @@ content:
       - title: Rognons de veau, façon rognonnade
         price: 22,50€
       - title: Andouillette "Braillon", sauce moutarde
-        description: La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
-          la ficelle
+        description: La vraie andouillette de Lyon, faite à la fraise de veau et tirée à la ficelle
         local: true
         price: 21,50€
 ---
