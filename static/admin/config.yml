@@ -21,6 +21,12 @@ collections:
           name: 'title',
           widget: 'string',
         }
+      - {
+          label: 'Active',
+          name: 'active',
+          widget: 'boolean',
+          required: false,
+      }
       - label: 'Contenu'
         name: 'content'
         widget: 'list'
