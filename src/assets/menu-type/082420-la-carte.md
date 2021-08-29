@@ -122,8 +122,7 @@ content:
     price: 25,50€
   - type: alacarte
     title: Maxi Salades Estivales
-    description: Toutes nos salades sont accompagnées de frites maison. 1 Maxi
-      Salade + 1 Frite + 1 Fromage ou Dessert 13€
+    description: Toutes nos salades sont accompagnées de frites maison
     item:
       - title: La Pêcheur
         price: 11€
@@ -139,10 +138,16 @@ content:
         description: Salade, blanc de volaille, foie de volaille, oeuf dur, tomates
         price: 11€
       - title: La Trois Viandes
-        description: Salade, Rosbif, blanc de volaille, jambon à l' os, tomates, cornichons
+        description: Salade, Rosbif, blanc de volaille, jambon à l'os, tomates, cornichons
         price: 11€
       - title: Carpaccio de bœuf mariné
         price: 11€
+      - title: 1 Maxi Salade + 1 Frite + 1 Fromage ou Dessert
+        price: 13€
+  - type: alacarte
+    title: Menu Enfant
+    description: 1 Plat de Menu de M'man + 1 Dessert au choix + 1 Sirop à l'eau
+    price: 12,50€
   - type: alacarte
     title: A la Carte
     item:

@@ -10,7 +10,7 @@ collections:
   - label: 'type de carte'
     name: 'menu-type'
     folder: 'src/assets/menu-type'
-    slug: '{{month}}{{day}}{{hour}}-{{slug}}'
+    slug: '{{day}}-{{month}}-{{hour}}-{{slug}}'
     editor:
       preview: false
     create: true
@@ -32,6 +32,24 @@ collections:
         name: 'content'
         widget: 'list'
         types:
+          # - label: 'Formule'
+          #   name: 'formula'
+          #   widget: 'object'
+          #   fields:
+          #     - {
+          #         label: 'Nom',
+          #         title: 'title',
+          #         name: 'title',
+          #         widget: 'string',
+          #     }
+          #     - {
+          #         label: 'Description',
+          #         name: 'description',
+          #         widget: 'markdown',
+          #     }
+          #     - {
+          #        label: 'Prix', name: 'price', widget: 'string' }
+
           - label: 'A la carte'
             name: 'alacarte'
             widget: 'object'
@@ -46,6 +64,12 @@ collections:
                   label: 'Description',
                   name: 'description',
                   widget: 'markdown',
+                  required: false,
+                }
+              - {
+                  label: 'Prix',
+                  name: 'price',
+                  widget: 'string',
                   required: false,
                 }
               - label: 'Plats:'
@@ -93,7 +117,6 @@ collections:
                 }
               - label: 'Entrées'
                 name: 'starters'
-                create: true
                 widget: 'object'
                 fields:
                   - {
