@@ -11,10 +11,12 @@ export const Item = ({ data }) => {
     <>
       <div>
         <div className='item--main-info'>
-          <span className='item--title'>{data.title}</span>
-          {data.supplement ? (
-            <span className='item--supplement'>{`(+${data.supplement})`}</span>
-          ) : null}
+          <span className='item--title'>
+            {data.title}
+            {data.supplement ? (
+              <span className='item--supplement'>{`(+${data.supplement})`}</span>
+            ) : null}
+          </span>
           {data.local ? (
             <span className='item--local'>
               <svg

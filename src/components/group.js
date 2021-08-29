@@ -5,6 +5,15 @@ if (typeof document !== undefined) {
   import('../components/toggle_button.js')
 }
 
+const filterContentByDataType = data => {
+  if (data.type === 'menu') {
+    return <Menu data={data} key={data.title} />
+  }
+  if (data.type === 'alacarte') {
+    return <AlaCarte data={data} key={data.title} />
+  }
+}
+
 export const Group = ({ data }) => {
   const { title, content } = data.frontmatter
   const contentId = data.id
@@ -24,15 +33,20 @@ export const Group = ({ data }) => {
           ></button>
         </h1>
       </label>
-      <div id={contentId} className='content-group--content'>
+      <div id={contentId} className='content-group__content'>
         {content.map(subgroup => {
-          if (subgroup.type === 'menu') {
-            return <Menu data={subgroup} key={subgroup.title} />
-          }
-          if (subgroup.type === 'alacarte') {
-            return <AlaCarte data={subgroup} key={subgroup.title} />
-          }
-          return null
+          return (
+            <div className={`${subgroup.type} category`}>
+              <div className='category--title-wrapper'>
+                <h2>
+                  <span className='category--title'>{subgroup.title}</span>
+                  <span className='category--price'>{subgroup.price}</span>
+                </h2>
+                <p className='category--description'>{subgroup.description}</p>
+              </div>
+              {filterContentByDataType(subgroup)}
+            </div>
+          )
         })}
       </div>
     </div>
