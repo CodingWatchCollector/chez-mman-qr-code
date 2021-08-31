@@ -72,6 +72,8 @@ content:
     price: 16€
   - type: alacarte
     title: Menu P'tit Gone (<10 ans)
+    description: 1 Plat de Menu de M'man + 1 Dessert au choix + 1 Sirop à l'eau
+    price: 12,50€
   - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
     starters:
@@ -144,10 +146,6 @@ content:
         price: 11€
       - title: 1 Maxi Salade + 1 Frite + 1 Fromage ou Dessert
         price: 13€
-  - type: alacarte
-    title: Menu Enfant
-    description: 1 Plat de Menu de M'man + 1 Dessert au choix + 1 Sirop à l'eau
-    price: 12,50€
   - type: alacarte
     title: A la Carte
     item:
