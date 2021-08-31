@@ -76,7 +76,7 @@ content:
     price: 12,50€
     item:
       - title: 1 Plat de Menu de M'man + 1 Dessert au choix + 1 Sirop à l'eau
-  - type: menu
+    - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
     starters:
       title: Entrées
@@ -85,9 +85,7 @@ content:
           description: Tranche de saumon mariné Maison & son toast grillé
         - title: Gâteau de foie de volaille
           local: true
-          description:
-            Gâteau de foie de volaille Maison, sauce financière (tomates,
-            champignons, olives noires)
+          description: Gâteau de foie de volaille Maison, sauce financière (tomates, champignons, olives noires)
         - title: Melon & Jambon cru
         - title: Salade de lentilles
           description: Lentilles, oeuf poché, lard, oignons, tomates
@@ -177,9 +175,7 @@ content:
       - title: Rognons de veau, façon rognonnade
         price: 22,50€
       - title: Andouillette "Braillon", sauce moutarde
-        description:
-          La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
-          la ficelle
+        description: La vraie andouillette de Lyon, faite à la fraise de veau et tirée à la ficelle
         local: true
         price: 21,50€
 ---
