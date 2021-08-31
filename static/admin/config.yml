@@ -32,24 +32,6 @@ collections:
         name: 'content'
         widget: 'list'
         types:
-          # - label: 'Formule'
-          #   name: 'formula'
-          #   widget: 'object'
-          #   fields:
-          #     - {
-          #         label: 'Nom',
-          #         title: 'title',
-          #         name: 'title',
-          #         widget: 'string',
-          #     }
-          #     - {
-          #         label: 'Description',
-          #         name: 'description',
-          #         widget: 'markdown',
-          #     }
-          #     - {
-          #        label: 'Prix', name: 'price', widget: 'string' }
-
           - label: 'A la carte'
             name: 'alacarte'
             widget: 'object'
@@ -63,7 +45,7 @@ collections:
               - {
                   label: 'Description',
                   name: 'description',
-                  widget: 'markdown',
+                  widget: 'string',
                   required: false,
                 }
               - {
@@ -111,7 +93,7 @@ collections:
               - {
                   label: 'Description',
                   name: 'description',
-                  widget: 'markdown',
+                  widget: 'string',
                   default: '1 Entrée + 1 Plat + 1 Fromage ou Dessert',
                   required: false,
                 }

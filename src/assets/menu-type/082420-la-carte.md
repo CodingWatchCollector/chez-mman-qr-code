@@ -70,7 +70,13 @@ content:
           vegetarian: true
     title: Menu de M'man
     price: 16€
-  - type: menu
+  - type: alacarte
+    title: Menu P'tit Gone
+    description: (<10 ans)
+    price: 12,50€
+    item:
+      - title: 1 Plat de Menu de M'man + 1 Dessert au choix + 1 Sirop à l'eau
+    - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
     starters:
       title: Entrées
@@ -79,8 +85,7 @@ content:
           description: Tranche de saumon mariné Maison & son toast grillé
         - title: Gâteau de foie de volaille
           local: true
-          description: Gâteau de foie de volaille Maison, sauce financière (tomates,
-            champignons, olives noires)
+          description: Gâteau de foie de volaille Maison, sauce financière (tomates, champignons, olives noires)
         - title: Melon & Jambon cru
         - title: Salade de lentilles
           description: Lentilles, oeuf poché, lard, oignons, tomates
@@ -143,10 +148,6 @@ content:
       - title: 1 Maxi Salade + 1 Frite + 1 Fromage ou Dessert
         price: 13€
   - type: alacarte
-    title: Menu P'tit Gone (<10 ans)
-    description: 1 Plat de Menu de M'man + 1 Dessert au choix + 1 Sirop à l'eau
-    price: 12,50€
-  - type: alacarte
     title: A la Carte
     item:
       - title: Foie de veau
@@ -174,8 +175,7 @@ content:
       - title: Rognons de veau, façon rognonnade
         price: 22,50€
       - title: Andouillette "Braillon", sauce moutarde
-        description: La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
-          la ficelle
+        description: La vraie andouillette de Lyon, faite à la fraise de veau et tirée à la ficelle
         local: true
         price: 21,50€
 ---

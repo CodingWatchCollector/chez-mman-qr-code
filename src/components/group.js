@@ -1,16 +1,18 @@
 import React from 'react'
 import { Menu } from './menu'
 import { AlaCarte } from './alacarte'
+import IconLeaf from '../icons/icon_leaf.js'
+import IconLocal from '../icons/icon_local.js'
 if (typeof document !== undefined) {
   import('../components/toggle_button.js')
 }
 
 const filterContentByDataType = data => {
   if (data.type === 'menu') {
-    return <Menu data={data} key={data.title} />
+    return <Menu data={data} />
   }
   if (data.type === 'alacarte') {
-    return <AlaCarte data={data} key={data.title} />
+    return <AlaCarte data={data} />
   }
 }
 
@@ -34,17 +36,34 @@ export const Group = ({ data }) => {
         </h1>
       </label>
       <div id={contentId} className='content-group__content'>
+        <div className='label-description-wrapper'>
+          <p className='label-description'>
+            <IconLocal />
+            <span>locale / local</span>
+          </p>
+          <p className='label-description'>
+            <IconLeaf />
+            <span>végétarien / vegetarian</span>
+          </p>
+        </div>
         {content.map(subgroup => {
           return (
-            <div className={`${subgroup.type} category`}>
-              <div className='category--title-wrapper'>
-                <h2>
-                  <span className='category--title'>{subgroup.title}</span>
-                  <span className='category--price'>{subgroup.price}</span>
-                </h2>
-                <p className='category--description'>{subgroup.description}</p>
+            <div
+              className={`${subgroup.type} category-wrapper`}
+              key={subgroup.title}
+            >
+              <div className='category'>
+                <div className='category--title-wrapper'>
+                  <h2>
+                    <span className='category--title'>{subgroup.title}</span>
+                    <span className='category--price'>{subgroup.price}</span>
+                  </h2>
+                  <p className='category--description'>
+                    {subgroup.description}
+                  </p>
+                </div>
+                {filterContentByDataType(subgroup)}
               </div>
-              {filterContentByDataType(subgroup)}
             </div>
           )
         })}
