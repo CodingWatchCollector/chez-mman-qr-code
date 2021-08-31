@@ -3,9 +3,9 @@ import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import '../styles/index.css'
 import { Group } from '../components/group'
-// import '@fontsource/cabin/500.css'
-// import '@fontsource/cabin/700.css'
-// import '@fontsource/cabin/400-italic.css'
+import '@fontsource/cabin/500.css'
+import '@fontsource/cabin/700.css'
+import '@fontsource/cabin/400-italic.css'
 
 // markup
 const IndexPage = ({ data }) => {
