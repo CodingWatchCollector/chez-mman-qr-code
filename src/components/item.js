@@ -2,6 +2,7 @@ import React from 'react'
 import IconLocal from '../icons/icon_local.js'
 import IconLeaf from '../icons/icon_leaf.js'
 
+
 export const Item = ({ data }) => {
   return (
     <>
