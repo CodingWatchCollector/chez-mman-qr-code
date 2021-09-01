@@ -7,7 +7,8 @@ import '@fontsource/cabin/500.css'
 import '@fontsource/cabin/700.css'
 import '@fontsource/cabin/400-italic.css'
 
-// markup
+
+
 const IndexPage = ({ data }) => {
   const content = data.content.nodes
   const { title, description } = data.site.siteMetadata

@@ -70,6 +70,14 @@ content:
           vegetarian: true
     title: Menu de M'man
     price: 16€
+
+  - type: alacarte
+    title: Menu P'tit Gone
+    description: (<10 ans)
+    price: 12,50€
+    item:
+      - title: 1 Plat de Menu de M'man + 1 Dessert au choix + 1 Sirop à l'eau
+
   - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
     starters:

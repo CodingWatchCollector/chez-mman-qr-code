@@ -1,6 +1,10 @@
 import React from 'react'
-import { Menu } from './menu'
-import { AlaCarte } from './alacarte'
+
+import { Menu } from './menu.js'
+import { AlaCarte } from './alacarte.js'
+import IconLeaf from '../icons/icon_leaf.js'
+import IconLocal from '../icons/icon_local.js'
+
 if (typeof document !== undefined) {
   import('../components/toggle_button.js')
 }
