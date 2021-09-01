@@ -95,7 +95,7 @@ content:
     title: Menu de M'man
     price: 16€
   - type: alacarte
-    title: Kid menu
+    title: Kids menu
     description: (<10 ans)
     price: 12,50€
     item:
@@ -138,25 +138,30 @@ content:
             pudding
         - title: Rognons de veau, façon rognonnade
           supplement: 5,50€
+          description: Grilled calf kidneys in red wine and mushrooms sauce
     desert-cheese:
       title: Desserts/Fromage
       item:
         - title: 1/2 St Marcellin de la Mère Richard
           local: true
           vegetarian: true
+          description: Soft cow cheese
         - title: Cervelle de canut
-          description: Faisselle, l'huile d'olive, ail, échalotes, ciboulette
+          description: Cottage cheese with garlic and herbs
           local: true
           vegetarian: true
         - title: Fromage blanc, nature/à la crème
           vegetarian: true
+          description: Cottage cheese
         - title: Dessert Maison au choix
           local: true
           vegetarian: true
+          description: Homemade dessert of your choice
         - title: Café gourmand
           supplement: 4€
           vegetarian: true
           local: true
+          description: 3 mini desserts with espresso
     title: Menu GourM'man
     price: 25,50€
   - type: alacarte
@@ -164,32 +169,37 @@ content:
     item:
       - title: Foie de veau
         price: 19,50€
-        description: Foie de veau persillé & sa purée maison
+        description: Grilled calf liver, parsley&garlic sauce served with mashed potatoes
       - title: Poire de bœuf
-        description: Poire de boeuf poêlée (250gr) & sa poêlée d'échalotes
+        description: Grilled thick and tender rump steak (250g) with grilled shallots
+          served with  potatoes gratin and vegetables
         price: 18€
         vegetarian: false
       - title: Hamburger maison
         price: 12,50€
-        description: Hamburger maison, frites maison et salade verte
+        description: Homemade Hamburger, cheese, tartare sauce, homemade fries and salad
       - title: Saumon mariné maison
-        description: Assiette de saumon mariné maison & ses toasts grillés, salade verte
+        description: Homemade marinated raw salmon with grilled toasts
         price: 15,50€
       - title: Tartare de saumon
-        description: Servi avec des frites maison et salade verte
+        description: Salmon tartare served with homemade fries and salad
         price: 15,50€
       - title: Magret de canard, sauce aigre douce
         price: 15,50€
+        description: Grilled duck breast, sweet and sour sauce served with potatoes
+          gratin and  vegetables
       - title: Dos de saumon poêlé, sauce vierge
         price: 16€
+        description: Grilled salmon filet with olive oil served with potatoes gratin and
+          vegetables
       - title: Tartare ou César de bœuf haché au couteau
-        description: Servi avec des frites maison et salade verte
+        description: Beef tartare served with homemade fries and salad
         price: 16€
       - title: Rognons de veau, façon rognonnade
         price: 22,50€
+        description: Grilled calf kidneys in red wine and mushrooms sauce
       - title: Andouillette "Braillon", sauce moutarde
-        description: La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
-          la ficelle
+        description: Authentic craft calf ruffle sausage
         local: true
         price: 21,50€
   - type: alacarte
