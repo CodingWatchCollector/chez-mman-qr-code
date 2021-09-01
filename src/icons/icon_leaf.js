@@ -17,3 +17,4 @@ const Icon = ({ fill, className }) => {
 }
 
 export default Icon
+
