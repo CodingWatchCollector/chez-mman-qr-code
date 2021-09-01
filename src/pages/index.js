@@ -79,7 +79,6 @@ export const query = graphql`
               }
             }
             desert_cheese {
-              title
               item {
                 title
                 supplement
@@ -87,6 +86,7 @@ export const query = graphql`
                 local
                 vegetarian
               }
+              title
             }
           }
         }

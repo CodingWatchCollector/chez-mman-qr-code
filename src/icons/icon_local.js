@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const Icon = ({ fill, className }) => {
   return (
     <svg
@@ -18,3 +17,4 @@ const Icon = ({ fill, className }) => {
 
 
 export default Icon
+
