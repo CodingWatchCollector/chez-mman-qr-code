@@ -87,7 +87,8 @@ content:
           description: Tranche de saumon mariné Maison & son toast grillé
         - title: Gâteau de foie de volaille
           local: true
-          description: Gâteau de foie de volaille Maison, sauce financière (tomates,
+          description:
+            Gâteau de foie de volaille Maison, sauce financière (tomates,
             champignons, olives noires)
         - title: Melon & Jambon cru
         - title: Salade de lentilles
@@ -182,7 +183,8 @@ content:
       - title: Rognons de veau, façon rognonnade
         price: 22,50€
       - title: Andouillette "Braillon", sauce moutarde
-        description: La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
+        description:
+          La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
           la ficelle
         local: true
         price: 21,50€
