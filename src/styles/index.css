@@ -26,6 +26,7 @@ body {
     Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   background: hsla(var(--clr-bg-700));
   font-size: 1.125rem;
+  font-weight: 500;
   line-height: 1.1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -52,6 +53,7 @@ h1,
 h2,
 h3,
 .category--description {
+  font-weight: 700;
   text-align: center;
 }
 
@@ -92,18 +94,38 @@ button[is='toggle-button']::before {
 }
 
 .content-group__title {
+  position: relative;
   padding: 1em 0;
 }
 
+.label-description-wrapper {
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.label-description {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.label-description:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.category-wrapper {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
 .category {
-  box-shadow: 0 4px 10px 1px hsla(var(--clr-accent--700), 0.2);
+  box-shadow: 0 1px 5px -1px hsla(var(--clr-accent--700), 0.2);
   border-radius: 4px;
   margin: 2em 0.5em;
   padding: 1em 0.5em;
 }
 
 .category--description {
-  font-weight: 700;
   font-size: 1.315rem;
 }
 
@@ -158,20 +180,13 @@ button[is='toggle-button']::before {
 .item--description {
   font-size: 0.9em;
   font-style: italic;
+  font-weight: 400;
 }
 
 .item--vegetarian,
 .item--local {
   display: inline-flex;
   align-items: center;
-}
-
-.item--local svg {
-  fill: hsla(var(--clr-local--400));
-}
-
-.item--vegetarian svg {
-  fill: hsla(var(--clr-vegetarian--400));
 }
 
 /* ******************** */
