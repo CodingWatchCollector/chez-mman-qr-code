@@ -76,7 +76,7 @@ content:
     price: 12,50€
     item:
       - title: 1 Plat de Menu de M'man + 1 Dessert au choix + 1 Sirop à l'eau
-    - type: menu
+  - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
     starters:
       title: Entrées
