@@ -203,27 +203,44 @@ content:
         local: true
         price: 21,50€
   - type: alacarte
-    title: Maxi Salades Estivales
+    title: Big salads
     description: Toutes nos salades sont accompagnées de frites maison
     item:
       - title: La Pêcheur
         price: 11€
-        description: Salade, tartare de hareng, toast de sardine, saumon mariné, oeuf dur
+        description: Marinated raw salmon, smoked herring tartare, sardine toast, boiled
+          egg,  greens
       - title: La Primeur
-        description: Salade, assortiment de crudités, oeuf dur
+        description: Fresh vegetables from the market, greens, boiled egg
         vegetarian: true
         price: 11€
       - title: La Viande Rouge
-        description: Salade, Rosbif, Tomates, Mozzarella
+        description: Sliced roast beef, tomatoes, mozzarella, greens
         price: 11€
       - title: La Viande Blanche
-        description: Salade, blanc de volaille, foie de volaille, oeuf dur, tomates
+        description: Roasted chicken breast (chilled), grilled paultry livers, boiled
+          egg, greens
         price: 11€
       - title: La Trois Viandes
-        description: Salade, Rosbif, blanc de volaille, jambon à l'os, tomates, cornichons
+        description: Sliced roast beef, grilled chicken breast (chilled), roasted ham
+          (chilled),  greens
         price: 11€
       - title: Carpaccio de bœuf mariné
         price: 11€
-      - title: 1 Maxi Salade + 1 Frite + 1 Fromage ou Dessert
+        description: Beef carpaccio, Parmigiano Cheese, greens
+      - description: Mixed salad with croutons, bacon and poached egg
+        title: Salade Lyonnaise
+        local: true
+      - description: Toasts with melted goat cheese and honey, greens
+        title: Salade au chèvre chaud
+        vegetarian: true
+      - vegetarian: true
+        title: Oeuf en meurette
+        description: Poached eggs in red wine sauce, toasts
+        local: true
+      - title: Tomates et mozzarella
+        description: Tomatoes, mozzarella, greens
+        vegetarian: true
+      - title: 1 Big salad + Homemade Fries + 1 Cheese or Dessert
         price: 13€
 ---
