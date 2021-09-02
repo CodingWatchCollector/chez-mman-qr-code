@@ -3,7 +3,7 @@ title: English menu
 active: true
 content:
   - type: menu
-    description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
+    description: 1 Starter + 1 Main course + 1 Dessert/Cheese
     starters:
       title: Entrées/Starters
       item:
@@ -103,7 +103,7 @@ content:
           with water
         description: ""
   - type: menu
-    description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
+    description: 1 Starter + 1 Main course + 1 Dessert/Cheese
     starters:
       title: Entrées/Starters
       item:
@@ -204,7 +204,7 @@ content:
         price: 21,50€
   - type: alacarte
     title: Big salads
-    description: Toutes nos salades sont accompagnées de frites maison
+    description: All our big salads are served with homemade fries
     item:
       - title: La Pêcheur
         price: 11€
@@ -231,16 +231,20 @@ content:
       - description: Mixed salad with croutons, bacon and poached egg
         title: Salade Lyonnaise
         local: true
+        price: 11€
       - description: Toasts with melted goat cheese and honey, greens
         title: Salade au chèvre chaud
         vegetarian: true
+        price: 11€
       - vegetarian: true
         title: Oeuf en meurette
         description: Poached eggs in red wine sauce, toasts
         local: true
+        price: 11€
       - title: Tomates et mozzarella
         description: Tomatoes, mozzarella, greens
         vegetarian: true
+        price: 11€
       - title: 1 Big salad + Homemade Fries + 1 Cheese or Dessert
         price: 13€
 ---
