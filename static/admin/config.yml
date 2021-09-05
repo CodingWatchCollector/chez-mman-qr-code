@@ -45,7 +45,7 @@ collections:
           #     - {
           #         label: 'Description',
           #         name: 'description',
-          #         widget: 'markdown',
+          #         widget: 'string',
           #     }
           #     - {
           #        label: 'Prix', name: 'price', widget: 'string' }
@@ -63,7 +63,7 @@ collections:
               - {
                   label: 'Description',
                   name: 'description',
-                  widget: 'markdown',
+                  widget: 'string',
                   required: false,
                 }
               - {
@@ -111,7 +111,7 @@ collections:
               - {
                   label: 'Description',
                   name: 'description',
-                  widget: 'markdown',
+                  widget: 'string',
                   default: '1 Entrée + 1 Plat + 1 Fromage ou Dessert',
                   required: false,
                 }
