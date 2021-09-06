@@ -2,7 +2,7 @@
 The site i've made for the restaurant I work for.
 The site is based on mobile-first approach as it will be mainly opened at place using QR code, but it doesn't look ugly on desktop neither. The site is intentionally lightweight, robust and simple. It was built with low connection speed, elderly users, old devices and accessibility in mind.   
 The main idea was to stop reprint pages every time we have a new dish but keep the menu updated.
-My boss who's far from being tech person is capable to update the menu on his own.   
+My boss who's far from being tech person is capable to update the menu by himself.   
 I'm 100% satisfied with the simplicity, flexibility and complexity of the site structure.
 
 ## Possible features:
