@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: 'https://chez-mman-site-mobile.netlify.app/',
     title: `Chez M'man`,
+    language: 'fr',
     description: `La carte de restaurant Chez M'man, 4 rue des Marronniers, Lyon 69002`
   },
   plugins: [

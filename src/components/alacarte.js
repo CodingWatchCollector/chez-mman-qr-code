@@ -6,7 +6,7 @@ export const AlaCarte = ({ data }) => {
 
   return (
     <div className='category--content'>
-      <ul>
+      <ul className='items-list'>
         {itemsList.map(item => (
           <li className=' item' key={item.title}>
             <Item data={item} />

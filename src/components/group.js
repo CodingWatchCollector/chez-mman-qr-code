@@ -1,73 +1,71 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { Menu } from './menu.js'
 import { AlaCarte } from './alacarte.js'
-import IconLeaf from '../icons/icon_leaf.js'
-import IconLocal from '../icons/icon_local.js'
+import BookOpen from '../icons/book_open.js'
+import BookClosed from '../icons/book_closed.js'
+
 if (typeof document !== undefined) {
   import('../components/toggle_button.js')
 }
 
 const filterContentByDataType = data => {
   if (data.type === 'menu') {
-    return <Menu data={data} />
+    return (
+      <div>
+        <Menu data={data} />
+      </div>
+    )
   }
   if (data.type === 'alacarte') {
     return <AlaCarte data={data} />
   }
 }
 
-export const Group = ({ data }) => {
+export const Group = ({ data, expandContent, expanded }) => {
   const { title, content } = data.frontmatter
-  const contentId = data.id
+  const htmlContent = useMemo(() => {
+    return content.map(subgroup => {
+      return (
+        <div
+          className={`${subgroup.type} category-wrapper flow-content flow-content--large`}
+          key={subgroup.title}
+        >
+          <div className='category flow-content'>
+            <div className='category--title-wrapper'>
+              <h2>
+                <span className='category--title'>{subgroup.title}</span>
+                {subgroup.price ? (
+                  <span className='category--price'>{subgroup.price}</span>
+                ) : null}
+              </h2>
+              <p className='category--description'>{subgroup.description}</p>
+            </div>
+            <div>{filterContentByDataType(subgroup)}</div>
+          </div>
+        </div>
+      )
+    })
+  }, [content])
   return (
-    <div className='content-group'>
+    <div
+      className={'content-group ' + (expanded ? 'content-group--active' : null)}
+    >
       <label>
         <h1 className='content-group__title'>
-          {title}
           <button
-            aria-label='expand the menu'
-            is='toggle-button'
-            data-target={contentId}
-            data-sign-open='&#9667;'
-            data-sign-close='&#9662;'
-            data-sign-active='&#9667;'
-            hidden
+            aria-expanded='false'
+            data-group='nav'
+            onClick={e => {
+              expandContent(htmlContent, data.id)
+              e.target.setAttribute('aria-expanded', 'true')
+            }}
           ></button>
+          <span>
+            {expanded ? <BookOpen /> : <BookClosed />}
+            {title}
+          </span>
         </h1>
       </label>
-      <div id={contentId} className='content-group__content'>
-        <div className='label-description-wrapper'>
-          <p className='label-description'>
-            <IconLocal />
-            <span>locale / local</span>
-          </p>
-          <p className='label-description'>
-            <IconLeaf />
-            <span>végétarien / vegetarian</span>
-          </p>
-        </div>
-        {content.map(subgroup => {
-          return (
-            <div
-              className={`${subgroup.type} category-wrapper`}
-              key={subgroup.title}
-            >
-              <div className='category'>
-                <div className='category--title-wrapper'>
-                  <h2>
-                    <span className='category--title'>{subgroup.title}</span>
-                    <span className='category--price'>{subgroup.price}</span>
-                  </h2>
-                  <p className='category--description'>
-                    {subgroup.description}
-                  </p>
-                </div>
-                {filterContentByDataType(subgroup)}
-              </div>
-            </div>
-          )
-        })}
-      </div>
     </div>
   )
 }
