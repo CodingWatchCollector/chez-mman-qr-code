@@ -6,9 +6,6 @@
   --clr-bg-700: 46, 87%, 97%;
   --clr-bg--grad--start: 0, 40%, 33%;
 
-  --clr-bg--grad-accent--start: 0, 40%, 50%;
-  --clr-bg--grad-accent--end: 0, 40%, 10%;
-
   --spacer: 1rem;
   --spacer--large: 3rem;
 }
@@ -123,17 +120,6 @@ button {
 
 .content-group--active h1 {
   transform: scale(1.1);
-}
-
-.content-group--active h1 > * {
-  background-image: linear-gradient(
-    90deg,
-    hsl(var(--clr-bg--grad-accent--start)),
-    hsl(var(--clr-bg--grad-accent--end))
-  );
-  background-size: 100% 3px;
-  background-repeat: no-repeat;
-  background-position: left bottom;
 }
 
 .content-group__title {
