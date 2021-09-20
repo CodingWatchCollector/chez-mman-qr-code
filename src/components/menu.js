@@ -9,12 +9,12 @@ export const Menu = ({ data }) => {
   ]
 
   return (
-    <div className='category--content'>
+    <div className='category--content flow-content'>
       {subMenues.map(submenu => (
         <div className='menu__submenu' key={`${data.title}-${submenu.title}`}>
           <h3 className='menu__submenu--title'>{submenu.title}</h3>
           <div className='menu__submenu--content'>
-            <ul>
+            <ul className='items-list'>
               {submenu.item.map(item => (
                 <li className='item' key={item.title}>
                   <Item data={item} />

@@ -62,7 +62,7 @@ content:
             and vegetables
         - title: Boeuf à la provençale, pâtes
           description: Beef stew in tomato sauce (with mushrooms and olives), served with
-            Pasta
+            pasta
         - title: Assiette végétarienne
           vegetarian: true
           description: Potatoes gratin and roasted vegetables
