@@ -1,10 +1,10 @@
 :root {
   --clr-accent--400: 0, 40%, 33%;
-  --clr-accent--700: 0, 40%, 16%;
-  --clr-primary: 0, 39%, 7%;
-  --clr-bg--400: 43, 47%, 97%;
-  --clr-bg-700: 46, 87%, 97%;
-  --clr-bg--grad--start: 0, 40%, 33%;
+  --clr-text--900: 0, 39%, 7%;
+  --clr-neutral--400: 43, 47%, 97%;
+
+  --clr-bg-grad--start: 0, 40%, 66%;
+  --clr-bg-grad--end: 0, 40%, 86%;
 
   --spacer: 1rem;
   --spacer--large: 3rem;
@@ -28,12 +28,14 @@ html {
 }
 
 body {
-  color: hsla(var(--clr-primary));
+  color: hsla(var(--clr-text--900));
   font-family: 'Cabin', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
     Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  background: hsl(197, 76%, 77%);
-  background: linear-gradient(90deg, hsl(298, 68%, 90%), hsl(30, 82%, 91%));
-  background: linear-gradient(90deg, #cc8787, #e9cccc);
+  background: linear-gradient(
+    90deg,
+    hsl(var(--clr-bg-grad--start)),
+    hsl(var(--clr-bg-grad--end))
+  );
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.1;
@@ -72,6 +74,8 @@ button {
   position: absolute;
   left: -9999px;
   clip: rect(0 0 0 0);
+  clip-path: inset(0 0 0 0);
+  padding: 0;
   height: 1px;
   margin: -1px;
 }
@@ -105,21 +109,26 @@ button {
 /* ************************* */
 
 .content-group {
-  background-color: hsla(var(--clr-bg--400), 0.6);
+  background-color: hsla(var(--clr-neutral--400), 0.6);
   backdrop-filter: blur(2px);
 }
 
 .content-group--active {
-  /* text-decoration: underline; */
+  overflow: hidden;
 }
 
 .content-group h1 {
   transform: scale(1);
-  transition: transform 250ms linear;
 }
 
 .content-group--active h1 {
   transform: scale(1.1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .content-group h1 {
+    transition: transform 250ms ease-in;
+  }
 }
 
 .content-group__title {
@@ -146,7 +155,7 @@ button {
 /* ************************* */
 
 .category {
-  background-color: hsla(var(--clr-bg--400), 0.35);
+  background-color: hsla(var(--clr-neutral--400), 0.35);
 }
 
 .category--description {
@@ -156,7 +165,7 @@ button {
 .category--title-wrapper {
   position: sticky;
   top: 0;
-  background-color: hsla(var(--clr-bg--400), 0.6);
+  background-color: hsla(var(--clr-neutral--400), 0.6);
   backdrop-filter: blur(2px);
   padding: 1rem 0.2rem;
 }
@@ -180,7 +189,7 @@ button {
 }
 
 .item:not(:last-child) {
-  box-shadow: 0 3px 3px -4px hsla(var(--clr-bg--grad--start), 0.4);
+  box-shadow: 0 3px 3px -4px hsla(var(--clr-accent--400), 0.4);
 }
 
 .item--main-info {
@@ -209,10 +218,6 @@ button {
 /* ******************** */
 /* MENU STYLES  */
 /* ******************** */
-
-.menu__submenu + .menu__submenu {
-  /* padding-top: 1em; */
-}
 
 /* ******************** */
 /* A LA CARTE STYLES  */
