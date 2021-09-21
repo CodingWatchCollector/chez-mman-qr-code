@@ -164,7 +164,7 @@ button {
 
 .category--title-wrapper {
   position: sticky;
-  top: 0;
+  top: 20px;
   background-color: hsla(var(--clr-neutral--400), 0.6);
   backdrop-filter: blur(2px);
   padding: 1rem 0.2rem;

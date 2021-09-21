@@ -9,6 +9,7 @@ import collapseAllButtonsFromSet from '../components/collapse_buttons.js'
 import '@fontsource/cabin/500.css'
 import '@fontsource/cabin/700.css'
 import '@fontsource/cabin/400-italic.css'
+import favicon from '../images/icon.svg'
 
 const labelDescription = (
   <div className='content--expanded__labels flow-content'>
@@ -39,6 +40,7 @@ const IndexPage = ({ data }) => {
       <Helmet htmlAttributes={{ lang: language }}>
         <title>{title}</title>
         <meta name='description' content={description} />
+        <link rel='icon' type='icon/png' href={favicon} size='32x32' />
       </Helmet>
       <main className='container flow-content flow-content--large'>
         <div className='main--nav flow-content'>
