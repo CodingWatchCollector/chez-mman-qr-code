@@ -7,15 +7,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Chez M'man, la carte`,
-        short_name: `Chez M'man`,
-        start_url: `/`,
-        icon: `src/images/icon.svg`
-      }
-    },
     'gatsby-transformer-remark',
     'gatsby-plugin-netlify-cms',
     {
