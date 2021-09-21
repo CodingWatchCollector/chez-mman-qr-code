@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => {
       <Helmet htmlAttributes={{ lang: language }}>
         <title>{title}</title>
         <meta name='description' content={description} />
-        <link rel='icon' type='icon/png' href={favicon} size='32x32' />
+        <link rel='icon' type='image/svg+xml' href={favicon} />
       </Helmet>
       <main className='container flow-content flow-content--large'>
         <div className='main--nav flow-content'>
