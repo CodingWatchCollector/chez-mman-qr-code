@@ -35,6 +35,20 @@ const IndexPage = ({ data }) => {
     collapseAllButtonsFromSet('nav')
   }
 
+  const now = new Date()
+  console.log(now.getHours(), now.getMinutes())
+
+  // const isLunchHours = date => {
+  //   const day = date.getDay()
+  //   const hours = date.getHours()
+  //   const minutes = date.getMinutes()
+
+  //   if (day > 0 && day < 6) {
+  //     if (hours > 8 && hours < 13) {
+  //     }
+  //   }
+  // }
+
   return (
     <>
       <Helmet htmlAttributes={{ lang: language }}>
@@ -57,6 +71,9 @@ const IndexPage = ({ data }) => {
           })}
         </div>
         <div className='main--expanded flow-content flow-content--large'>
+          {/* {now.getDay()}
+          {now.getHours()}
+          {now.getMinutes()} */}
           {expandedContent ? labelDescription : ''}
           {expandedContent}
         </div>

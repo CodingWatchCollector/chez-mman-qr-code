@@ -27,6 +27,12 @@ html {
   margin: 0;
 }
 
+@media (prefers-color-scheme: light) {
+  .ico {
+    fill: white;
+  }
+}
+
 body {
   color: hsla(var(--clr-text--900));
   font-family: 'Cabin', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
