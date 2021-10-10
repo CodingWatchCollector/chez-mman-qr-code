@@ -1,12 +1,149 @@
 backend:
-  # name: test-repo
-  name: git-gateway
+  name: test-repo
+  # name: git-gateway
   repo: CodingWatchCollector/chez-mman-qr-code
   branch: production # Branch to update (optional; defaults to master)
 
 media_folder: 'images/uploads' # Media files will be stored in the repo under images/uploads
 public_folder: '/images/uploads' # The src attribute for uploaded media will begin with /images/uploads
+locale: 'fr'
 collections:
+  - label: 'suggestions'
+    name: 'suggestions'
+    folder: 'src/assets/suggestions'
+    slug: '{{day}}-{{month}}-{{hour}}-{{slug}}'
+    create: true
+    fields:
+      - {
+          label: 'Nom',
+          title: 'title',
+          name: 'title',
+          widget: 'string',
+          default: 'Suggestions',
+        }
+      - {
+          label: 'Active',
+          name: 'active',
+          widget: 'boolean',
+          required: false,
+          default: true,
+        }
+
+      - label: 'Contenu'
+        name: 'content'
+        widget: 'list'
+        types:
+          - label: 'Formule du midi'
+            name: 'lunch'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Nom',
+                  title: 'title',
+                  name: 'title',
+                  widget: 'string',
+                  default: 'Formule du midi',
+                }
+              - {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'Prix',
+                  name: 'price',
+                  widget: 'string',
+                  required: false,
+                  default: '12.50€',
+                }
+              - label: 'Plats du jour'
+                name: 'item'
+                widget: 'list'
+                fields:
+                  - { label: 'Plat', name: 'title', widget: 'string' }
+                  - {
+                      label: 'Quand',
+                      name: 'updated',
+                      widget: 'datetime',
+                      date_format: 'LLLL',
+                    }
+                  - {
+                      label: 'Description',
+                      name: 'description',
+                      widget: 'string',
+                      required: false,
+                    }
+                  - {
+                      label: 'Prix',
+                      name: 'price',
+                      widget: 'string',
+                      required: false,
+                    }
+                  - {
+                      label: 'Local',
+                      name: 'local',
+                      widget: 'boolean',
+                      required: false,
+                    }
+                  - {
+                      label: 'Vegetarien',
+                      name: 'vegetarian',
+                      widget: 'boolean',
+                      required: false,
+                    }
+          - label: 'A la carte'
+            name: 'alacarte'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Nom',
+                  title: 'title',
+                  name: 'title',
+                  widget: 'string',
+                }
+              - {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'Prix',
+                  name: 'price',
+                  widget: 'string',
+                  required: false,
+                }
+              - label: 'Plats:'
+                name: 'item'
+                widget: 'list'
+                fields:
+                  - { label: 'Nom', name: 'title', widget: 'string' }
+                  - {
+                      label: 'Description',
+                      name: 'description',
+                      widget: 'string',
+                      required: false,
+                    }
+                  - {
+                      label: 'Prix',
+                      name: 'price',
+                      widget: 'string',
+                      required: false,
+                    }
+                  - {
+                      label: 'Local',
+                      name: 'local',
+                      widget: 'boolean',
+                      required: false,
+                    }
+                  - {
+                      label: 'Vegetarien',
+                      name: 'vegetarian',
+                      widget: 'boolean',
+                      required: false,
+                    }
+
   - label: 'type de carte'
     name: 'menu-type'
     folder: 'src/assets/menu-type'
@@ -32,24 +169,6 @@ collections:
         name: 'content'
         widget: 'list'
         types:
-          # - label: 'Formule'
-          #   name: 'formula'
-          #   widget: 'object'
-          #   fields:
-          #     - {
-          #         label: 'Nom',
-          #         title: 'title',
-          #         name: 'title',
-          #         widget: 'string',
-          #     }
-          #     - {
-          #         label: 'Description',
-          #         name: 'description',
-          #         widget: 'string',
-          #     }
-          #     - {
-          #        label: 'Prix', name: 'price', widget: 'string' }
-
           - label: 'A la carte'
             name: 'alacarte'
             widget: 'object'

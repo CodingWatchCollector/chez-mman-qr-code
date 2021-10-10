@@ -35,12 +35,26 @@ const IndexPage = ({ data }) => {
     collapseAllButtonsFromSet('nav')
   }
 
+  const now = new Date()
+  console.log(now.getHours(), now.getMinutes())
+
+  // const isLunchHours = date => {
+  //   const day = date.getDay()
+  //   const hours = date.getHours()
+  //   const minutes = date.getMinutes()
+
+  //   if (day > 0 && day < 6) {
+  //     if (hours > 8 && hours < 13) {
+  //     }
+  //   }
+  // }
+
   return (
     <>
       <Helmet htmlAttributes={{ lang: language }}>
         <title>{title}</title>
         <meta name='description' content={description} />
-        <link rel='icon' type='icon/png' href={favicon} size='32x32' />
+        <link rel='icon' type='image/svg+xml' href={favicon} />
       </Helmet>
       <main className='container flow-content flow-content--large'>
         <div className='main--nav flow-content'>
@@ -57,6 +71,9 @@ const IndexPage = ({ data }) => {
           })}
         </div>
         <div className='main--expanded flow-content flow-content--large'>
+          {/* {now.getDay()}
+          {now.getHours()}
+          {now.getMinutes()} */}
           {expandedContent ? labelDescription : ''}
           {expandedContent}
         </div>
