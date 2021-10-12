@@ -28,15 +28,16 @@ const IndexPage = ({ data }) => {
   const content = data.content.nodes
   const { title, description, language } = data.site.siteMetadata
   const [expandedContent, setExpandedContent] = useState(null)
-  const [expandedCategory, setExpandedCategory] = useState(null)
+  const [expandedCategory, setExpandedCategory] = useState('Suggestions')
   const handleActiveCategoryChange = (categoryContent, categoryId) => {
     setExpandedCategory(categoryId)
     setExpandedContent(categoryContent)
     collapseAllButtonsFromSet('nav')
   }
 
-  const now = new Date()
-  console.log(now.getHours(), now.getMinutes())
+  // lunch hours functionality
+  // const now = new Date()
+  // console.log(now.getHours(), now.getMinutes())
 
   // const isLunchHours = date => {
   //   const day = date.getDay()
@@ -48,6 +49,25 @@ const IndexPage = ({ data }) => {
   //     }
   //   }
   // }
+  const headerContent = content.map(group => {
+    let active = false
+    if (
+      expandedCategory === group.frontmatter.title ||
+      expandedCategory === group.id
+    ) {
+      active = true
+    }
+
+    return (
+      <Group
+        data={group}
+        key={group.id}
+        expandContent={handleActiveCategoryChange}
+        expanded={active}
+        categoryByDefault={expandedCategory}
+      />
+    )
+  })
 
   return (
     <>
@@ -57,23 +77,8 @@ const IndexPage = ({ data }) => {
         <link rel='icon' type='image/svg+xml' href={favicon} />
       </Helmet>
       <main className='container flow-content flow-content--large'>
-        <div className='main--nav flow-content'>
-          {content.map(group => {
-            const active = expandedCategory === group.id
-            return (
-              <Group
-                data={group}
-                key={group.id}
-                expandContent={handleActiveCategoryChange}
-                expanded={active}
-              />
-            )
-          })}
-        </div>
+        <header className='main--nav flow-content'>{headerContent}</header>
         <div className='main--expanded flow-content flow-content--large'>
-          {/* {now.getDay()}
-          {now.getHours()}
-          {now.getMinutes()} */}
           {expandedContent ? labelDescription : ''}
           {expandedContent}
         </div>
@@ -98,6 +103,7 @@ export const query = graphql`
     ) {
       nodes {
         id
+        fileAbsolutePath
         frontmatter {
           title
           active
@@ -107,6 +113,7 @@ export const query = graphql`
             description
             type
             item {
+              updated
               title
               price
               local

@@ -128,7 +128,7 @@ button {
 }
 
 .content-group--active h1 {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
