@@ -22,6 +22,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     supplement: String
     vegetarian: Boolean
     local: Boolean
+    updated: Date
   }
   `
 
