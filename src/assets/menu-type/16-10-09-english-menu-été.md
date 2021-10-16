@@ -1,6 +1,6 @@
 ---
 title: English menu été
-active: true
+active: false
 content:
   - type: menu
     description: 1 Starter + 1 Main course + 1 Dessert/Cheese
