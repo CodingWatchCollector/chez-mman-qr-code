@@ -87,7 +87,6 @@ content:
           local: true
           description: Gâteau de foie de volaille Maison, sauce financière (tomates,
             champignons, olives noires)
-        - title: Melon & Jambon cru
         - title: Salade de lentilles
           description: Lentilles, oeuf poché, lard, oignons, tomates
           local: true
@@ -157,28 +156,4 @@ content:
           la ficelle
         local: true
         price: 21,50€
-  - type: alacarte
-    title: Maxi Salades Estivales
-    description: Toutes nos salades sont accompagnées de frites maison
-    item:
-      - title: La Pêcheur
-        price: 11€
-        description: Salade, tartare de hareng, toast de sardine, saumon mariné, oeuf dur
-      - title: La Primeur
-        description: Salade, assortiment de crudités, oeuf dur
-        vegetarian: true
-        price: 11€
-      - title: La Viande Rouge
-        description: Salade, Rosbif, Tomates, Mozzarella
-        price: 11€
-      - title: La Viande Blanche
-        description: Salade, blanc de volaille, foie de volaille, oeuf dur, tomates
-        price: 11€
-      - title: La Trois Viandes
-        description: Salade, Rosbif, blanc de volaille, jambon à l'os, tomates, cornichons
-        price: 11€
-      - title: Carpaccio de bœuf mariné
-        price: 11€
-      - title: 1 Maxi Salade + 1 Frite + 1 Fromage ou Dessert
-        price: 13€
 ---
