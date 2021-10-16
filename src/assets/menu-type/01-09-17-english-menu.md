@@ -112,8 +112,6 @@ content:
         - title: Gâteau de foie de volaille
           local: true
           description: Chicken liver pudding with  tomato/mushrooms/olives sauce
-        - title: Melon & Jambon cru
-          description: Melon and Ham salad
         - title: Salade de lentilles
           description: Lentils salad with poached egg and bacon
           local: true
@@ -202,49 +200,4 @@ content:
         description: Authentic craft calf ruffle sausage
         local: true
         price: 21,50€
-  - type: alacarte
-    title: Big salads
-    description: All our big salads are served with homemade fries
-    item:
-      - title: La Pêcheur
-        price: 11€
-        description: Marinated raw salmon, smoked herring tartare, sardine toast, boiled
-          egg,  greens
-      - title: La Primeur
-        description: Fresh vegetables from the market, greens, boiled egg
-        vegetarian: true
-        price: 11€
-      - title: La Viande Rouge
-        description: Sliced roast beef, tomatoes, mozzarella, greens
-        price: 11€
-      - title: La Viande Blanche
-        description: Roasted chicken breast (chilled), grilled paultry livers, boiled
-          egg, greens
-        price: 11€
-      - title: La Trois Viandes
-        description: Sliced roast beef, grilled chicken breast (chilled), roasted ham
-          (chilled),  greens
-        price: 11€
-      - title: Carpaccio de bœuf mariné
-        price: 11€
-        description: Beef carpaccio, Parmigiano Cheese, greens
-      - description: Mixed salad with croutons, bacon and poached egg
-        title: Salade Lyonnaise
-        local: true
-        price: 11€
-      - description: Toasts with melted goat cheese and honey, greens
-        title: Salade au chèvre chaud
-        vegetarian: true
-        price: 11€
-      - vegetarian: true
-        title: Oeuf en meurette
-        description: Poached eggs in red wine sauce, toasts
-        local: true
-        price: 11€
-      - title: Tomates et mozzarella
-        description: Tomatoes, mozzarella, greens
-        vegetarian: true
-        price: 11€
-      - title: 1 Big salad + Homemade Fries + 1 Cheese or Dessert
-        price: 13€
 ---
