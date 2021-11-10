@@ -5,6 +5,9 @@ content:
   - type: alacarte
     title: A la Carte
     item:
+      - title: Gratinée à l'oignon
+        description: Onion soup
+        price: 12,50€
       - title: Foie de veau
         price: 19,50€
         description: Grilled calf liver, parsley&garlic sauce served with mashed potatoes
@@ -26,6 +29,9 @@ content:
         price: 15,50€
         description: Grilled duck breast, sweet and sour sauce served with potatoes
           gratin and  vegetables
+      - title: Rognons de veau, façon rognonnade
+        price: 22,50€
+        description: Grilled calf kidneys in red wine and mushrooms sauce
       - title: Dos de saumon poêlé, sauce vierge
         price: 16€
         description: Grilled salmon filet with olive oil served with potatoes gratin and
@@ -33,13 +39,17 @@ content:
       - title: Tartare ou César de bœuf haché au couteau
         description: Beef tartare served with homemade fries and salad
         price: 16€
-      - title: Rognons de veau, façon rognonnade
-        price: 22,50€
-        description: Grilled calf kidneys in red wine and mushrooms sauce
       - title: Andouillette "Braillon", sauce moutarde
         description: Authentic craft calf ruffle sausage
         local: true
         price: 21,50€
+      - title: Ris de veau
+        description: Sweatbread with Madeira wine sauce
+        price: 27,00€
+      - title: Trilogie lyonnaise
+        description: Paned veal intestine, Chitterling pork sausage, Blood sausage
+        price: 15,50€
+        local: true
   - type: menu
     description: 1 Starter + 1 Main course + 1 Dessert/Cheese
     starters:
@@ -68,9 +78,9 @@ content:
           description: Toasts with melted goat cheese and honey, greens
         - title: Tartare de hareng, pomme de terre à l'huile
           description: Smoked herring tartar, boiled potato
-        - title: Tomates et mozzarella
+        - title: Potage de légumes maison
           vegetarian: true
-          description: Tomatoes and mozzarella salad
+          description: Homemade vegetable soup, croutons
     main-course:
       title: Plats/Main courses
       item:
@@ -98,15 +108,19 @@ content:
         - title: Jambon à l'os, sauce Madère
           description: Roasted ham with Madeira wine sauce served with  potatoes gratin
             and vegetables
-        - title: Boeuf à la provençale, pâtes
-          description: Beef stew in tomato sauce (with mushrooms and olives), served with
-            pasta
+        - title: Boeuf Bourguignon, pâtes
+          description: Beef Bourguignon, served with pasta
         - title: Assiette végétarienne
           vegetarian: true
           description: Potatoes gratin and roasted vegetables
         - title: Pièce de boeuf poêlée
           supplement: 2€
-          description: Grilled beefsteak served with potatoes  gratin and vegetables
+          description: Grilled beefsteak served with potatoes gratin and vegetables
+        - title: Boudin noir à la crème d'oignons
+          description: Blood sausage, creamy onion sauce, potatoes gratin and vegetables
+          local: true
+        - title: "Cancoillotte,saucisse fumée, pommes vapeur "
+          description: Melted Cancoillotte cheese, smoked sausage, steamed potatoes
     desert-cheese:
       title: Desserts/Cheese
       item:
@@ -147,21 +161,30 @@ content:
       item:
         - title: Saumon mariné Maison
           description: Homemade marinated raw  salmon with grilled toasts
+        - title: Oeuf en meurette
+          local: true
+          description: Poached eggs in red wine sauce
+          vegetarian: true
         - title: Gâteau de foie de volaille
           local: true
           description: Chicken liver pudding with  tomato/mushrooms/olives sauce
         - title: Salade de lentilles
           description: Lentils salad with poached egg and bacon
           local: true
+          vegetarian: false
+        - title: Salade de quenelle poêlée
+          description: Grilled lyonnaise dumplings, greens
+          local: true
+          vegetarian: true
         - title: Entrée du Menu de M'man
           description: Starter from "Menu de M'man"
+          vegetarian: false
     main-course:
       title: Plats
       item:
-        - title: Andouillette éclatée au vin blanc
+        - title: Trilogie lyonnaise
           local: true
-          description: Chitterling pork sausage grilled with onions and  white wine served
-            with potatoes gratin and vegetables
+          description: Paned veal intestine, Chitterling pork sausage, Blood sausage
         - title: Dos de saumon poêlé, sauce vierge
           description: Grilled salmon filet with olive oil served with  potatoes gratin
             and vegetables
@@ -175,6 +198,9 @@ content:
         - title: Rognons de veau, façon rognonnade
           supplement: 5,50€
           description: Grilled calf kidneys in red wine and mushrooms sauce
+        - title: Ris de veau
+          description: Sweatbread with Madeira wine sauce
+          supplement: 7,00€
     desert-cheese:
       title: Desserts/Fromage
       item:
