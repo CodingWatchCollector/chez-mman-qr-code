@@ -1,6 +1,6 @@
 ---
 title: Suggestions
-active: false
+active: true
 content:
   - type: alacarte
     title: Suggestions du jour
