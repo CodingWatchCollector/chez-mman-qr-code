@@ -1,6 +1,6 @@
 ---
 title: La Carte
-active: false
+active: true
 content:
   - type: alacarte
     title: A la Carte
