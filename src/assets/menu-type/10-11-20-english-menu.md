@@ -1,6 +1,6 @@
 ---
 title: English menu
-active: false
+active: true
 content:
   - type: alacarte
     title: A la Carte
