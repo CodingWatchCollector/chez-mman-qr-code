@@ -8,7 +8,7 @@ I'm 100% satisfied with the simplicity, flexibility and complexity of the site s
 ## Possible features:
 1. Dish of the Day. Add a collection of dishes and update daily the active item. The Dish-of-the-day block should only appear during working hours at lunch time. The block should only be visible if active item was set the same day.
 2. Suggestions. Just a block with temporary dishes, no render conditions. 
-3. Drinks list. Easy to make, but may need some structure changes, like multiple pages (in case JavaScript is not supported on device's browser, which is the case even with some new smartphones).
+3. Drinks list. Easy to make, but may need some structure changes, like multiple pages (in case JavaScript is not supported on device's browser, which is the case with some smartphones or with poor internet connection).
 
 ## Technology stack:
 1. Gatsby as JAMstack base.
