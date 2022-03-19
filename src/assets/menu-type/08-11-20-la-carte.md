@@ -1,13 +1,52 @@
 ---
-<<<<<<< Updated upstream:src/assets/menu-type/082420-la-carte.md
 title: La Carte
 active: true
-=======
-title: La Carte été
-active: false
 language: fr
->>>>>>> Stashed changes:src/assets/menu-type/16-10-09-la-carte-dété.md
 content:
+  - type: alacarte
+    title: A la Carte
+    item:
+      - title: Foie de veau
+        price: 19,50€
+        description: Foie de veau persillé & sa purée maison
+      - title: Poire de bœuf
+        description: Poire de boeuf poêlée (250gr) & sa poêlée d'échalotes
+        price: 18€
+        vegetarian: false
+      - title: Hamburger maison
+        price: 12,50€
+        description: Hamburger maison, frites maison et salade verte
+      - title: Saumon mariné maison
+        description: Assiette de saumon mariné maison & ses toasts grillés, salade verte
+        price: 15,50€
+      - title: Magret de canard, sauce aigre douce
+        price: 15,50€
+      - title: Ris de veau, sauce Madère
+        price: 27,00€
+      - title: Gratinée à l'oignon
+        description: ''
+        price: 12,50€
+      - title: Tartare ou César de bœuf haché au couteau
+        description: Servi avec des frites maison et salade verte
+        price: 16€
+      - title: Andouillette "Braillon", sauce moutarde
+        description:
+          La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
+          la ficelle
+        local: true
+        price: 21,50€
+      - title: Dos de saumon poêlé, sauce vierge
+        price: 16€
+      - title: Rognons de veau, façon rognonnade
+        price: 22,50€
+        local: false
+      - title: Trilogie lyonnaise
+        description: Andouillette, tablier de sapeur, boudin noir, garniture
+        price: 15,50€
+        local: true
+      - title: Côte de boeuf
+        description: Côte de boeuf ~350-400gr, os à moelle, frites maison
+        price: 23,50€
   - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
     starters:
@@ -32,8 +71,9 @@ content:
         - title: Salade de chèvre chaud au miel toasté
           vegetarian: true
         - title: Tartare de hareng, pomme de terre à l'huile
-        - title: Tomates et mozzarella
+        - title: Potage de Légumes Maison
           vegetarian: true
+          description: Légumes de saison et croûtons
     main-course:
       title: Plats
       item:
@@ -49,12 +89,15 @@ content:
         - title: Filet de lieu rôti à l'huile d'olive
         - title: Blanc de volaille, sauce forestière
         - title: Jambon à l'os, sauce Madère
-        - title: Boeuf à la provençale, pâtes
+        - title: Boeuf Bourguignon, pâtes
         - title: Assiette végétarienne
           vegetarian: true
           description: Gratin dauphinois et assortiment des légumes
         - title: Pièce de boeuf poêlée
           supplement: 2€
+        - title: Boudin noir à la crème d'oignons
+          local: true
+        - title: Cancoillotte, saucisse fumée, pommes vapeur
     desert-cheese:
       title: Desserts/Fromage
       item:
@@ -94,16 +137,22 @@ content:
           description:
             Gâteau de foie de volaille Maison, sauce financière (tomates,
             champignons, olives noires)
-        - title: Melon & Jambon cru
         - title: Salade de lentilles
           description: Lentilles, oeuf poché, lard, oignons, tomates
           local: true
+        - title: Gratinée à l'oignon
+        - title: Salade de quenelle poêlée
+          local: true
+          vegetarian: true
         - title: Entrée du Menu de M'man
     main-course:
       title: Plats
       item:
-        - title: Andouillette éclatée au vin blanc
+        - title: Trilogie lyonnaise
           local: true
+          description: Andouillette, tablier de sapeur, boudin noir, garniture
+        - title: Ris de veau, sauce Madère
+          supplement: 7,00€
         - title: Dos de saumon poêlé, sauce vierge
         - title: Magret de canard, sauce aigre douce
         - title: Quenelle & gâteau de foie de volaille, sauce Nantua
@@ -131,62 +180,4 @@ content:
           local: true
     title: Menu GourM'man
     price: 25,50€
-  - type: alacarte
-    title: A la Carte
-    item:
-      - title: Foie de veau
-        price: 19,50€
-        description: Foie de veau persillé & sa purée maison
-      - title: Poire de bœuf
-        description: Poire de boeuf poêlée (250gr) & sa poêlée d'échalotes
-        price: 18€
-        vegetarian: false
-      - title: Hamburger maison
-        price: 12,50€
-        description: Hamburger maison, frites maison et salade verte
-      - title: Saumon mariné maison
-        description: Assiette de saumon mariné maison & ses toasts grillés, salade verte
-        price: 15,50€
-      - title: Tartare de saumon
-        description: Servi avec des frites maison et salade verte
-        price: 15,50€
-      - title: Magret de canard, sauce aigre douce
-        price: 15,50€
-      - title: Dos de saumon poêlé, sauce vierge
-        price: 16€
-      - title: Tartare ou César de bœuf haché au couteau
-        description: Servi avec des frites maison et salade verte
-        price: 16€
-      - title: Rognons de veau, façon rognonnade
-        price: 22,50€
-      - title: Andouillette "Braillon", sauce moutarde
-        description:
-          La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
-          la ficelle
-        local: true
-        price: 21,50€
-  - type: alacarte
-    title: Maxi Salades Estivales
-    description: Toutes nos salades sont accompagnées de frites maison
-    item:
-      - title: La Pêcheur
-        price: 11€
-        description: Salade, tartare de hareng, toast de sardine, saumon mariné, oeuf dur
-      - title: La Primeur
-        description: Salade, assortiment de crudités, oeuf dur
-        vegetarian: true
-        price: 11€
-      - title: La Viande Rouge
-        description: Salade, Rosbif, Tomates, Mozzarella
-        price: 11€
-      - title: La Viande Blanche
-        description: Salade, blanc de volaille, foie de volaille, oeuf dur, tomates
-        price: 11€
-      - title: La Trois Viandes
-        description: Salade, Rosbif, blanc de volaille, jambon à l'os, tomates, cornichons
-        price: 11€
-      - title: Carpaccio de bœuf mariné
-        price: 11€
-      - title: 1 Maxi Salade + 1 Frite + 1 Fromage ou Dessert
-        price: 13€
 ---

@@ -1,13 +1,59 @@
 ---
-<<<<<<< Updated upstream:src/assets/menu-type/01-09-17-english-menu.md
-title: English menu
+title: English
 active: true
-=======
-title: English été
-active: false
 language: en
->>>>>>> Stashed changes:src/assets/menu-type/16-10-09-english-menu-été.md
 content:
+  - type: alacarte
+    title: A la Carte
+    item:
+      - title: Gratinée à l'oignon
+        description: Onion soup
+        price: 12,50€
+      - title: Foie de veau
+        price: 19,50€
+        description: Grilled calf liver, parsley&garlic sauce served with mashed potatoes
+      - title: Poire de bœuf
+        description:
+          Grilled thick and tender rump steak (250g) with grilled shallots
+          served with  potatoes gratin and vegetables
+        price: 18€
+        vegetarian: false
+      - title: Hamburger maison
+        price: 12,50€
+        description: Homemade Hamburger, cheese, tartare sauce, homemade fries and salad
+      - title: Saumon mariné maison
+        description: Homemade marinated raw salmon with grilled toasts
+        price: 15,50€
+      - title: Côte de boeuf
+        description: Rib steak ~350-400gr, bone marrow, homemade fries
+        price: 23,50€
+      - title: Magret de canard, sauce aigre douce
+        price: 15,50€
+        description:
+          Grilled duck breast, sweet and sour sauce served with potatoes
+          gratin and  vegetables
+      - title: Rognons de veau, façon rognonnade
+        price: 22,50€
+        description: Grilled calf kidneys in red wine and mushrooms sauce
+      - title: Dos de saumon poêlé, sauce vierge
+        price: 16€
+        description:
+          Grilled salmon filet with olive oil served with potatoes gratin and
+          vegetables
+      - title: Tartare ou César de bœuf haché au couteau
+        description: Beef tartare served with homemade fries and salad
+        price: 16€
+      - title: Andouillette "Braillon", sauce moutarde
+        description: Authentic craft calf ruffle sausage
+        local: true
+        price: 21,50€
+      - title: Ris de veau
+        description: Sweatbread with Madeira wine sauce
+        price: 27,00€
+      - title: Trilogie lyonnaise
+        description: Paned veal intestine, Chitterling pork sausage, Blood sausage
+        price: 15,50€
+        local: true
   - type: menu
     description: 1 Starter + 1 Main course + 1 Dessert/Cheese
     starters:
@@ -36,9 +82,9 @@ content:
           description: Toasts with melted goat cheese and honey, greens
         - title: Tartare de hareng, pomme de terre à l'huile
           description: Smoked herring tartar, boiled potato
-        - title: Tomates et mozzarella
+        - title: Potage de légumes maison
           vegetarian: true
-          description: Tomatoes and mozzarella salad
+          description: Homemade vegetable soup, croutons
     main-course:
       title: Plats/Main courses
       item:
@@ -72,21 +118,19 @@ content:
           description:
             Roasted ham with Madeira wine sauce served with  potatoes gratin
             and vegetables
-        - title: Boeuf à la provençale, pâtes
-<<<<<<< Updated upstream:src/assets/menu-type/01-09-17-english-menu.md
-          description: Beef stew in tomato sauce (with mushrooms and olives), served with
-            Pasta
-=======
-          description:
-            Beef stew in tomato sauce (with mushrooms and olives), served with
-            pasta
->>>>>>> Stashed changes:src/assets/menu-type/16-10-09-english-menu-été.md
+        - title: Boeuf Bourguignon, pâtes
+          description: Beef Bourguignon, served with pasta
         - title: Assiette végétarienne
           vegetarian: true
           description: Potatoes gratin and roasted vegetables
         - title: Pièce de boeuf poêlée
           supplement: 2€
-          description: Grilled beefsteak served with potatoes  gratin and vegetables
+          description: Grilled beefsteak served with potatoes gratin and vegetables
+        - title: Boudin noir à la crème d'oignons
+          description: Blood sausage, creamy onion sauce, potatoes gratin and vegetables
+          local: true
+        - title: 'Cancoillotte,saucisse fumée, pommes vapeur '
+          description: Melted Cancoillotte cheese, smoked sausage, steamed potatoes
     desert-cheese:
       title: Desserts/Cheese
       item:
@@ -128,24 +172,30 @@ content:
       item:
         - title: Saumon mariné Maison
           description: Homemade marinated raw  salmon with grilled toasts
+        - title: Oeuf en meurette
+          local: true
+          description: Poached eggs in red wine sauce
+          vegetarian: true
         - title: Gâteau de foie de volaille
           local: true
           description: Chicken liver pudding with  tomato/mushrooms/olives sauce
-        - title: Melon & Jambon cru
-          description: Melon and Ham salad
         - title: Salade de lentilles
           description: Lentils salad with poached egg and bacon
           local: true
+          vegetarian: false
+        - title: Salade de quenelle poêlée
+          description: Grilled lyonnaise dumplings, greens
+          local: true
+          vegetarian: true
         - title: Entrée du Menu de M'man
           description: Starter from "Menu de M'man"
+          vegetarian: false
     main-course:
       title: Plats
       item:
-        - title: Andouillette éclatée au vin blanc
+        - title: Trilogie lyonnaise
           local: true
-          description:
-            Chitterling pork sausage grilled with onions and  white wine served
-            with potatoes gratin and vegetables
+          description: Paned veal intestine, Chitterling pork sausage, Blood sausage
         - title: Dos de saumon poêlé, sauce vierge
           description:
             Grilled salmon filet with olive oil served with  potatoes gratin
@@ -162,6 +212,9 @@ content:
         - title: Rognons de veau, façon rognonnade
           supplement: 5,50€
           description: Grilled calf kidneys in red wine and mushrooms sauce
+        - title: Ris de veau
+          description: Sweatbread with Madeira wine sauce
+          supplement: 7,00€
     desert-cheese:
       title: Desserts/Fromage
       item:
@@ -187,93 +240,4 @@ content:
           description: 3 mini desserts with espresso
     title: Menu GourM'man
     price: 25,50€
-  - type: alacarte
-    title: A la Carte
-    item:
-      - title: Foie de veau
-        price: 19,50€
-        description: Grilled calf liver, parsley&garlic sauce served with mashed potatoes
-      - title: Poire de bœuf
-        description:
-          Grilled thick and tender rump steak (250g) with grilled shallots
-          served with  potatoes gratin and vegetables
-        price: 18€
-        vegetarian: false
-      - title: Hamburger maison
-        price: 12,50€
-        description: Homemade Hamburger, cheese, tartare sauce, homemade fries and salad
-      - title: Saumon mariné maison
-        description: Homemade marinated raw salmon with grilled toasts
-        price: 15,50€
-      - title: Tartare de saumon
-        description: Salmon tartare served with homemade fries and salad
-        price: 15,50€
-      - title: Magret de canard, sauce aigre douce
-        price: 15,50€
-        description:
-          Grilled duck breast, sweet and sour sauce served with potatoes
-          gratin and  vegetables
-      - title: Dos de saumon poêlé, sauce vierge
-        price: 16€
-        description:
-          Grilled salmon filet with olive oil served with potatoes gratin and
-          vegetables
-      - title: Tartare ou César de bœuf haché au couteau
-        description: Beef tartare served with homemade fries and salad
-        price: 16€
-      - title: Rognons de veau, façon rognonnade
-        price: 22,50€
-        description: Grilled calf kidneys in red wine and mushrooms sauce
-      - title: Andouillette "Braillon", sauce moutarde
-        description: Authentic craft calf ruffle sausage
-        local: true
-        price: 21,50€
-  - type: alacarte
-    title: Big salads
-    description: All our big salads are served with homemade fries
-    item:
-      - title: La Pêcheur
-        price: 11€
-        description:
-          Marinated raw salmon, smoked herring tartare, sardine toast, boiled
-          egg,  greens
-      - title: La Primeur
-        description: Fresh vegetables from the market, greens, boiled egg
-        vegetarian: true
-        price: 11€
-      - title: La Viande Rouge
-        description: Sliced roast beef, tomatoes, mozzarella, greens
-        price: 11€
-      - title: La Viande Blanche
-        description:
-          Roasted chicken breast (chilled), grilled paultry livers, boiled
-          egg, greens
-        price: 11€
-      - title: La Trois Viandes
-        description:
-          Sliced roast beef, grilled chicken breast (chilled), roasted ham
-          (chilled),  greens
-        price: 11€
-      - title: Carpaccio de bœuf mariné
-        price: 11€
-        description: Beef carpaccio, Parmigiano Cheese, greens
-      - description: Mixed salad with croutons, bacon and poached egg
-        title: Salade Lyonnaise
-        local: true
-        price: 11€
-      - description: Toasts with melted goat cheese and honey, greens
-        title: Salade au chèvre chaud
-        vegetarian: true
-        price: 11€
-      - vegetarian: true
-        title: Oeuf en meurette
-        description: Poached eggs in red wine sauce, toasts
-        local: true
-        price: 11€
-      - title: Tomates et mozzarella
-        description: Tomatoes, mozzarella, greens
-        vegetarian: true
-        price: 11€
-      - title: 1 Big salad + Homemade Fries + 1 Cheese or Dessert
-        price: 13€
 ---
