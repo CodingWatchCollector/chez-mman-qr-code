@@ -1,12 +1,4 @@
 :root {
-<<<<<<< Updated upstream
-  --clr-accent--400: 0, 40%, 33%;
-  --clr-accent--700: 0, 40%, 16%;
-  --clr-primary: 0, 39%, 7%;
-  --clr-bg-400: 43, 47%, 97%;
-  --clr-bg-700: 46, 87%, 97%;
-}
-=======
   --ff-sans: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
     Cantarell, Noto Sans, sans-serif;
   --ff-serif: 'Tinos', serif;
@@ -23,42 +15,11 @@
   --spacer-xs: 0.5rem;
   --spacer-xl: 2rem;
   /* --spacer-variable--xl: max(1rem, 8vw); */
->>>>>>> Stashed changes
 
   /* --min-tap-target-height: 2rem; */
 
   /* --text-max-length: 40em; */
 
-<<<<<<< Updated upstream
-body {
-  color: hsla(var(--clr-primary));
-  padding: 0;
-  font-family: 'Cabin', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
-    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  background: hsla(var(--clr-bg-700));
-  font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 1.1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-  max-width: 75rem;
-  margin: 0 auto;
-  min-height: 100vh;
-  box-shadow: 0 0 40px -20px rgba(0, 0, 0, 0.25);
-}
-
-.hide {
-  display: none;
-}
-
-h1,
-h2,
-h3 {
-  text-transform: uppercase;
-=======
   /* --transition-duration: 0ms; */
 }
 
@@ -100,7 +61,6 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
->>>>>>> Stashed changes
 }
 
 h1,
@@ -114,31 +74,13 @@ figure {
   margin: 0;
 }
 
-<<<<<<< Updated upstream
-ul {
-=======
 ul:where([class]),
 ol:where([class]) {
   list-style: none;
->>>>>>> Stashed changes
   padding: 0;
   margin: 0;
 }
 
-<<<<<<< Updated upstream
-/* toggle button  */
-button[is='toggle-button'] {
-  position: absolute;
-  background: inherit;
-  color: inherit;
-  border: none;
-  font-size: inherit;
-  width: fit-content;
-}
-
-button[is='toggle-button']::before {
-  content: attr(data-sign-active);
-=======
 input,
 button,
 textarea,
@@ -176,7 +118,6 @@ body {
 .logo {
   fill: var(--clr-main);
   background: var(--bg-clr);
->>>>>>> Stashed changes
 }
 
 /* change colors on selected tab */
@@ -185,26 +126,6 @@ button {
   background: var(--bg-clr);
 }
 
-<<<<<<< Updated upstream
-.content-group {
-  background: linear-gradient(
-    135deg,
-    hsla(var(--clr-bg-400)),
-    hsla(var(--clr-bg-700)),
-    hsla(var(--clr-bg-400))
-  );
-  border-bottom: 1px solid transparent;
-  box-shadow: 0 -4px 6px -4px hsla(var(--clr-accent--400), 0.3) inset;
-}
-
-.content-group__title {
-  position: relative;
-  padding: 1em 0;
-}
-
-.label-description-wrapper {
-  max-width: fit-content;
-=======
 button[data-state='active'] {
   color: var(--bg-clr);
   background: var(--clr-main);
@@ -250,7 +171,6 @@ h3 {
 /* GENERAL LAYOUT */
 
 .container {
->>>>>>> Stashed changes
   margin: 0 auto;
   padding: 0 1.25rem;
   padding: 0 var(--spacer);
@@ -261,58 +181,18 @@ h3 {
   margin-top: var(--flow-spacer);
 }
 
-<<<<<<< Updated upstream
-.label-description:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-.category-wrapper {
-  max-width: 50rem;
-  margin: 0 auto;
-}
-
-.category {
-  box-shadow: 0 1px 5px -1px hsla(var(--clr-accent--700), 0.2);
-  border-radius: 4px;
-  margin: 2em 0.5em;
-  padding: 1em 0.5em;
-=======
 .spacer-xl > * + * {
   --flow-spacer: var(--spacer-xl);
 }
 
 .spacer-xs > * + * {
   --flow-spacer: var(--spacer-xs);
->>>>>>> Stashed changes
 }
 
 .flex {
   display: flex;
 }
 
-<<<<<<< Updated upstream
-.category--title-wrapper {
-  position: relative;
-}
-
-.category--title {
-  margin-right: 1em;
-}
-
-.category--title-wrapper::after {
-  position: absolute;
-  bottom: -20%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  content: '';
-  width: 50%;
-  max-width: 20rem;
-  border-bottom: 1px solid hsla(var(--clr-accent--400), 0.3);
-}
-
-.category--content {
-  padding-top: 2em;
-=======
 .grid {
   display: grid;
 }
@@ -323,17 +203,12 @@ h3 {
 
 .gap-xl {
   gap: var(--spacer-xl);
->>>>>>> Stashed changes
 }
 
 .gap-xs {
   gap: var(--spacer-xs);
 }
 
-<<<<<<< Updated upstream
-.item {
-  padding: 0.5rem 0;
-=======
 /* visually hidden text inside button */
 .group-nav span {
   clip: rect(0 0 0 0);
@@ -349,7 +224,6 @@ h3 {
 
 h1 {
   padding: var(--spacer-xl) 0;
->>>>>>> Stashed changes
   margin: 0 auto;
 }
 
@@ -370,17 +244,10 @@ h1 {
   padding: var(--spacer) 0;
 }
 
-<<<<<<< Updated upstream
-.item--description {
-  font-size: 0.9em;
-  font-style: italic;
-  font-weight: 400;
-=======
 /* items */
 .items-list {
   display: grid;
   gap: var(--spacer);
->>>>>>> Stashed changes
 }
 
 .item-local,
@@ -393,19 +260,9 @@ h1 {
   height: var(--fs-400);
 }
 
-<<<<<<< Updated upstream
-.menu__submenu + .menu__submenu {
-  padding-top: 1em;
-}
-
-/* ******************** */
-/* A LA CARTE STYLES  */
-/* ******************** */
-=======
 .item {
   position: relative;
 }
->>>>>>> Stashed changes
 
 /* light dotted line between items */
 .item::after {
