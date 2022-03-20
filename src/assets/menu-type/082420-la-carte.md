@@ -1,12 +1,7 @@
 ---
-<<<<<<< Updated upstream:src/assets/menu-type/082420-la-carte.md
-title: La Carte
-active: true
-=======
 title: La Carte été
 active: false
 language: fr
->>>>>>> Stashed changes:src/assets/menu-type/16-10-09-la-carte-dété.md
 content:
   - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert

@@ -9,27 +9,11 @@ export const Menu = ({ data }) => {
   ]
 
   return (
-<<<<<<< Updated upstream
-    <div className='category--content'>
-      {subMenues.map(submenu => (
-        <div className='menu__submenu' key={`${data.title}-${submenu.title}`}>
-          <h3 className='menu__submenu--title'>{submenu.title}</h3>
-          <div className='menu__submenu--content'>
-            <ul>
-              {submenu.item.map(item => (
-                <li className='item' key={item.title}>
-                  <Item data={item} />
-                </li>
-              ))}
-            </ul>
-          </div>
-=======
     <div className='subgroup flow-spacer'>
       <div className='subgroup-head'>
         <div className='subgroup-title-wrapper'>
           <h2 className='subgroup-title'>{data.title}</h2>
           <div className='subgroup-price'>{data.price}</div>
->>>>>>> Stashed changes
         </div>
         <p className='subgroup-title-description'>{data.description}</p>
       </div>

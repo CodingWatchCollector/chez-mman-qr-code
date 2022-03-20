@@ -4,17 +4,6 @@ import { Item } from './item.js'
 export const AlaCarte = ({ data }) => {
   const itemsList = data.item || []
   return (
-<<<<<<< Updated upstream
-    <div className='category--content'>
-      <ul>
-        {itemsList.map(item => (
-          <li className=' item' key={item.title}>
-            <Item data={item} />
-          </li>
-        ))}
-      </ul>
-    </div>
-=======
     <>
       <div className='subgroup flow-spacer'>
         <div className='subgroup-head'>
@@ -35,6 +24,5 @@ export const AlaCarte = ({ data }) => {
         </div>
       </div>
     </>
->>>>>>> Stashed changes
   )
 }

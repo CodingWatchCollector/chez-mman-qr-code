@@ -5,17 +5,6 @@ import '../styles/index.css'
 import * as Tabs from '@radix-ui/react-tabs'
 import getTriggers from '../components/getTriggers.js'
 import { Group } from '../components/group.js'
-<<<<<<< Updated upstream
-import '@fontsource/cabin/500.css'
-import '@fontsource/cabin/700.css'
-import '@fontsource/cabin/400-italic.css'
-
-
-
-const IndexPage = ({ data }) => {
-  const content = data.content.nodes
-  const { title, description } = data.site.siteMetadata
-=======
 import '@fontsource/tinos/700.css'
 import '@fontsource/montserrat/400.css'
 import '@fontsource/montserrat/300.css'
@@ -33,7 +22,6 @@ const IndexPage = ({ data }) => {
       </Tabs.Content>
     )
   })
->>>>>>> Stashed changes
 
   return (
     <>
@@ -41,14 +29,6 @@ const IndexPage = ({ data }) => {
         <title>{title}</title>
         <meta name='description' content={description} />
       </Helmet>
-<<<<<<< Updated upstream
-      <main className='container'>
-        {content.map(group => {
-          return group.frontmatter.active ? (
-            <Group data={group} key={group.id} />
-          ) : null
-        })}
-=======
       <h1 className='logo' aria-label={`Chez M'man`}>
         <Logo />
       </h1>
@@ -65,7 +45,6 @@ const IndexPage = ({ data }) => {
             <div className='main-content'>{tabsContent}</div>
           </div>
         </Tabs.Root>
->>>>>>> Stashed changes
       </main>
     </>
   )
@@ -83,10 +62,6 @@ export const query = graphql`
     }
     content: allMarkdownRemark {
       nodes {
-<<<<<<< Updated upstream
-        id
-=======
->>>>>>> Stashed changes
         frontmatter {
           title
           active

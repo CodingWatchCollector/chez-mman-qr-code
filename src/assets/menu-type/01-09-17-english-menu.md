@@ -1,12 +1,7 @@
 ---
-<<<<<<< Updated upstream:src/assets/menu-type/01-09-17-english-menu.md
-title: English menu
-active: true
-=======
 title: English été
 active: false
 language: en
->>>>>>> Stashed changes:src/assets/menu-type/16-10-09-english-menu-été.md
 content:
   - type: menu
     description: 1 Starter + 1 Main course + 1 Dessert/Cheese
@@ -73,14 +68,9 @@ content:
             Roasted ham with Madeira wine sauce served with  potatoes gratin
             and vegetables
         - title: Boeuf à la provençale, pâtes
-<<<<<<< Updated upstream:src/assets/menu-type/01-09-17-english-menu.md
-          description: Beef stew in tomato sauce (with mushrooms and olives), served with
-            Pasta
-=======
           description:
             Beef stew in tomato sauce (with mushrooms and olives), served with
             pasta
->>>>>>> Stashed changes:src/assets/menu-type/16-10-09-english-menu-été.md
         - title: Assiette végétarienne
           vegetarian: true
           description: Potatoes gratin and roasted vegetables
