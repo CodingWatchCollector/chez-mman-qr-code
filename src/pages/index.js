@@ -25,9 +25,10 @@ const IndexPage = ({ data }) => {
 
   return (
     <>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: language }}>
         <title>{title}</title>
         <meta name='description' content={description} />
+        <link rel='icon' type='image/svg+xml' href={favicon} />
       </Helmet>
       <h1 className='logo' aria-label={`Chez M'man`}>
         <Logo />
@@ -36,7 +37,7 @@ const IndexPage = ({ data }) => {
         <Tabs.Root
           defaultValue={defaultActiveTab}
           activationMode='manual'
-          className='container flow-spacer'
+          className='container'
         >
           <nav className='nav-main' aria-label='main'>
             <Tabs.List>{getTriggers('title', rawContent)}</Tabs.List>
@@ -60,7 +61,9 @@ export const query = graphql`
         title
       }
     }
-    content: allMarkdownRemark {
+    content: allMarkdownRemark(
+      filter: { frontmatter: { active: { eq: true } } }
+    ) {
       nodes {
         frontmatter {
           title

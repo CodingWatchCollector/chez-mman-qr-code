@@ -14,6 +14,12 @@ const filterContentByDataType = data => {
 }
 
 export const Group = ({ data }) => {
+  // hide navigation if only 1 item
+  let hideNav = false
+  if (data.content.length === 1) {
+    hideNav = true
+  }
+
   let defaultActiveTab = ''
   const tabsContent = data.content.map(node => {
     if (!defaultActiveTab) {
@@ -29,11 +35,13 @@ export const Group = ({ data }) => {
   return (
     <Tabs.Root
       defaultValue={defaultActiveTab}
-      className='group flow-spacer'
+      className='group'
       activationMode='manual'
     >
-      <nav className='group-nav'>
-        <Tabs.List>{getTriggers('title', data.content)}</Tabs.List>
+      <nav className={hideNav ? 'hidden' : ''}>
+        <Tabs.List className='group-nav'>
+          {getTriggers('title', data.content)}
+        </Tabs.List>
       </nav>
       <div className='group-content'>{tabsContent}</div>
     </Tabs.Root>

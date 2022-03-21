@@ -5,8 +5,8 @@ export const AlaCarte = ({ data }) => {
   const itemsList = data.item || []
   return (
     <>
-      <div className='subgroup flow-spacer'>
-        <div className='subgroup-head'>
+      <div className='subgroup alacarte separator-700'>
+        <div className='subgroup-head separator-700'>
           <div className='subgroup-title-wrapper'>
             <h2 className='subgroup-title'>{data.title}</h2>
             <div className='subgroup-price'>{data.price}</div>
@@ -16,7 +16,7 @@ export const AlaCarte = ({ data }) => {
         <div className='subgroup-content'>
           <ul className='items-list'>
             {itemsList.map(item => (
-              <li className='item' key={item.title}>
+              <li className='item separator-400' key={item.title}>
                 <Item data={item} />
               </li>
             ))}
