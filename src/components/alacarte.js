@@ -6,10 +6,17 @@ export const AlaCarte = ({ data }) => {
   return (
     <>
       <div className='subgroup alacarte separator-700'>
-        <div className='subgroup-head separator-700'>
-          <div className='subgroup-title-wrapper'>
+        <div className='subgroup-head flow-spacer separator-700'>
+          <div
+            className={
+              'subgroup-title-wrapper ' +
+              (data.price ? ' price-separator-700' : '')
+            }
+          >
             <h2 className='subgroup-title'>{data.title}</h2>
-            <div className='subgroup-price'>{data.price}</div>
+            {data.price ? (
+              <div className='subgroup-price'>{data.price}</div>
+            ) : null}
           </div>
           <p className='subgroup-title-description'>{data.description}</p>
         </div>
