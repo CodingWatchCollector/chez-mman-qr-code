@@ -1,6 +1,7 @@
 ---
 title: La Carte
 active: true
+language: fr
 content:
   - type: alacarte
     title: A la Carte
@@ -23,13 +24,14 @@ content:
       - title: Ris de veau, sauce Madère
         price: 27,00€
       - title: Gratinée à l'oignon
-        description: ""
+        description: ''
         price: 12,50€
       - title: Tartare ou César de bœuf haché au couteau
         description: Servi avec des frites maison et salade verte
         price: 16€
       - title: Andouillette "Braillon", sauce moutarde
-        description: La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
+        description:
+          La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
           la ficelle
         local: true
         price: 21,50€
@@ -116,7 +118,7 @@ content:
           local: true
           vegetarian: true
     title: Menu de M'man
-    price: 16€
+    price: 16,00€
   - type: alacarte
     title: Menu P'tit Gone
     description: (<10 ans)
@@ -132,7 +134,8 @@ content:
           description: Tranche de saumon mariné Maison & son toast grillé
         - title: Gâteau de foie de volaille
           local: true
-          description: Gâteau de foie de volaille Maison, sauce financière (tomates,
+          description:
+            Gâteau de foie de volaille Maison, sauce financière (tomates,
             champignons, olives noires)
         - title: Salade de lentilles
           description: Lentilles, oeuf poché, lard, oignons, tomates

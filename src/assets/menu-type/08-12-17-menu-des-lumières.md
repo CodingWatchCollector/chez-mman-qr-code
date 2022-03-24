@@ -1,22 +1,23 @@
 ---
 title: Menu des Lumières
 active: false
+language: en
 content:
   - type: menu
     description: 1 Starter + 1 Main course + 1 Cheese/Dessert
     starters:
       title: Starters (10,50€ without menu)
       item:
-        - title: "Salade lyonnaise "
+        - title: 'Salade lyonnaise '
           description: Mixed salad with croutons, bacon and poached egg
           local: true
-        - title: "Salade de chèvre chaud toasté "
+        - title: 'Salade de chèvre chaud toasté '
           description: Toasts with melted goat cheese, greens
           vegetarian: true
         - title: Saladier lyonnais
           description: Veal trotter, beef muzzle, lentils,cervelas
           local: true
-        - title: "Potage de légumes maison "
+        - title: 'Potage de légumes maison'
           description: Homemade vegetable soup, croutons
           local: false
           vegetarian: true
@@ -29,10 +30,11 @@ content:
         - title: Gratin de quenelle de brochet, épinards
           description: Fish dumplings and spinach gratin
           local: true
-        - title: "Boeuf Bourguignon, potatoes gratin "
+        - title: 'Boeuf Bourguignon, potatoes gratin '
           description: Beef Bourguignon, served with potatoes gratin
         - title: Andouillette de Lyon, sauce moutarde
-          description: Chitterling pork sausage with mustard sauce served with potatoes
+          description:
+            Chitterling pork sausage with mustard sauce served with potatoes
             gratin
           local: true
         - title: Saucisson chaud au macon

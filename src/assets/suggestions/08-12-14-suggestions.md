@@ -1,13 +1,15 @@
 ---
-title: Suggestions
+title: Suggestions Lumieres
 active: false
+language: en
 content:
   - type: alacarte
     title: À la carte
     item:
       - title: Poire de boeuf (250g)et sa poêlée d'échalotes, gratin dauphinois
         price: 20,50€
-        description: Grilled thick and tender rump steak (250g) with grilled shallots
+        description:
+          Grilled thick and tender rump steak (250g) with grilled shallots
           served with potatoes gratin
       - title: Côte de boeuf (350g) et os à moelle
         price: 25,00€
@@ -23,7 +25,7 @@ content:
         price: 15,00€
         description: Roasted bone marrow
         local: true
-      - title: "Foie de veau persillé "
+      - title: 'Foie de veau persillé '
         description: Grilled calf liver, parsley&garlic sauce served with potatoes gratin
         price: 20,50€
         local: true

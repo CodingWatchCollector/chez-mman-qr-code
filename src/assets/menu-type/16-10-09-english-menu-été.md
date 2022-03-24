@@ -1,6 +1,7 @@
 ---
-title: English menu été
+title: English été
 active: false
+language: en
 content:
   - type: menu
     description: 1 Starter + 1 Main course + 1 Dessert/Cheese
@@ -38,10 +39,12 @@ content:
       item:
         - title: Saucisson chaud pistaché, cervelle de canut, pommes vapeurs
           local: true
-          description: Steamed sausage with pistachios, cottage  cheese with herbs and
+          description:
+            Steamed sausage with pistachios, cottage  cheese with herbs and
             garlic, boiled potatoes
         - title: Tablier de sapeur, sauce tartare
-          description: Paned and fried veal intestine served with potatoes gratin
+          description:
+            Paned and fried veal intestine served with potatoes gratin
             and  vegetables
           local: true
         - title: Quenelle de brochet, sauce Nantua, riz
@@ -49,19 +52,24 @@ content:
           description: Pike fish dumpling in lobster bisque sauce  with white rice
         - title: Andouillette de Lyon, sauce moutarde
           local: true
-          description: Chitterling pork sausage with mustard sauce served  with potatoes
+          description:
+            Chitterling pork sausage with mustard sauce served  with potatoes
             gratin and vegetables
         - title: Filet de lieu rôti à l'huile d'olive
-          description: Roasted saithe(Pollock) filet with olive oil served with  potatoes
+          description:
+            Roasted saithe(Pollock) filet with olive oil served with  potatoes
             gratin and vegetables
         - title: Blanc de volaille, sauce forestière
-          description: Grilled chicken breast, creamy mushroom sauce  served with potatoes
+          description:
+            Grilled chicken breast, creamy mushroom sauce  served with potatoes
             gratin and vegetables
         - title: Jambon à l'os, sauce Madère
-          description: Roasted ham with Madeira wine sauce served with  potatoes gratin
+          description:
+            Roasted ham with Madeira wine sauce served with  potatoes gratin
             and vegetables
         - title: Boeuf à la provençale, pâtes
-          description: Beef stew in tomato sauce (with mushrooms and olives), served with
+          description:
+            Beef stew in tomato sauce (with mushrooms and olives), served with
             pasta
         - title: Assiette végétarienne
           vegetarian: true
@@ -93,15 +101,16 @@ content:
           vegetarian: true
           description: 3 mini desserts with espresso
     title: Menu de M'man
-    price: 16€
+    price: 16,00€
   - type: alacarte
     title: Kids menu
     description: (<10 ans)
     price: 12,50€
     item:
-      - title: 1 Main course from "Menu de M'man" + 1 Dessert of your choice + 1 Sirop
+      - title:
+          1 Main course from "Menu de M'man" + 1 Dessert of your choice + 1 Sirop
           with water
-        description: ""
+        description: ''
   - type: menu
     description: 1 Starter + 1 Main course + 1 Dessert/Cheese
     starters:
@@ -124,17 +133,21 @@ content:
       item:
         - title: Andouillette éclatée au vin blanc
           local: true
-          description: Chitterling pork sausage grilled with onions and  white wine served
+          description:
+            Chitterling pork sausage grilled with onions and  white wine served
             with potatoes gratin and vegetables
         - title: Dos de saumon poêlé, sauce vierge
-          description: Grilled salmon filet with olive oil served with  potatoes gratin
+          description:
+            Grilled salmon filet with olive oil served with  potatoes gratin
             and vegetables
         - title: Magret de canard, sauce aigre douce
-          description: Grilled duck breast, sweet and sour sauce  served with potatoes
+          description:
+            Grilled duck breast, sweet and sour sauce  served with potatoes
             gratin and vegetables
         - title: Quenelle & gâteau de foie de volaille, sauce Nantua
           local: true
-          description: Pike fish dumpling in a lobster bisque sauce  with chicken liver
+          description:
+            Pike fish dumpling in a lobster bisque sauce  with chicken liver
             pudding
         - title: Rognons de veau, façon rognonnade
           supplement: 5,50€
@@ -171,7 +184,8 @@ content:
         price: 19,50€
         description: Grilled calf liver, parsley&garlic sauce served with mashed potatoes
       - title: Poire de bœuf
-        description: Grilled thick and tender rump steak (250g) with grilled shallots
+        description:
+          Grilled thick and tender rump steak (250g) with grilled shallots
           served with  potatoes gratin and vegetables
         price: 18€
         vegetarian: false
@@ -186,11 +200,13 @@ content:
         price: 15,50€
       - title: Magret de canard, sauce aigre douce
         price: 15,50€
-        description: Grilled duck breast, sweet and sour sauce served with potatoes
+        description:
+          Grilled duck breast, sweet and sour sauce served with potatoes
           gratin and  vegetables
       - title: Dos de saumon poêlé, sauce vierge
         price: 16€
-        description: Grilled salmon filet with olive oil served with potatoes gratin and
+        description:
+          Grilled salmon filet with olive oil served with potatoes gratin and
           vegetables
       - title: Tartare ou César de bœuf haché au couteau
         description: Beef tartare served with homemade fries and salad
@@ -208,7 +224,8 @@ content:
     item:
       - title: La Pêcheur
         price: 11€
-        description: Marinated raw salmon, smoked herring tartare, sardine toast, boiled
+        description:
+          Marinated raw salmon, smoked herring tartare, sardine toast, boiled
           egg,  greens
       - title: La Primeur
         description: Fresh vegetables from the market, greens, boiled egg
@@ -218,11 +235,13 @@ content:
         description: Sliced roast beef, tomatoes, mozzarella, greens
         price: 11€
       - title: La Viande Blanche
-        description: Roasted chicken breast (chilled), grilled paultry livers, boiled
+        description:
+          Roasted chicken breast (chilled), grilled paultry livers, boiled
           egg, greens
         price: 11€
       - title: La Trois Viandes
-        description: Sliced roast beef, grilled chicken breast (chilled), roasted ham
+        description:
+          Sliced roast beef, grilled chicken breast (chilled), roasted ham
           (chilled),  greens
         price: 11€
       - title: Carpaccio de bœuf mariné

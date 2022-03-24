@@ -1,6 +1,7 @@
 ---
-title: La Carte d'été
+title: La Carte été
 active: false
+language: fr
 content:
   - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
@@ -69,7 +70,7 @@ content:
           local: true
           vegetarian: true
     title: Menu de M'man
-    price: 16€
+    price: 16,00€
   - type: alacarte
     title: Menu P'tit Gone
     description: (<10 ans)
@@ -85,7 +86,8 @@ content:
           description: Tranche de saumon mariné Maison & son toast grillé
         - title: Gâteau de foie de volaille
           local: true
-          description: Gâteau de foie de volaille Maison, sauce financière (tomates,
+          description:
+            Gâteau de foie de volaille Maison, sauce financière (tomates,
             champignons, olives noires)
         - title: Melon & Jambon cru
         - title: Salade de lentilles
@@ -153,7 +155,8 @@ content:
       - title: Rognons de veau, façon rognonnade
         price: 22,50€
       - title: Andouillette "Braillon", sauce moutarde
-        description: La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
+        description:
+          La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
           la ficelle
         local: true
         price: 21,50€

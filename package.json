@@ -14,9 +14,12 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/cabin": "^4.5.0",
+    "@fontsource/montserrat": "^4.5.5",
+    "@fontsource/tinos": "^4.5.3",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
-    "@fontsource/cabin": "^4.5.0",
+    "@radix-ui/react-tabs": "^0.1.5",
     "gatsby": "^3.10.2",
     "gatsby-plugin-image": "^1.10.1",
     "gatsby-plugin-manifest": "^3.12.0",

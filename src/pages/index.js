@@ -2,70 +2,24 @@ import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import '../styles/index.css'
+import * as Tabs from '@radix-ui/react-tabs'
+import getTriggers from '../components/getTriggers.js'
 import { Group } from '../components/group.js'
-import IconLeaf from '../icons/icon_leaf.js'
-import IconLocal from '../icons/icon_local.js'
-import collapseAllButtonsFromSet from '../components/collapse_buttons.js'
-import '@fontsource/cabin/500.css'
-import '@fontsource/cabin/700.css'
-import '@fontsource/cabin/400-italic.css'
+import '@fontsource/tinos/700.css'
+import '@fontsource/montserrat/400.css'
+import '@fontsource/montserrat/300.css'
 import favicon from '../images/icon.svg'
-
-const labelDescription = (
-  <div className='content--expanded__labels flow-content'>
-    <p className='label-description'>
-      <IconLocal />
-      <span>locale / local</span>
-    </p>
-    <p className='label-description'>
-      <IconLeaf />
-      <span>végétarien / vegetarian</span>
-    </p>
-  </div>
-)
+import Logo from '../images/logo.js'
 
 const IndexPage = ({ data }) => {
-  const content = data.content.nodes
+  const rawContent = data.content.nodes.map(node => node.frontmatter)
   const { title, description, language } = data.site.siteMetadata
-  const [expandedContent, setExpandedContent] = useState(null)
-  const [expandedCategory, setExpandedCategory] = useState('Suggestions')
-  const handleActiveCategoryChange = (categoryContent, categoryId) => {
-    setExpandedCategory(categoryId)
-    setExpandedContent(categoryContent)
-    collapseAllButtonsFromSet('nav')
-  }
-
-  // lunch hours functionality
-  // const now = new Date()
-  // console.log(now.getHours(), now.getMinutes())
-
-  // const isLunchHours = date => {
-  //   const day = date.getDay()
-  //   const hours = date.getHours()
-  //   const minutes = date.getMinutes()
-
-  //   if (day > 0 && day < 6) {
-  //     if (hours > 8 && hours < 13) {
-  //     }
-  //   }
-  // }
-  const headerContent = content.map(group => {
-    let active = false
-    if (
-      expandedCategory === group.frontmatter.title ||
-      expandedCategory === group.id
-    ) {
-      active = true
-    }
-
+  const defaultActiveTab = 'Suggestions'
+  const tabsContent = rawContent.map(group => {
     return (
-      <Group
-        data={group}
-        key={group.id}
-        expandContent={handleActiveCategoryChange}
-        expanded={active}
-        categoryByDefault={expandedCategory}
-      />
+      <Tabs.Content value={group.title} key={group.title}>
+        <Group data={group} />
+      </Tabs.Content>
     )
   })
 
@@ -76,12 +30,22 @@ const IndexPage = ({ data }) => {
         <meta name='description' content={description} />
         <link rel='icon' type='image/svg+xml' href={favicon} />
       </Helmet>
-      <main className='container flow-content flow-content--large'>
-        <header className='main--nav flow-content'>{headerContent}</header>
-        <div className='main--expanded flow-content flow-content--large'>
-          {expandedContent ? labelDescription : ''}
-          {expandedContent}
-        </div>
+      <h1 className='logo' aria-label={`Chez M'man`}>
+        <Logo />
+      </h1>
+      <main className='container'>
+        <Tabs.Root
+          defaultValue={defaultActiveTab}
+          activationMode='manual'
+          className='frame'
+        >
+          <nav aria-label='main'>
+            <Tabs.List className='nav-main'>
+              {getTriggers('title', rawContent)}
+            </Tabs.List>
+          </nav>
+          <div className='main-content'>{tabsContent}</div>
+        </Tabs.Root>
       </main>
     </>
   )
@@ -102,11 +66,10 @@ export const query = graphql`
       filter: { frontmatter: { active: { eq: true } } }
     ) {
       nodes {
-        id
-        fileAbsolutePath
         frontmatter {
           title
           active
+          language
           content {
             title
             price

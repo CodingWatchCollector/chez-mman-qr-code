@@ -5,28 +5,28 @@ import IconLeaf from '../icons/icon_leaf.js'
 export const Item = ({ data }) => {
   return (
     <>
-      <div>
-        <div className='item--main-info'>
-          <span className='item--title'>
+      <div className='item-content'>
+        <p className='item-head'>
+          <span className='item-title'>
             {data.title}
             {data.supplement ? (
-              <span className='item--supplement'>{`(+${data.supplement})`}</span>
+              <span className='item-supplement'>{`(+${data.supplement})`}</span>
             ) : null}
           </span>
           {data.local ? (
-            <span className='item--local'>
+            <span className='item-local'>
               <IconLocal />
             </span>
           ) : null}
           {data.vegetarian ? (
-            <span className='item--vegetarian'>
+            <span className='item-vegetarian'>
               <IconLeaf />
             </span>
           ) : null}
-        </div>
-        <div className='item--description'>{data.description}</div>
+        </p>
+        <p className='item-description'>{data.description}</p>
       </div>
-      <div className='item--price'>{data.price}</div>
+      <p className='item-price'>{data.price}</p>
     </>
   )
 }
