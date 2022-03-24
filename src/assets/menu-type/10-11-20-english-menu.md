@@ -59,7 +59,7 @@ content:
         - title: Salade lyonnaise
           description: Mixed salad with croutons, bacon and poached egg
           local: true
-          price: 9,50€
+          price: ""
         - title: Oeuf en meurette
           description: Poached eggs in red wine sauce
           local: true
