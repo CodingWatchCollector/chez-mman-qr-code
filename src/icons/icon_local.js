@@ -9,7 +9,7 @@ const Icon = ({ startColor, endColor, className }) => {
       width='24'
       height='24'
       viewBox='0 0 24 24'
-      fill={fill || 'url(#local-gradient)' || 'hsl(240, 40%, 33%)'}
+      fill={'url(#local-gradient)' || 'hsl(240, 40%, 33%)'}
     >
       <linearGradient id='local-gradient' x2='1' y2='1'>
         <stop offset='0%' stopColor='hsl(0, 40%, 30%)' />
