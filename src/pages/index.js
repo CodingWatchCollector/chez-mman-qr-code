@@ -88,6 +88,7 @@ export const query = graphql`
               item {
                 description
                 title
+                price
                 supplement
                 vegetarian
                 local
@@ -99,6 +100,7 @@ export const query = graphql`
                 description
                 supplement
                 title
+                price
                 local
                 vegetarian
               }
@@ -107,6 +109,7 @@ export const query = graphql`
               item {
                 title
                 supplement
+                price
                 description
                 local
                 vegetarian
