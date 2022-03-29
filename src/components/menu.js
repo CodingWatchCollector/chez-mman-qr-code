@@ -10,7 +10,7 @@ export const Menu = ({ data }) => {
 
   return (
     <div className='subgroup menu'>
-      <div className='subgroup-head flow-spacer separator-700'>
+      <div className='subgroup-head'>
         <div
           className={
             'subgroup-title-wrapper ' +
@@ -22,7 +22,11 @@ export const Menu = ({ data }) => {
             <div className='subgroup-price'>{data.price}</div>
           ) : null}
         </div>
-        <p className='subgroup-title-description'>{data.description}</p>
+        {data.description ? (
+          <p className='subgroup-title-description separator-700'>
+            {data.description}
+          </p>
+        ) : null}
       </div>
       <div className='subgroup-content'>
         {subMenues.map(submenu => (

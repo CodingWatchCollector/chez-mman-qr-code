@@ -33,12 +33,8 @@ const IndexPage = ({ data }) => {
       <h1 className='logo' aria-label={`Chez M'man`}>
         <Logo />
       </h1>
-      <main className='container'>
-        <Tabs.Root
-          defaultValue={defaultActiveTab}
-          activationMode='manual'
-          className='frame'
-        >
+      <main className='frame'>
+        <Tabs.Root defaultValue={defaultActiveTab} activationMode='manual'>
           <nav aria-label='main'>
             <Tabs.List className='nav-main'>
               {getTriggers('title', rawContent)}

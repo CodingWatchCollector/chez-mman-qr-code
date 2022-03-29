@@ -39,10 +39,10 @@ export const Group = ({ data }) => {
   return (
     <Tabs.Root
       defaultValue={defaultActiveTab}
-      className='group'
+      className='group flow-spacer spacer-xl'
       activationMode='manual'
     >
-      <nav className={hideNav ? 'hidden' : ''}>
+      <nav hidden={hideNav}>
         <Tabs.List className='group-nav'>
           {getTriggers('title', data.content)}
         </Tabs.List>
