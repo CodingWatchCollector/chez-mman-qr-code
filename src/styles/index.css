@@ -1,3 +1,22 @@
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes scaleOut {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
 :root {
   --ff-sans: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
     Cantarell, Noto Sans, sans-serif;
@@ -37,7 +56,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
-    --transition-duration: 350ms;
+    --transition-duration: 500ms;
   }
 }
 
@@ -335,7 +354,7 @@ h1 {
   box-shadow: var(--box-shadow-400);
 }
 
-.group-nav button[data-state='active']::after {
+.group-nav button::after {
   content: '';
   position: absolute;
   top: 2px;
@@ -344,6 +363,14 @@ h1 {
   right: 2px;
   background-color: var(--clr-main);
   border-radius: 1px;
+}
+
+.group-nav button[data-state='active']::after {
+  animation: scaleIn var(--transition-duration) ease forwards;
+}
+
+.group-nav button[data-state='inactive']::after {
+  animation: scaleOut var(--transition-duration) ease forwards;
 }
 
 /* subgroup + submenu */
