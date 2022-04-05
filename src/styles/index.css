@@ -135,7 +135,7 @@ body {
 .logo {
   /* fill: var(--clr-main); */
   fill: black;
-  background-image: linear-gradient(to bottom, blue 0% 50%, yellow 50% 100%);
+  background-image: linear-gradient(to bottom, #0057b8 0% 50%, #ffd700 50% 100%);
 }
 
 /* change colors on selected tab */
