@@ -133,7 +133,8 @@ body {
 }
 
 .logo {
-  fill: var(--clr-main);
+  /* fill: var(--clr-main); */
+  fill: black;
   background-image: linear-gradient(to bottom, yellow 0% 50%, blue 50% 100%);
 }
 
