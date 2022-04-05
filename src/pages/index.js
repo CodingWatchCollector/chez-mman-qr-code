@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import '../styles/index.css'
@@ -30,7 +30,7 @@ const IndexPage = ({ data }) => {
         <meta name='description' content={description} />
         <link rel='icon' type='image/svg+xml' href={favicon} />
       </Helmet>
-      <h1 className='logo' aria-label={`Chez M'man`}>
+      <h1 className='logo-wrapper' aria-label={`Chez M'man`}>
         <Logo />
       </h1>
       <main className='frame'>
