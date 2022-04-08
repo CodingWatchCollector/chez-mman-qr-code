@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Icon = ({ startColor, endColor, className }) => {
+const Icon = ({ className }) => {
   return (
     <svg
-      aria-label='végétarien'
+      aria-hidden='true'
       className={className}
       xmlns='http://www.w3.org/2000/svg'
       width='24'

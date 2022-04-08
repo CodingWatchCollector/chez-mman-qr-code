@@ -38,11 +38,12 @@
 
   --border-400: 1px solid var(--clr-main);
   --border-700: 2px solid var(--clr-main);
+
   --border-radius: 4px;
 
-  --box-shadow-900: 8px 6px 0 -1px var(--clr-main);
-  --box-shadow-700: 4px 4px 0 0 var(--clr-main);
   --box-shadow-400: 4px 4px 0 -2px var(--clr-main);
+  --box-shadow-700: 4px 4px 0 0 var(--clr-main);
+  --box-shadow-900: 8px 6px 0 -1px var(--clr-main);
 
   --transition-duration: 0ms;
 
@@ -153,6 +154,11 @@ body {
 button {
   color: var(--clr-main);
   background: transparent;
+  cursor: pointer;
+  border: var(--border-400);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-400);
+  padding: var(--padding--button);
 }
 
 h1 {
@@ -217,8 +223,7 @@ h3 {
   display: none;
 }
 
-/* visually hidden text inside button */
-.group-nav span {
+.visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
@@ -227,6 +232,7 @@ h3 {
   white-space: nowrap;
   width: 1px;
 }
+
 
 /* light dotted line between items */
 .separator-400 {
@@ -289,13 +295,9 @@ h1 {
 }
 
 .nav-main button {
-  cursor: pointer;
   position: relative;
   flex: 1 0 auto;
-  border: var(--border-400);
-  border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-700);
-  padding: var(--padding--button);
 }
 
 .nav-main button[data-state='active'] {
@@ -337,14 +339,21 @@ h1 {
   margin: 0 auto;
 }
 
+/* visually hidden text inside button */
+.group-nav span {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .group-nav button {
-  cursor: pointer;
-  border: var(--border-700);
-  border-radius: var(--border-radius);
-  color: var(--clr-main);
-  padding: var(--padding--button);
   position: relative;
-  box-shadow: var(--box-shadow-400);
+  cursor: pointer;
+  border: var(--border-700); 
 }
 
 .group-nav button::after {

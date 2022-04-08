@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
   const defaultActiveTab = 'Suggestions'
   const tabsContent = rawContent.map(group => {
     return (
-      <Tabs.Content value={group.title} key={group.title}>
+      <Tabs.Content value={group.title} key={group.title} lang={group.language}>
         <Group data={group} />
       </Tabs.Content>
     )

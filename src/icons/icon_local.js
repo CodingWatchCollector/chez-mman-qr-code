@@ -3,7 +3,7 @@ import React from 'react'
 const Icon = ({ startColor, endColor, className }) => {
   return (
     <svg
-      aria-label='local'
+      aria-hidden='true'
       className={className}
       xmlns='http://www.w3.org/2000/svg'
       width='24'

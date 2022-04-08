@@ -10,16 +10,21 @@ export const Item = ({ data }) => {
           <span className='item-title'>
             {data.title}
             {data.supplement ? (
-              <span className='item-supplement'>{`(+${data.supplement})`}</span>
+              <span
+                className='item-supplement'
+                aria-label={'supplement ' + data.supplement}
+              >{`(+${data.supplement})`}</span>
             ) : null}
           </span>
           {data.local ? (
             <span className='item-local'>
+              <span className='visually-hidden'>locale</span>
               <IconLocal />
             </span>
           ) : null}
           {data.vegetarian ? (
             <span className='item-vegetarian'>
+              <span className='visually-hidden'>vegetarien</span>
               <IconLeaf />
             </span>
           ) : null}
