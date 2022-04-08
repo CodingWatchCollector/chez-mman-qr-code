@@ -16,6 +16,12 @@ module.exports = {
         name: 'markdown-pages'
       }
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/icons/icon.svg`
+      }
+    },
     'gatsby-plugin-image',
     'gatsby-plugin-mdx',
     `gatsby-plugin-sharp`,

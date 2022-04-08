@@ -26,7 +26,7 @@ export const Item = ({ data }) => {
         </p>
         <p className='item-description'>{data.description}</p>
       </div>
-      <p className='item-price'>{data.price}</p>
+      {data.price ? <p className='item-price'>{data.price}</p> : null}
     </>
   )
 }

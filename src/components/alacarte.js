@@ -27,7 +27,10 @@ export const AlaCarte = ({ data }) => {
         <div className='subgroup-content'>
           <ul className='items-list'>
             {itemsList.map(item => (
-              <li className='item separator-400' key={item.title}>
+              <li
+                className='item flow-spacer spacer-xs separator-400'
+                key={item.title}
+              >
                 <Item data={item} />
               </li>
             ))}

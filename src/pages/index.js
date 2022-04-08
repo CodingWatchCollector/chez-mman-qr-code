@@ -8,7 +8,6 @@ import { Group } from '../components/group.js'
 import '@fontsource/tinos/700.css'
 import '@fontsource/montserrat/400.css'
 import '@fontsource/montserrat/300.css'
-import favicon from '../images/icon.svg'
 import Logo from '../images/logo.js'
 
 const IndexPage = ({ data }) => {
@@ -28,7 +27,6 @@ const IndexPage = ({ data }) => {
       <Helmet htmlAttributes={{ lang: language }}>
         <title>{title}</title>
         <meta name='description' content={description} />
-        <link rel='icon' type='image/svg+xml' href={favicon} />
       </Helmet>
       <h1 className='logo-wrapper' aria-label={`Chez M'man`}>
         <Logo />

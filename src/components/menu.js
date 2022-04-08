@@ -38,7 +38,10 @@ export const Menu = ({ data }) => {
             <div className='submenu-content'>
               <ul className='items-list'>
                 {submenu.item.map(item => (
-                  <li className='item separator-400' key={item.title}>
+                  <li
+                    className='item flow-spacer spacer-xs separator-400'
+                    key={item.title}
+                  >
                     <Item data={item} />
                   </li>
                 ))}

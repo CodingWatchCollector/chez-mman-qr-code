@@ -24,6 +24,7 @@ export const Group = ({ data }) => {
     hideNav = true
   }
 
+  // choose first tab as an active one
   let defaultActiveTab = ''
   const tabsContent = data.content.map(node => {
     if (!defaultActiveTab) {
