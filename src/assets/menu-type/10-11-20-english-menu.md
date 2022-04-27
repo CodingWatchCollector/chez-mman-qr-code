@@ -20,8 +20,8 @@ content:
       - title: Hamburger maison
         price: 12,50€
         description: Homemade Hamburger, cheese, tartare sauce, homemade fries and salad
-      - title: Saumon mariné maison
-        description: Homemade marinated raw salmon with grilled toasts
+      - title: Cabillaud mariné maison
+        description: Homemade marinated raw cod fish with grilled toasts
         price: 15,50€
       - title: Côte de boeuf
         description: Rib steak ~350-400gr, bone marrow, homemade fries
@@ -33,10 +33,10 @@ content:
       - title: Rognons de veau, façon rognonnade
         price: 22,50€
         description: Grilled calf kidneys in red wine and mushrooms sauce
-      - title: Dos de saumon poêlé, sauce vierge
+      - title: Dos de cabillaud poêlé, sauce vierge
         price: 16€
-        description: Grilled salmon filet with olive oil served with potatoes gratin and
-          vegetables
+        description: Grilled cod fish filet with olive oil served with potatoes gratin
+          and vegetables
       - title: Tartare ou César de bœuf haché au couteau
         description: Beef tartare served with homemade fries and salad
         price: 16€
@@ -161,8 +161,8 @@ content:
     starters:
       title: Entrées/Starters
       item:
-        - title: Saumon mariné Maison
-          description: Homemade marinated raw  salmon with grilled toasts
+        - title: Cabillaud mariné Maison
+          description: Homemade marinated raw cod fish with grilled toasts
         - title: Oeuf en meurette
           local: true
           description: Poached eggs in red wine sauce
@@ -187,8 +187,8 @@ content:
         - title: Trilogie lyonnaise
           local: true
           description: Paned veal intestine, Chitterling pork sausage, Blood sausage
-        - title: Dos de saumon poêlé, sauce vierge
-          description: Grilled salmon filet with olive oil served with  potatoes gratin
+        - title: Dos de cabillaud poêlé, sauce vierge
+          description: Grilled cod fish filet with olive oil served with  potatoes gratin
             and vegetables
         - title: Magret de canard, sauce aigre douce
           description: Grilled duck breast, sweet and sour sauce  served with potatoes
