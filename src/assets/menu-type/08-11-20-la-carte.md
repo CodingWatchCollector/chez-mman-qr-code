@@ -16,26 +16,26 @@ content:
       - title: Hamburger maison
         price: 12,50€
         description: Hamburger maison, frites maison et salade verte
-      - title: Saumon mariné maison
-        description: Assiette de saumon mariné maison & ses toasts grillés, salade verte
+      - title: Cabillaud mariné maison
+        description: Assiette de cabillaud mariné maison & ses toasts grillés, salade verte
         price: 15,50€
       - title: Magret de canard, sauce aigre douce
         price: 15,50€
       - title: Ris de veau, sauce Madère
         price: 27,00€
       - title: Gratinée à l'oignon
-        description: ''
+        description: ""
         price: 12,50€
-      - title: Tartare ou César de bœuf haché au couteau
-        description: Servi avec des frites maison et salade verte
-        price: 16€
       - title: Andouillette "Braillon", sauce moutarde
-        description:
-          La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
+        description: La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
           la ficelle
         local: true
         price: 21,50€
-      - title: Dos de saumon poêlé, sauce vierge
+      - title: Tartare ou César de bœuf haché au couteau
+        description: Servi avec des frites maison et salade verte
+        price: 16€
+        local: false
+      - title: Dos de cabillaud poêlé, sauce vierge
         price: 16€
       - title: Rognons de veau, façon rognonnade
         price: 22,50€
@@ -130,12 +130,11 @@ content:
     starters:
       title: Entrées
       item:
-        - title: Saumon mariné Maison
-          description: Tranche de saumon mariné Maison & son toast grillé
+        - title: Cabillaud mariné Maison
+          description: Tranche de cabillaud mariné Maison & son toast grillé
         - title: Gâteau de foie de volaille
           local: true
-          description:
-            Gâteau de foie de volaille Maison, sauce financière (tomates,
+          description: Gâteau de foie de volaille Maison, sauce financière (tomates,
             champignons, olives noires)
         - title: Salade de lentilles
           description: Lentilles, oeuf poché, lard, oignons, tomates
@@ -145,6 +144,7 @@ content:
           local: true
           vegetarian: true
         - title: Entrée du Menu de M'man
+          description: (salade Lyonnaise, oeuf en meurette, terrine maison, potage...)
     main-course:
       title: Plats
       item:
@@ -153,7 +153,7 @@ content:
           description: Andouillette, tablier de sapeur, boudin noir, garniture
         - title: Ris de veau, sauce Madère
           supplement: 7,00€
-        - title: Dos de saumon poêlé, sauce vierge
+        - title: Dos de cabillaud poêlé, sauce vierge
         - title: Magret de canard, sauce aigre douce
         - title: Quenelle & gâteau de foie de volaille, sauce Nantua
           local: true
