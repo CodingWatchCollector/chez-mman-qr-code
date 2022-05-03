@@ -28,8 +28,9 @@ const IndexPage = ({ data }) => {
         <title>{title}</title>
         <meta name='description' content={description} />
       </Helmet>
-      <h1 className='logo-wrapper' aria-label={`Chez M'man`}>
+      <h1 className='logo-wrapper'>
         <Logo />
+        <span className='visually-hidden'>Chez M'man</span>
       </h1>
       <main className='frame'>
         <Tabs.Root defaultValue={defaultActiveTab} activationMode='manual'>
