@@ -6,6 +6,9 @@ content:
   - type: alacarte
     title: A la Carte
     item:
+      - title: Tataki de thon
+        description: Grilled tuna steak seasoned with wasabi, sesame seeds and sesame oil
+        price: 22,50€
       - title: Gratinée à l'oignon
         description: Onion soup
         price: 12,50€
