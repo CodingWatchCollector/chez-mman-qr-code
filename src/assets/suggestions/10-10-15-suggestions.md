@@ -12,8 +12,6 @@ content:
       - title: Tataki de thon
         price: 22,50€
         local: false
-      - title: Thon poêlé
-        price: 22,50€
       - title: Os à moelle
         price: 12,00€
 ---
