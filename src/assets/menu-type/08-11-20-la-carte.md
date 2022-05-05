@@ -16,9 +16,6 @@ content:
       - title: Hamburger maison
         price: 12,50€
         description: Hamburger maison, frites maison et salade verte
-      - title: Cabillaud mariné maison
-        description: Assiette de cabillaud mariné maison & ses toasts grillés, salade verte
-        price: 15,50€
       - title: Magret de canard, sauce aigre douce
         price: 15,50€
       - title: Ris de veau, sauce Madère
@@ -35,8 +32,6 @@ content:
         description: Servi avec des frites maison et salade verte
         price: 16€
         local: false
-      - title: Dos de cabillaud poêlé, sauce vierge
-        price: 16€
       - title: Rognons de veau, façon rognonnade
         price: 22,50€
         local: false
@@ -47,6 +42,67 @@ content:
       - title: Côte de boeuf
         description: Côte de boeuf ~350-400gr, os à moelle, frites maison
         price: 23,50€
+      - title: Tataki de thon
+        price: 22,50€
+  - type: alacarte
+    title: Menu P'tit Gone
+    description: (<10 ans)
+    price: 12,50€
+    item:
+      - title: 1 Plat de Menu de M'man + 1 Dessert au choix + 1 Sirop à l'eau
+  - type: menu
+    description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
+    starters:
+      title: Entrées
+      item:
+        - title: Gâteau de foie de volaille
+          local: true
+          description: Gâteau de foie de volaille Maison, sauce financière (tomates,
+            champignons, olives noires)
+        - title: Salade de lentilles
+          description: Lentilles, oeuf poché, lard, oignons, tomates
+          local: true
+        - title: Gratinée à l'oignon
+        - title: Salade de quenelle poêlée
+          local: true
+          vegetarian: true
+        - title: Entrée du Menu de M'man
+          description: (salade Lyonnaise, oeuf en meurette, terrine maison, potage...)
+    main-course:
+      title: Plats
+      item:
+        - title: Trilogie lyonnaise
+          local: true
+          description: Andouillette, tablier de sapeur, boudin noir, garniture
+        - title: Ris de veau, sauce Madère
+          supplement: 7,00€
+        - title: Thon poêlé, sauce vierge
+        - title: Magret de canard, sauce aigre douce
+        - title: Quenelle & gâteau de foie de volaille, sauce Nantua
+          local: true
+        - title: Rognons de veau, façon rognonnade
+          supplement: 5,50€
+    desert-cheese:
+      title: Desserts/Fromage
+      item:
+        - title: 1/2 St Marcellin de la Mère Richard
+          local: true
+          vegetarian: true
+        - title: Cervelle de canut
+          description: Faisselle, l'huile d'olive, ail, échalotes, ciboulette
+          local: true
+          vegetarian: true
+        - title: Fromage blanc, nature/à la crème
+          vegetarian: true
+        - title: Dessert Maison au choix
+          local: true
+          vegetarian: true
+        - title: Café gourmand
+          supplement: 4€
+          vegetarian: true
+          local: true
+    title: Menu GourM'man
+    price: 25,50€
   - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
     starters:
@@ -87,6 +143,7 @@ content:
         - title: Andouillette de Lyon, sauce moutarde
           local: true
         - title: Filet de lieu rôti à l'huile d'olive
+          local: false
         - title: Blanc de volaille, sauce forestière
         - title: Jambon à l'os, sauce Madère
         - title: Boeuf Bourguignon, pâtes
@@ -119,65 +176,4 @@ content:
           vegetarian: true
     title: Menu de M'man
     price: 16,00€
-  - type: alacarte
-    title: Menu P'tit Gone
-    description: (<10 ans)
-    price: 12,50€
-    item:
-      - title: 1 Plat de Menu de M'man + 1 Dessert au choix + 1 Sirop à l'eau
-  - type: menu
-    description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
-    starters:
-      title: Entrées
-      item:
-        - title: Cabillaud mariné Maison
-          description: Tranche de cabillaud mariné Maison & son toast grillé
-        - title: Gâteau de foie de volaille
-          local: true
-          description: Gâteau de foie de volaille Maison, sauce financière (tomates,
-            champignons, olives noires)
-        - title: Salade de lentilles
-          description: Lentilles, oeuf poché, lard, oignons, tomates
-          local: true
-        - title: Gratinée à l'oignon
-        - title: Salade de quenelle poêlée
-          local: true
-          vegetarian: true
-        - title: Entrée du Menu de M'man
-          description: (salade Lyonnaise, oeuf en meurette, terrine maison, potage...)
-    main-course:
-      title: Plats
-      item:
-        - title: Trilogie lyonnaise
-          local: true
-          description: Andouillette, tablier de sapeur, boudin noir, garniture
-        - title: Ris de veau, sauce Madère
-          supplement: 7,00€
-        - title: Dos de cabillaud poêlé, sauce vierge
-        - title: Magret de canard, sauce aigre douce
-        - title: Quenelle & gâteau de foie de volaille, sauce Nantua
-          local: true
-        - title: Rognons de veau, façon rognonnade
-          supplement: 5,50€
-    desert-cheese:
-      title: Desserts/Fromage
-      item:
-        - title: 1/2 St Marcellin de la Mère Richard
-          local: true
-          vegetarian: true
-        - title: Cervelle de canut
-          description: Faisselle, l'huile d'olive, ail, échalotes, ciboulette
-          local: true
-          vegetarian: true
-        - title: Fromage blanc, nature/à la crème
-          vegetarian: true
-        - title: Dessert Maison au choix
-          local: true
-          vegetarian: true
-        - title: Café gourmand
-          supplement: 4€
-          vegetarian: true
-          local: true
-    title: Menu GourM'man
-    price: 25,50€
 ---
