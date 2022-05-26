@@ -176,4 +176,24 @@ content:
           vegetarian: true
     title: Menu de M'man
     price: 16,00€
+  - type: alacarte
+    title: Maxi Salades
+    description: 1 Maxi salade + 1 assiette de frites maison + 1 fromage ou dessert
+    price: 14,00€
+    item:
+      - title: Salade Italienne
+        price: 12,50€
+        description: Pâtes, jambon cru, parmesan, oeufs durs, olives noires, tomates + 1
+          assiette de frites maison
+      - title: Salade viande rouge
+        description: Salade, rosbif, mozzarella, tomates + 1 assiette de frites maison
+        price: 12,50€
+      - title: Salade poulet et chorizo
+        description: Poulet, chorizo, poivrons, salade, oignons frits, oeufs durs + 1
+          assiette de frites maison
+        price: 12,50€
+      - title: Salade paysanne
+        description: Salade, chèvre chaud, lard, pommes caramélisées, croûtons, oeufs
+          durs, tomates + 1 assiette de frites maison
+        price: 12,50€
 ---
