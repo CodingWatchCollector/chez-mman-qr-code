@@ -196,4 +196,17 @@ content:
         description: Salade, chèvre chaud, lard, pommes caramélisées, croûtons, oeufs
           durs, tomates + 1 assiette de frites maison
         price: 12,50€
+  - type: alacarte
+    title: Poke bowls
+    description: 1 Poke bowl + 1 fromage ou dessert
+    price: 15,00€
+    item:
+      - title: Poke bowl pêcheur
+        price: 13,50€
+        description: Poisson et rillettes du moment, tartare de hareng, tomates, citron, riz
+      - title: Poke bowl crudités
+        description: Quinoa, haricots rouges, radis, tomates, concombre, carottes, oeufs
+          durs, salade
+        price: 13,50€
+        vegetarian: true
 ---
