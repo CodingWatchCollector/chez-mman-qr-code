@@ -9,39 +9,38 @@ content:
       - title: Foie de veau
         price: 19,50€
         description: Foie de veau persillé & sa purée maison
+      - title: Steak de thon poêlé à l'huile d'olive
+        price: 20,00€
       - title: Poire de bœuf
         description: Poire de boeuf poêlée (250gr) & sa poêlée d'échalotes
-        price: 18€
+        price: 18,50€
         vegetarian: false
       - title: Hamburger maison
         price: 12,50€
         description: Hamburger maison, frites maison et salade verte
-      - title: Magret de canard, sauce aigre douce
-        price: 15,50€
-      - title: Ris de veau, sauce Madère
-        price: 27,00€
-      - title: Gratinée à l'oignon
-        description: ""
-        price: 12,50€
+      - title: Escalope de veau à la crème
+        price: 19,00€
       - title: Andouillette "Braillon", sauce moutarde
         description: La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
           la ficelle
         local: true
-        price: 21,50€
+        price: 22,00€
       - title: Tartare ou César de bœuf haché au couteau
         description: Servi avec des frites maison et salade verte
         price: 16€
         local: false
-      - title: Rognons de veau, façon rognonnade
+      - title: Tartare de thon, frites maison
+        price: 20,00€
+      - title: Rognons de veau, sauce au vin rouge
         price: 22,50€
         local: false
       - title: Trilogie lyonnaise
         description: Andouillette, tablier de sapeur, boudin noir, garniture
-        price: 15,50€
+        price: 16,00€
         local: true
       - title: Côte de boeuf
-        description: Côte de boeuf ~350-400gr, os à moelle, frites maison
-        price: 23,50€
+        description: Côte de boeuf ~350-400gr, frites maison
+        price: 24,00€
       - title: Tataki de thon
         price: 22,50€
   - type: alacarte
@@ -55,32 +54,31 @@ content:
     starters:
       title: Entrées
       item:
-        - title: Gâteau de foie de volaille
+        - title: Oeufs en meurette
           local: true
-          description: Gâteau de foie de volaille Maison, sauce financière (tomates,
-            champignons, olives noires)
+          description: Oeufs pochés au sauce au vin rouge, échalotes et champignons
         - title: Salade de lentilles
           description: Lentilles, oeuf poché, lard, oignons, tomates
           local: true
-        - title: Gratinée à l'oignon
-        - title: Salade de quenelle poêlée
-          local: true
-          vegetarian: true
+        - title: Terrine de M'man maison
+        - title: Tartare de thon
+          local: false
+          vegetarian: false
         - title: Entrée du Menu de M'man
-          description: (salade Lyonnaise, oeuf en meurette, terrine maison, potage...)
+          description: (salade lyonnaise, taboulé aux légumes, gaspacho,..)
+        - title: Melon et jambon cru
     main-course:
       title: Plats
       item:
         - title: Trilogie lyonnaise
           local: true
           description: Andouillette, tablier de sapeur, boudin noir, garniture
-        - title: Ris de veau, sauce Madère
-          supplement: 7,00€
-        - title: Thon poêlé, sauce vierge
-        - title: Magret de canard, sauce aigre douce
-        - title: Quenelle & gâteau de foie de volaille, sauce Nantua
-          local: true
-        - title: Rognons de veau, façon rognonnade
+        - title: Poire de boeuf à l'échalote
+          supplement: ""
+        - title: Steak de thon poêlé, sauce vierge
+        - title: Escalope de veau à la crème
+          supplement: 2,50€
+        - title: Rognons de veau, sauce au vin rouge
           supplement: 5,50€
     desert-cheese:
       title: Desserts/Fromage
@@ -102,7 +100,7 @@ content:
           vegetarian: true
           local: true
     title: Menu GourM'man
-    price: 25,50€
+    price: 26,00€
   - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
     starters:
