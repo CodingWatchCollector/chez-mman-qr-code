@@ -9,65 +9,63 @@ content:
       - title: Tataki de thon
         description: Grilled tuna steak seasoned with wasabi, sesame seeds and sesame oil
         price: 22,50€
-      - title: Gratinée à l'oignon
-        description: Onion soup
-        price: 12,50€
+      - title: Escalope de veau à la crème
+        description: Veal cutlet, creamy sauce, potatoes gratin and vegetables
+        price: 19,00€
       - title: Foie de veau
         price: 19,50€
         description: Grilled calf liver, parsley&garlic sauce served with mashed potatoes
       - title: Poire de bœuf
         description: Grilled thick and tender rump steak (250g) with grilled shallots
           served with  potatoes gratin and vegetables
-        price: 18€
+        price: 18,50€
         vegetarian: false
       - title: Hamburger maison
         price: 12,50€
         description: Homemade Hamburger, cheese, tartare sauce, homemade fries and salad
       - title: Côte de boeuf
-        description: Rib steak ~350-400gr, bone marrow, homemade fries
-        price: 23,50€
-      - title: Magret de canard, sauce aigre douce
-        price: 15,50€
-        description: Grilled duck breast, sweet and sour sauce served with potatoes
-          gratin and  vegetables
-      - title: Rognons de veau, façon rognonnade
+        description: Rib steak ~350-400gr, homemade fries
+        price: 24,00€
+      - title: Tartare de thon
+        price: 20,00€
+        description: Tuna tartare, homemade fries and salad
+      - title: Rognons de veau, sauce au vin rouge
         price: 22,50€
         description: Grilled calf kidneys in red wine and mushrooms sauce
-      - title: Tartare ou César de bœuf haché au couteau
+      - title: Tartare ou César de bœuf coupé au couteau
         description: Beef tartare served with homemade fries and salad
         price: 16€
       - title: Andouillette "Braillon", sauce moutarde
         description: Authentic craft calf ruffle sausage
         local: true
-        price: 21,50€
-      - title: Ris de veau
-        description: Sweatbread with Madeira wine sauce
-        price: 27,00€
+        price: 22,00€
+      - title: Steak de thon poêlé
+        description: Grilled tuna steak, potatoes gratin and vegetables
+        price: 22,00€
       - title: Trilogie lyonnaise
         description: Paned veal intestine, Chitterling pork sausage, Blood sausage
-        price: 15,50€
+        price: 16,00€
         local: true
   - type: menu
     description: 1 Starter + 1 Main course + 1 Dessert/Cheese
     starters:
-      title: Entrées/Starters
+      title: Entrées/Starters (9,50€ without menu)
       item:
         - title: Salade lyonnaise
           description: Mixed salad with croutons, bacon and poached egg
           local: true
           price: ""
-        - title: Oeuf en meurette
-          description: Poached eggs in red wine sauce
-          local: true
+        - title: Tomates mozzarella
+          description: Tomatoes, mozzarella, salad
+          local: false
           vegetarian: true
-        - title: Terrine de chez M'man Maison & son toast grillé
-          description: Homemade pork and chicken pate with toasted bread
         - title: L'assiette de M'man
-          description: Steamed sausage and chicken liver pudding gratinated
+          description: Steamed sausage browned in the oven
           local: true
-        - title: Salade des foies de volaille
-          local: true
-          description: Paultry livers cooked with vinegar and onions, greens
+        - title: Taboulé aux légumes
+          local: false
+          description: Tabbouleh with bell pepper, tomatoes and parsley
+          vegetarian: true
         - title: Saladier lyonnais
           description: Veal trotter, beef muzzle, lentils,cervelas
           local: true
@@ -76,11 +74,11 @@ content:
           description: Toasts with melted goat cheese and honey, greens
         - title: Tartare de hareng, pomme de terre à l'huile
           description: Smoked herring tartar, boiled potato
-        - title: Potage de légumes maison
+        - title: Gaspacho maison
           vegetarian: true
-          description: Homemade vegetable soup, croutons
+          description: Homemade tomato gaspacho
     main-course:
-      title: Plats/Main courses
+      title: Plats/Main courses (11,50€ without menu)
       item:
         - title: Saucisson chaud pistaché, cervelle de canut, pommes vapeurs
           local: true
@@ -97,9 +95,9 @@ content:
           local: true
           description: Chitterling pork sausage with mustard sauce served  with potatoes
             gratin and vegetables
-        - title: Filet de lieu rôti à l'huile d'olive
-          description: Roasted saithe(Pollock) filet with olive oil served with  potatoes
-            gratin and vegetables
+        - title: Poisson du moment rôti à l'huile d'olive
+          description: Roasted fish filet with olive oil served with  potatoes gratin and
+            vegetables
         - title: Blanc de volaille, sauce forestière
           description: Grilled chicken breast, creamy mushroom sauce  served with potatoes
             gratin and vegetables
