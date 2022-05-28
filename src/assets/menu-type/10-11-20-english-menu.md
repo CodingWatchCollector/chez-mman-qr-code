@@ -215,4 +215,24 @@ content:
           description: 3 mini desserts with espresso
     title: Menu GourM'man
     price: 25,50€
+  - type: alacarte
+    title: Big salades
+    description: 1 Big  + 1 portion of homemade fries + 1 cheese or desert
+    price: 14,00€
+    item:
+      - title: Italienne (Italian)
+        description: Pasta, parmesan, raw ham, hard-boiled egg, tomatoes, olives + 1
+          portion of homemade fries
+        price: 12,50€
+      - title: Viande rouge (red meat)
+        description: Rosbif, mozzarella, tomatoes, salad + 1 portion of homemade fries
+        price: 12,50€
+      - title: Paysanne (peasant)
+        description: Salad, bacon, hard-boiled egg, toast with melted goat cheese,
+          caramelized apples, croutons, tomatoes + 1 portion of homemade fries
+        price: 12,50€
+      - title: Poulet et chorizo (chicken and chorizo)
+        description: Chicken breast, chorizo, salad, fried onions, hard-boiled eggs + 1
+          portion of homemade fries
+        price: 12,50€
 ---
