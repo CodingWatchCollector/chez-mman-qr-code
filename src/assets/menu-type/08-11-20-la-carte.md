@@ -64,9 +64,9 @@ content:
         - title: Tartare de thon
           local: false
           vegetarian: false
+        - title: Melon et jambon cru
         - title: Entrée du Menu de M'man
           description: (salade lyonnaise, taboulé aux légumes, gaspacho,..)
-        - title: Melon et jambon cru
     main-course:
       title: Plats
       item:
@@ -104,7 +104,7 @@ content:
   - type: menu
     description: 1 Entrée + 1 Plat + 1 Fromage ou Dessert
     starters:
-      title: Entrées
+      title: Entrées (9,50€ hors menu)
       item:
         - title: Salade lyonnaise
           description: Salade verte, oeuf poché, tranche de lard, croûtons
@@ -129,7 +129,7 @@ content:
           vegetarian: true
           description: Légumes de saison et croûtons
     main-course:
-      title: Plats
+      title: Plats (11,50€ hors menu)
       item:
         - title: Saucisson chaud pistaché, cervelle de canut, pommes vapeurs
           local: true
@@ -154,7 +154,7 @@ content:
           local: true
         - title: Cancoillotte, saucisse fumée, pommes vapeur
     desert-cheese:
-      title: Desserts/Fromage
+      title: Desserts/Fromage (5€ hors menu)
       item:
         - title: 1/2 St Marcellin de la Mère Richard
           local: true
