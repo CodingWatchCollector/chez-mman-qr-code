@@ -76,7 +76,7 @@ content:
           description: Smoked herring tartar, boiled potato
         - title: Gaspacho maison
           vegetarian: true
-          description: Homemade tomato gaspacho
+          description: Tomatoes, bell peppers and cucumbers
     main-course:
       title: Plats/Main courses (11,50€ without menu)
       item:
@@ -101,24 +101,19 @@ content:
         - title: Blanc de volaille, sauce forestière
           description: Grilled chicken breast, creamy mushroom sauce  served with potatoes
             gratin and vegetables
-        - title: Jambon à l'os, sauce Madère
-          description: Roasted ham with Madeira wine sauce served with  potatoes gratin
-            and vegetables
-        - title: Boeuf Bourguignon, pâtes
-          description: Beef Bourguignon, served with pasta
         - title: Assiette végétarienne
           vegetarian: true
           description: Potatoes gratin and roasted vegetables
         - title: Pièce de boeuf poêlée
           supplement: 2€
           description: Grilled beefsteak served with potatoes gratin and vegetables
-        - title: Boudin noir à la crème d'oignons
-          description: Blood sausage, creamy onion sauce, potatoes gratin and vegetables
+        - title: Boudin noir aux pommes
+          description: Blood sausage with apples, potatoes gratin and vegetables
           local: true
-        - title: "Cancoillotte,saucisse fumée, pommes vapeur "
-          description: Melted Cancoillotte cheese, smoked sausage, steamed potatoes
+        - title: Boeuf à la provençale avec des pâtes
+          description: Beef stew in tomato sauce with carrots and olives, pasta
     desert-cheese:
-      title: Desserts/Cheese
+      title: Desserts/Cheese (5€ without menu)
       item:
         - title: 1/2 St Marcellin de la Mère Richard
           local: true
