@@ -25,7 +25,7 @@ content:
           la ficelle
         local: true
         price: 22,00€
-      - title: Tartare ou César de bœuf haché au couteau
+      - title: Tartare ou César de bœuf coupé au couteau
         description: Servi avec des frites maison et salade verte
         price: 16€
         local: false
@@ -109,25 +109,24 @@ content:
         - title: Salade lyonnaise
           description: Salade verte, oeuf poché, tranche de lard, croûtons
           local: true
-        - title: Oeuf en meurette
-          description: Oeuf poché, sauce au vin rouge, échalotes et champignons
-          local: true
+        - title: Gaspacho Maison
           vegetarian: true
-        - title: Terrine de chez M'man Maison & son toast grillé
+          description: Tomates, concombre, poivrons
         - title: L'assiette de M'man
-          description: Tranches de saucisson & gâteau de foie, gratinés au four
-          local: true
-        - title: Salade des foies de volaille
+          description: Tranches de saucisson gratinées au four
           local: true
         - title: Saladier lyonnais
           description: Pied de veau, museau de boeuf, lentilles et cervelas
           local: true
+        - title: Taboulé aux légumes
+          description: Tomates, poivrons, concombre, menthe, persil
+          vegetarian: true
         - title: Salade de chèvre chaud au miel toasté
           vegetarian: true
         - title: Tartare de hareng, pomme de terre à l'huile
-        - title: Potage de Légumes Maison
+          vegetarian: false
+        - title: Tomates et mozzarella
           vegetarian: true
-          description: Légumes de saison et croûtons
     main-course:
       title: Plats (11,50€ hors menu)
       item:
@@ -140,19 +139,18 @@ content:
           local: true
         - title: Andouillette de Lyon, sauce moutarde
           local: true
-        - title: Filet de lieu rôti à l'huile d'olive
+        - title: Filet de poisson rôti à l'huile d'olive
           local: false
         - title: Blanc de volaille, sauce forestière
-        - title: Jambon à l'os, sauce Madère
-        - title: Boeuf Bourguignon, pâtes
+        - title: Boeuf à la provençale, pâtes
+          description: Sauce tomate, carottes, olives noires, herbes de Provence
         - title: Assiette végétarienne
           vegetarian: true
           description: Gratin dauphinois et assortiment des légumes
         - title: Pièce de boeuf poêlée
           supplement: 2€
-        - title: Boudin noir à la crème d'oignons
+        - title: Boudin noir aux pommes
           local: true
-        - title: Cancoillotte, saucisse fumée, pommes vapeur
     desert-cheese:
       title: Desserts/Fromage (5€ hors menu)
       item:
