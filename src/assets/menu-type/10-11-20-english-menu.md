@@ -216,7 +216,7 @@ content:
     title: Menu GourM'man
     price: 25,50€
   - type: alacarte
-    title: Big salades
+    title: Big salads
     description: 1 Big  + 1 portion of homemade fries + 1 cheese or desert
     price: 14,00€
     item:
