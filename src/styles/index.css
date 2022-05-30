@@ -18,14 +18,15 @@
   --padding--button: 0.5rem 1.25rem;
 
   --border-400: 1px solid var(--clr-main);
+  /* --border-400: 1px solid hsl(271, 95%, 26%); */
   --border-700: 2px solid var(--clr-main);
+  /* --border-700: 2px solid hsl(271, 95%, 26%, 0.3); */
 
   --border-radius: 4px;
 
   --shadow-clr: var(--clr-main);
-  --shadow-blur: 0;
-  --box-shadow-400: 4px 4px var(--shadow-blur) 1px var(--shadow-clr);
-  --box-shadow-900: 6px 6px var(--shadow-blur) 0px var(--shadow-clr);
+  --box-shadow-400: 4px 4px 0 1px var(--shadow-clr);
+  --box-shadow-900: 6px 6px 0 0px var(--shadow-clr);
 
   --transition-duration: 0ms;
 
@@ -39,16 +40,18 @@
 
   --separator-700--vertical--light-scheme: url("data:image/svg+xml,%3csvg width='4px' height='10px' xmlns='http://www.w3.org/2000/svg'%3e%3cline x1='2' x2='2'  y1='5' y2='10' fill='none' stroke='#333333' stroke-width='3' stroke-dasharray='0, 10' stroke-linecap='round'/%3e%3c/svg%3e");
   --separator-700--vertical--dark-scheme: url("data:image/svg+xml,%3csvg width='4px' height='10px' xmlns='http://www.w3.org/2000/svg'%3e%3cline x1='2' x2='2'  y1='5' y2='10' fill='none' stroke='#f9f8f7' stroke-width='3' stroke-dasharray='0, 10' stroke-linecap='round'/%3e%3c/svg%3e");
-  
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-clr: hsl(0, 0%, 20%);
+    --bg-clr: hsl(0, 0%, 10%);
     --clr-main: hsl(30, 14%, 97%);
 
-  --shadow-clr: hsl(271, 95%, 26%, .7);
-  --shadow-blur: 4px;
+    --shadow-clr: hsl(271, 95%, 26%);
+
+    --box-shadow-400: 0 0 0.125rem 0.125rem var(--shadow-clr),
+      inset 0 0 0.125rem 0.125rem var(--shadow-clr);
+    --box-shadow-900: var(--box-shadow-400);
   }
 }
 
@@ -129,7 +132,6 @@ body {
   color: var(--clr-main);
   background-color: var(--bg-clr);
 }
-
 
 /* change colors on selected tab */
 button {
@@ -213,7 +215,6 @@ h3 {
   width: 1px;
 }
 
-
 /* light dotted line between items */
 .separator-400 {
   position: relative;
@@ -271,8 +272,12 @@ h3 {
   max-width: 15rem;
   margin: 0 auto;
   fill: var(--clr-main);
-  padding: .5rem 1.5rem;
-  background-image: linear-gradient(to bottom, #0057b8 0% 50%, #ffd700 50% 100%);
+  padding: 0.5rem 1.5rem;
+  background-image: linear-gradient(
+    to bottom,
+    #0057b8 0% 50%,
+    #ffd700 50% 100%
+  );
 }
 
 /* main nav  */
@@ -330,7 +335,7 @@ h3 {
 .group-nav button {
   position: relative;
   cursor: pointer;
-  border: var(--border-700); 
+  border: var(--border-700);
   background-color: transparent;
 }
 
