@@ -8,8 +8,8 @@
   --fs-700: 1.25rem;
   --fs-900: 1.5rem;
 
-  --clr-main: hsl(0, 0, 20);
-  --bg-clr: hsl(30, 14, 97);
+  --clr-main: hsl(0, 0%, 20%);
+  --bg-clr: hsl(30, 14%, 97%);
 
   --spacer: 1.25rem;
   --spacer-xs: 0.5rem;
@@ -44,8 +44,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-clr: hsl(0, 0, 20);
-    --clr-main: hsl(30, 14, 97);
+    --bg-clr: hsl(0, 0%, 20%);
+    --clr-main: hsl(30, 14%, 97%);
 
   --shadow-clr: hsl(271, 95%, 26%, .7);
   --shadow-blur: 4px;
