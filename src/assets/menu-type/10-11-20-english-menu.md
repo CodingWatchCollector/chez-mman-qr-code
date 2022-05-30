@@ -235,4 +235,17 @@ content:
         description: Chicken breast, chorizo, salad, fried onions, hard-boiled eggs + 1
           portion of homemade fries
         price: 12,50€
+  - type: alacarte
+    title: Poke bowls
+    description: 1 Poke bowl + 1 cheese or desert
+    price: 15,00€
+    item:
+      - vegetarian: true
+        title: Poke bowl crudités (raw vegetables)
+        description: Quinoa, red beans, radish, tomatoes, cucumbers, carrots,
+          hard-boiled eggs, salad
+        price: 13,50€
+      - title: Poke bowl pêcheur (fisherman's)
+        description: Fish of the day, fish rillettes, herring tartare, tomatoes, lemon, rice
+        price: 13,50€
 ---
