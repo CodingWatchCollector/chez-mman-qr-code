@@ -154,17 +154,19 @@ content:
           local: true
           description: Poached eggs in red wine sauce
           vegetarian: true
-        - title: Gâteau de foie de volaille
-          local: true
-          description: Chicken liver pudding with  tomato/mushrooms/olives sauce
+        - title: Terrine de M'man maison
+          local: false
+          description: Homemade pork and chicken pâté
         - title: Salade de lentilles
           description: Lentils salad with poached egg and bacon
           local: true
           vegetarian: false
-        - title: Salade de quenelle poêlée
-          description: Grilled lyonnaise dumplings, greens
-          local: true
-          vegetarian: true
+        - title: Tartare de thon
+          description: Tuna tartare
+          local: false
+          vegetarian: false
+        - title: Melon et jambon cru
+          description: Melon and raw ham
         - title: Entrée du Menu de M'man
           description: Starter from "Menu de M'man"
           vegetarian: false
@@ -177,19 +179,16 @@ content:
         - title: Thon poêlé, sauce vierge
           description: Grilled tuna steak with olive oil served with  potatoes gratin and
             vegetables
-        - title: Magret de canard, sauce aigre douce
-          description: Grilled duck breast, sweet and sour sauce  served with potatoes
-            gratin and vegetables
-        - title: Quenelle & gâteau de foie de volaille, sauce Nantua
-          local: true
-          description: Pike fish dumpling in a lobster bisque sauce  with chicken liver
-            pudding
+        - title: Escalope de veau à la crème
+          description: Veal cutlet, creamy sauce served with potatoes gratin and vegetables
+          supplement: 2,50€
+        - title: Poire de boeuf à l'échalote
+          local: false
+          description: Grilled thick and tender rump steak (250g) with grilled shallots
+            served with  potatoes gratin and vegetables
         - title: Rognons de veau, façon rognonnade
           supplement: 5,50€
           description: Grilled calf kidneys in red wine and mushrooms sauce
-        - title: Ris de veau
-          description: Sweatbread with Madeira wine sauce
-          supplement: 7,00€
     desert-cheese:
       title: Desserts/Fromage
       item:
@@ -214,7 +213,7 @@ content:
           local: true
           description: 3 mini desserts with espresso
     title: Menu GourM'man
-    price: 25,50€
+    price: 26,00€
   - type: alacarte
     title: Big salads
     description: 1 Big  + 1 portion of homemade fries + 1 cheese or desert
