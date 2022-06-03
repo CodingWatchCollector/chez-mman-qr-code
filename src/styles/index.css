@@ -25,21 +25,10 @@
   --border-radius: 4px;
 
   --shadow-clr: var(--clr-main);
-  --box-shadow-400: 4px 4px 0 1px var(--shadow-clr);
-  --box-shadow-900: 6px 6px 0 0px var(--shadow-clr);
+  --box-shadow-400: 0.25rem 0.25rem 0 1px var(--shadow-clr);
+  --box-shadow-900: 0.3rem 0.3rem 0 0 var(--shadow-clr);
 
   --transition-duration: 0ms;
-
-  /* background-image for dotted line */
-  /* color is hardcoded in stroke param: BLACK for light scheme and WHITE for dark scheme */
-  --separator-400--light-scheme: url("data:image/svg+xml,%3csvg width='12px' height='4px' xmlns='http://www.w3.org/2000/svg'%3e%3cline x1='4' x2='8'  y1='1' y2='1' fill='none' stroke='#333333' stroke-width='2' stroke-dasharray='0, 8' stroke-linecap='round'/%3e%3c/svg%3e");
-  --separator-400--dark-scheme: url("data:image/svg+xml,%3csvg width='12px' height='4px' xmlns='http://www.w3.org/2000/svg'%3e%3cline x1='4' x2='8'  y1='1' y2='1' fill='none' stroke='#f9f8f7' stroke-width='2' stroke-dasharray='0, 8' stroke-linecap='round'/%3e%3c/svg%3e");
-
-  --separator-700--light-scheme: url("data:image/svg+xml,%3csvg width='20px' height='4px' xmlns='http://www.w3.org/2000/svg'%3e%3cline x1='2' x2='10'  y1='2' y2='2' fill='none' stroke='#333333' stroke-width='3' stroke-dasharray='0, 10' stroke-linecap='round'/%3e%3c/svg%3e");
-  --separator-700--dark-scheme: url("data:image/svg+xml,%3csvg width='20px' height='4px' xmlns='http://www.w3.org/2000/svg'%3e%3cline x1='2' x2='10'  y1='2' y2='2' fill='none' stroke='#f9f8f7' stroke-width='3' stroke-dasharray='0, 10' stroke-linecap='round'/%3e%3c/svg%3e");
-
-  --separator-700--vertical--light-scheme: url("data:image/svg+xml,%3csvg width='4px' height='10px' xmlns='http://www.w3.org/2000/svg'%3e%3cline x1='2' x2='2'  y1='5' y2='10' fill='none' stroke='#333333' stroke-width='3' stroke-dasharray='0, 10' stroke-linecap='round'/%3e%3c/svg%3e");
-  --separator-700--vertical--dark-scheme: url("data:image/svg+xml,%3csvg width='4px' height='10px' xmlns='http://www.w3.org/2000/svg'%3e%3cline x1='2' x2='2'  y1='5' y2='10' fill='none' stroke='#f9f8f7' stroke-width='3' stroke-dasharray='0, 10' stroke-linecap='round'/%3e%3c/svg%3e");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -168,7 +157,6 @@ h2 {
 h3 {
   font-weight: 400;
   font-size: var(--fs-700);
-  text-transform: capitalize;
   text-align: center;
   line-height: 1;
 }
@@ -224,11 +212,11 @@ h3 {
   position: absolute;
   left: 0;
   bottom: -3px;
-  height: 3px;
+  height: 2px;
   width: 12rem;
   width: min(50%, 12rem);
-  background-repeat: space;
-  background-image: var(--separator-400--light-scheme);
+  background-repeat: repeat;
+  background-image: url(../icons/dots-small--light-scheme.svg);
 }
 
 .separator-400:last-child::after {
@@ -248,16 +236,16 @@ h3 {
   width: min(80%, 20rem);
   height: 4px;
   transform: translateX(-50%);
-  background-image: var(--separator-700--light-scheme);
-  background-repeat: space;
+  background-image: url(../icons/dots-big--light-scheme.svg);
+  background-repeat: repeat;
 }
 
 @media (prefers-color-scheme: dark) {
   .separator-400::after {
-    background-image: var(--separator-400--dark-scheme);
+    background-image: url(../icons/dots-small--dark-scheme.svg);
   }
   .separator-700::after {
-    background-image: var(--separator-700--dark-scheme);
+    background-image: url(../icons/dots-big--dark-scheme.svg);
   }
 }
 
@@ -275,8 +263,8 @@ h3 {
   padding: 0.5rem 1.5rem;
   background-image: linear-gradient(
     to bottom,
-    #0057b8 0% 50%,
-    #ffd700 50% 100%
+    hsla(212, 70%, 36%) 0% 50%,
+    hsl(51, 70%, 50%) 50% 100%
   );
 }
 
@@ -396,23 +384,24 @@ h3 {
 
 .price-separator-700 {
   position: relative;
-  --separator-position: calc(7ch);
+  --separator-position: 7ch;
 }
 
 .price-separator-700::after {
   content: '';
   position: absolute;
-  top: 0;
+  top: 50%;
   right: var(--separator-position);
   width: 4px;
   height: 100%;
-  background-image: var(--separator-700--vertical--light-scheme);
-  background-repeat: space;
+  transform: translateY(-50%);
+  background-image: url(../icons/dots-big--light-scheme.svg);
+  background-repeat: repeat;
 }
 
 @media (prefers-color-scheme: dark) {
   .price-separator-700::after {
-    background-image: var(--separator-700--vertical--dark-scheme);
+    background-image: url(../icons/dots-big--dark-scheme.svg);
   }
 }
 
