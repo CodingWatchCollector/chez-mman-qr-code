@@ -217,6 +217,7 @@ h3 {
   width: min(50%, 12rem);
   background-repeat: repeat;
   background-image: url(../icons/dots-small--light-scheme.svg);
+  background-size: 15px 10px;
 }
 
 .separator-400:last-child::after {
@@ -238,6 +239,7 @@ h3 {
   transform: translateX(-50%);
   background-image: url(../icons/dots-big--light-scheme.svg);
   background-repeat: repeat;
+  background-size: 25px 13px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -397,6 +399,7 @@ h3 {
   transform: translateY(-50%);
   background-image: url(../icons/dots-big--light-scheme.svg);
   background-repeat: repeat;
+  background-size: 25px 13px;
 }
 
 @media (prefers-color-scheme: dark) {
