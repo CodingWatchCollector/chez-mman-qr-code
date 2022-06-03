@@ -1,11 +1,11 @@
 <svg
-          height='4'
-          width='24'
+          height='14'
+          width='4'
           aria-hidden='true'
           xmlns='http://www.w3.org/2000/svg'
         >
         <circle
-            cx="12" cy="2" r="2" fill='#333333'
+            cx="2" cy="7" r="2" fill='#f9f8f7'
         ></circle>
           
         </svg>

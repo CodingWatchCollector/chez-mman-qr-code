@@ -215,9 +215,9 @@ h3 {
   height: 2px;
   width: 12rem;
   width: min(50%, 12rem);
-  background-repeat: repeat;
+  background-repeat: space;
   background-image: url(../icons/dots-small--light-scheme.svg);
-  background-size: 15px 10px;
+  background-size: 15px 3px;
 }
 
 .separator-400:last-child::after {
@@ -238,8 +238,8 @@ h3 {
   height: 4px;
   transform: translateX(-50%);
   background-image: url(../icons/dots-big--light-scheme.svg);
-  background-repeat: repeat;
-  background-size: 25px 13px;
+  background-repeat: space;
+  background-size: 24px 4px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -265,8 +265,8 @@ h3 {
   padding: 0.5rem 1.5rem;
   background-image: linear-gradient(
     to bottom,
-    hsla(212, 70%, 36%) 0% 50%,
-    hsl(51, 70%, 50%) 50% 100%
+    hsla(212, 60%, 36%) 0% 50%,
+    hsl(51, 60%, 50%) 50% 100%
   );
 }
 
@@ -392,19 +392,18 @@ h3 {
 .price-separator-700::after {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 0;
   right: var(--separator-position);
   width: 4px;
   height: 100%;
-  transform: translateY(-50%);
-  background-image: url(../icons/dots-big--light-scheme.svg);
-  background-repeat: repeat;
-  background-size: 25px 13px;
+  background-image: url(../icons/dots-vertical--light-scheme.svg);
+  background-repeat: space;
+  background-size: 4px 14px;
 }
 
 @media (prefers-color-scheme: dark) {
   .price-separator-700::after {
-    background-image: url(../icons/dots-big--dark-scheme.svg);
+    background-image: url(../icons/dots-vertical--dark-scheme.svg);
   }
 }
 
