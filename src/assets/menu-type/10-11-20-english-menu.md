@@ -77,6 +77,9 @@ content:
         - title: Gaspacho maison
           vegetarian: true
           description: Tomatoes, bell peppers and cucumbers
+        - title: Salade aux foies de volaille
+          description: Salad, grilled chicken livers, grilled chalots
+          local: true
     main-course:
       title: Plats/Main courses (11,50€ without menu)
       item:
