@@ -127,11 +127,12 @@ content:
           vegetarian: false
         - title: Tomates et mozzarella
           vegetarian: true
+        - title: Salade aux foies de volaille
+          local: true
+          description: Salade verte, foies de volaille poêlées, poêlé d'échalotes
     main-course:
       title: Plats (11,50€ hors menu)
       item:
-        - title: Saucisson chaud pistaché, cervelle de canut, pommes vapeurs
-          local: true
         - title: Tablier de sapeur, sauce tartare
           description: La panse de bœuf pané et frit
           local: true
@@ -150,6 +151,8 @@ content:
         - title: Pièce de boeuf poêlée
           supplement: 2€
         - title: Boudin noir aux pommes
+          local: true
+        - title: Saucisson chaud pistaché, cervelle de canut, pommes vapeurs
           local: true
     desert-cheese:
       title: Desserts/Fromage (5€ hors menu)
