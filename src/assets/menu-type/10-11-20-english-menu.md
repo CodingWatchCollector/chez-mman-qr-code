@@ -223,8 +223,7 @@ content:
     price: 14,00€
     item:
       - title: Italienne (Italian)
-        description: Pasta, parmesan, raw ham, hard-boiled egg, tomatoes, olives + 1
-          portion of homemade fries
+        description: Pasta, parmesan, raw ham, hard-boiled egg, tomatoes, olives
         price: 12,50€
       - title: Viande rouge (red meat)
         description: Rosbif, mozzarella, tomatoes, salad + 1 portion of homemade fries
