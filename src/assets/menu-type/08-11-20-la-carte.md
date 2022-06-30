@@ -182,8 +182,7 @@ content:
     item:
       - title: Salade Italienne
         price: 12,50€
-        description: Pâtes, jambon cru, parmesan, oeufs durs, olives noires, tomates + 1
-          assiette de frites maison
+        description: Pâtes, jambon cru, parmesan, oeufs durs, olives noires, tomates
       - title: Salade viande rouge
         description: Salade, rosbif, mozzarella, tomates + 1 assiette de frites maison
         price: 12,50€
