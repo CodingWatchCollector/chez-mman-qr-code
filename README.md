@@ -3,7 +3,6 @@ The site i've made for the restaurant where I was working.
 The site is based on mobile-first approach as it will be mainly opened at place using QR code. The site is intentionally lightweight, robust and simple. It was built with low connection speed, elderly users, old devices and accessibility in mind.   
 The main idea was to stop reprint pages every time we have a new dish but keep the menu updated.
 My boss who's far from being tech person is capable to update the menu by himself.
-I'm satisfied with the simplicity, flexibility and complexity of the MVP.
 
 ## Possible features:
 * [ ] **Dish of the Day**. Add a collection of dishes and update daily the active item. The Dish-of-the-day block should only appear during working hours at lunch time. The block should only be visible if active item was set the same day.
