@@ -1,6 +1,6 @@
 ---
-title: La Carte
-active: true
+title: La Carte été
+active: false
 language: fr
 content:
   - type: alacarte
