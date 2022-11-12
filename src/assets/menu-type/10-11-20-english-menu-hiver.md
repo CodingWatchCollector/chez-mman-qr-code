@@ -1,5 +1,5 @@
 ---
-title: English hiver
+title: English
 active: true
 language: en
 content:
