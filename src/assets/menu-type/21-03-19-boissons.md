@@ -13,24 +13,24 @@ content:
       - title: Kir
         description: "Vin blanc avec une crème au choix: cassis, mûre, framboise, pêche
           (7cl)"
-        price: 3,50€
+        price: 4€
         local: false
       - title: Communard
         description: Vin rouge avec une crème de cassis (7cl)
-        price: 3,50€
+        price: 4€
         local: true
       - title: Martini
         description: Blanc ou rouge (4cl)
-        price: 3,50€
+        price: 4€
       - title: Bière Pression 25cl
         description: 1664 blonde
-        price: 3,50€
+        price: 4€
       - title: Bière Pression 50cl
         description: 1664 blonde
-        price: 7,00€
+        price: 7,50€
       - title: Anisé
         description: Ricard ou Pastis (2cl)
-        price: 3,50€
+        price: 4€
       - title: Porto / Suze / Muscat
         price: 4,50€
         description: (7cl)
@@ -58,18 +58,18 @@ content:
     item:
       - title: Eau Minérale 50cl
         description: Badoit, Evian, San Pellegrino
-        price: 3,50€
+        price: 4€
       - title: Eau Minérale 1l
         description: Badoit, Evian, San Pellegrino
-        price: 5,00€
+        price: 6,00€
       - title: Soda
         description: Coca, Coca zéro, Coca Cherry Orangina, Schweppes Tonic/Agrumes,
           Ice-T, Perrier
-        price: 3,50€
+        price: 4€
         local: false
       - title: Jus Pago
         description: Abricot, orange, ananas, pomme, tomate (25cl)
-        price: 3,50€
+        price: 4€
       - title: Limonade / Diabolo
         description: Grenadine, fraise, menthe, orgeat, citron, pêche (25cl)
         price: 3,50€
