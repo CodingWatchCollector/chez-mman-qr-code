@@ -1,5 +1,5 @@
 ---
-title: La Carte hiver
+title: La Carte
 active: true
 language: fr
 content:
