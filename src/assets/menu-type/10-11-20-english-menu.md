@@ -1,6 +1,6 @@
 ---
-title: English
-active: true
+title: English été
+active: false
 language: en
 content:
   - type: alacarte
