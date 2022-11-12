@@ -24,14 +24,13 @@ content:
       - title: Ris de veau, sauce Madère
         price: 27,00€
       - title: Gratinée à l'oignon
-        description: ''
+        description: ""
         price: 12,50€
       - title: Tartare ou César de bœuf haché au couteau
         description: Servi avec des frites maison et salade verte
         price: 16€
       - title: Andouillette "Braillon", sauce moutarde
-        description:
-          La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
+        description: La vraie andouillette de Lyon, faite à la fraise de veau et tirée à
           la ficelle
         local: true
         price: 21,50€
@@ -55,10 +54,6 @@ content:
         - title: Salade lyonnaise
           description: Salade verte, oeuf poché, tranche de lard, croûtons
           local: true
-        - title: Oeuf en meurette
-          description: Oeuf poché, sauce au vin rouge, échalotes et champignons
-          local: true
-          vegetarian: true
         - title: Terrine de chez M'man Maison & son toast grillé
         - title: L'assiette de M'man
           description: Tranches de saucisson & gâteau de foie, gratinés au four
@@ -118,7 +113,7 @@ content:
           local: true
           vegetarian: true
     title: Menu de M'man
-    price: 16,00€
+    price: 17,00€
   - type: alacarte
     title: Menu P'tit Gone
     description: (<10 ans)
@@ -134,16 +129,16 @@ content:
           description: Tranche de saumon mariné Maison & son toast grillé
         - title: Gâteau de foie de volaille
           local: true
-          description:
-            Gâteau de foie de volaille Maison, sauce financière (tomates,
+          description: Gâteau de foie de volaille Maison, sauce financière (tomates,
             champignons, olives noires)
         - title: Salade de lentilles
           description: Lentilles, oeuf poché, lard, oignons, tomates
           local: true
         - title: Gratinée à l'oignon
-        - title: Salade de quenelle poêlée
+        - title: Oeuf en meurette
           local: true
           vegetarian: true
+          description: Oeuf poché, sauce au vin rouge, échalotes et champignons
         - title: Entrée du Menu de M'man
     main-course:
       title: Plats
@@ -179,5 +174,5 @@ content:
           vegetarian: true
           local: true
     title: Menu GourM'man
-    price: 25,50€
+    price: 27,00€
 ---
