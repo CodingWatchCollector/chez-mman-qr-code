@@ -13,7 +13,7 @@ content:
         description: Cheese plate
         price: 15,00€
         vegetarian: true
-      - title: Assiette mix
-        description: Cheese and cold cuts plate
-        price: 18,00€
+      - title: Camembert au four et un assortiment de charcuterie
+        description: Roasted Camembert cheese and cold cuts plate
+        price: 20,00€
 ---
