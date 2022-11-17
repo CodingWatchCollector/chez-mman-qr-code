@@ -9,7 +9,7 @@ content:
         local: true
         description: "Blanc pétillant de Bugey, nature ou à la crème : cassis, mûre,
           framboise, pêche (7cl)"
-        price: 4,00€
+        price: 4€
       - title: Kir
         description: "Vin blanc avec une crème au choix: cassis, mûre, framboise, pêche
           (7cl)"
@@ -36,23 +36,23 @@ content:
         description: (7cl)
       - title: Jack Daniel's
         description: (4cl)
-        price: 8,00€
+        price: 8€
       - title: Whisky / Gin / Vodka
         description: (4cl)
         price: 6,50€
       - title: Chivas 12 ans
         description: (4cl)
-        price: 10,00€
+        price: 10€
       - title: Glenlivet
         description: Single malt (4cl)
-        price: 10,00€
+        price: 10€
       - title: Digestif
         description: Jacoulot, cognac, armagnac, calvados, verveine, Chartreuse, Génépi,
           poire, framboise, mirabelle, get 27/31, limoncello, Bailey's (4cl)
-        price: 8,00€
+        price: 8€
       - title: Rhum Bumbu
         description: (4cl)
-        price: 9,00€
+        price: 9€
   - type: alacarte
     title: Sans Alcool
     item:
