@@ -163,10 +163,6 @@ content:
           description: Lentils salad with poached egg and bacon
           local: true
           vegetarian: false
-        - title: Salade de quenelle poêlée
-          description: Grilled lyonnaise dumplings, greens
-          local: true
-          vegetarian: true
         - title: Terrine de chez M'man Maison & son toast grillé
           description: Homemade pork and chicken pate with toasted bread
           local: true
