@@ -75,6 +75,9 @@ content:
         - title: Potage de légumes maison
           vegetarian: true
           description: Homemade vegetable soup, croutons
+        - title: Entrée du Menu GourM'man
+          description: Starter from the menu GourM'man
+          supplement: 2€
     main-course:
       title: Plats/Main courses
       item:
