@@ -149,4 +149,8 @@ content:
       - title: Thé/Café crème gourmand
         price: 9,00€
         description: Voir serveur/se
+      - title: Formule café + digestif (2cl)
+        description: Jacoulot, cognac, armagnac, calvados, verveine, chartreuse, génépi,
+          poire, framboise, mirabelle, prune, get 27/31, limoncello, bailey's
+        price: 6€
 ---
